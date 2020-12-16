@@ -200,6 +200,129 @@ section{
         border: 1px solid #979797;
         display: flex;
         align-items: center;
+        .container{
+            .row{
+                .col-sm-12{
+                    margin:auto;
+                    .office-location{
+                        display: flex;
+                        align-items: center;
+
+                        .logo{
+                            width: 61px;
+                            height: 35px;
+                            background: black;
+                            margin-right: 20px;
+                            border-radius: 30%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            i{
+                                &::before{
+                                    color: white;
+                                }
+                            }
+                        }
+                        .address{
+                            font-size: 16px;
+                            font-family: sans-serif;
+                            color: #EEEEEE;
+                        }
+                    }
+
+                    .footer-nav{
+                        ul{
+                            li{
+                                list-style: none;
+                                margin-bottom: 10px;
+                                margin-top: 10px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                    color: #EEEEEE;
+                                }
+                            }
+                         }
+                    }
+                    .footer-contact-social{
+                        .mobile-contact{
+                            display: flex;
+                            margin-bottom: 20px;
+
+                            .icon{
+                                height: 35px;
+                                width: 35px;
+                                /* background: white; */
+                                background-color: black;
+                                /* display: flex; */
+                                text-align: center;
+                                border-radius: 30%;
+                                margin-right: 15px;
+                                i{
+                                    &::before{
+                                        
+                                            
+                                            color: white;
+                                        
+                                    }
+                                }
+                            }
+                            .text{
+                                font-size: 22px;
+                                color: #FFFFFF;
+                                font-family: sans-serif;
+                            }
+                        }
+                        .social-media-contact{
+                            display: flex;
+                            .icon{
+                                width: 35px;
+                                height: 35px;
+                                background-color: black;
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+                                border-radius: 30%;
+                                margin-right: 15px;
+
+                                i{
+                                    &::before{
+                                        
+                                            
+                                            color: white;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .payment-options{
+                        display: flex;
+                        align-items: center;
+                        .text{
+                            font-size:18px;
+                            font-family: sans-serif;
+                            color: #F8F9FA;
+                        }
+                        .icons{
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                            .social-icons{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                background-color: white;
+                                border-radius: 5%;
+                                img{
+                                    width:30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
