@@ -1,0 +1,58 @@
+section{
+    &.header{
+        .header-middle{
+            
+            .container{
+                .row{
+                    .col-sm-12{
+                       
+                        &.remove-margin{
+                            margin: 0;
+                        }
+                        
+                        .filter-tutors{
+                            height: 100%;
+                            padding-top: 20px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            background-color: #E9ECEF;
+                            .title{
+                                font-size: 18px;
+                                padding-bottom: 10px;
+                                color: black;
+                                font-family: sans-serif;
+                            }
+
+                            form{
+                               
+                                .filter-options{
+                                    
+                                    .form-group{
+                                        select{
+                                            option{
+                                              
+                                            }
+                                        }
+                                    }
+
+                                    .request-tutor-tutorlist-page{
+                                        width: 100%;
+                                        height: 50px;
+                                        background-color: #6d6363;
+                                        border: none;
+                                        border-radius: 5%;
+                                        color: white;
+                                        font-size: 15px;
+                                        font-family: sans-serif;
+
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

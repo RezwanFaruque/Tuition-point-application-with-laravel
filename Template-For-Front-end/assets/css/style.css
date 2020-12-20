@@ -33,7 +33,7 @@ section.header .bg-light-color {
 }
 section.header .header-middle {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 83px);
 }
 section.header .header-middle .container {
   height: 100%;
@@ -260,6 +260,33 @@ section.footer .container .row .col-sm-12 .payment-options .icons .social-icons 
 section.footer .container .row .col-sm-12 .payment-options .icons .social-icons img {
   width: 30px;
   height: 30px;
+}
+
+section.header .header-middle .container .row .col-sm-12.remove-margin {
+  margin: 0;
+}
+section.header .header-middle .container .row .col-sm-12 .filter-tutors {
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #E9ECEF;
+}
+section.header .header-middle .container .row .col-sm-12 .filter-tutors .title {
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: black;
+  font-family: sans-serif;
+}
+section.header .header-middle .container .row .col-sm-12 .filter-tutors form .filter-options .request-tutor-tutorlist-page {
+  width: 100%;
+  height: 50px;
+  background-color: #6d6363;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
