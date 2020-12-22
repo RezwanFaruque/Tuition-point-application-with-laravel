@@ -436,4 +436,76 @@ section.body .header-middle .container .row .col-sm-12 .request-tutor-section .b
   border-radius: 15%;
 }
 
+section.body .container .row .col-sm-12 .middle-about-us {
+  margin-top: 50px;
+}
+section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card {
+  text-align: center;
+}
+section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .title {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #0F0D0D;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .body {
+  width: 100%;
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 25px;
+  color: #0F0D0D;
+  box-shadow: 0px 3px 6px #0000002B;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section {
+  margin-top: 50px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .title {
+  font-size: 34px;
+  font-family: sans-serif;
+  color: #0F0D0D;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section {
+  width: 100%;
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000008C;
+  border: 1px solid #707070;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .left-image {
+  margin-right: 30px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .left-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .right-text .name {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #37474F;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .right-text .designation {
+  font-family: 18px;
+  font-family: sans-serif;
+  color: #37474F;
+}
+
 /*# sourceMappingURL=style.css.map */
