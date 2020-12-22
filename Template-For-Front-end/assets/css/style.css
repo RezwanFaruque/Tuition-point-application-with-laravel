@@ -508,4 +508,21 @@ section.body .container .row .col-sm-12 .meet-the-team-section .team-member-sect
   color: #37474F;
 }
 
+section.body .faq-body {
+  margin-top: 50px;
+}
+section.body .faq-body .container .row .col-sm-12 .faq-section .title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 22px;
+  color: #37474FB8;
+}
+section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .card-header h5 button {
+  color: #37474F;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */

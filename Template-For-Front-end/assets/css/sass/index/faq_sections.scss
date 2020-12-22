@@ -1,0 +1,46 @@
+section{
+    &.body{
+        .faq-body{
+            margin-top: 50px;
+            .container{
+                .row{
+                    .col-sm-12{
+                        .faq-section{
+                            .title{
+                                margin-bottom: 30px;
+                                text-align: center;
+                                font-family: sans-serif;
+                                font-size: 22px;
+                                color: #37474FB8;
+
+
+                            }
+                            .faq-collapse-body{
+                                #accordion{
+                                    .card{
+                                        .card-header{
+                                            h5{
+                                                
+                                                button{
+                                                    color: #37474F;
+                                                    font-size: 17px;
+                                                    font-family: sans-serif;
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                        }
+                                        .collapse{
+                                            .card-body{
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
