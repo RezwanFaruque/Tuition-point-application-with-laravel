@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP_DEVELOPMENT</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <section class="header" style="background-image: none!important; height: auto">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-color">
+            <a class="navbar-brand" href="#">Tuition Point</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="premium-tutorlist.html">PREMIUM TUTOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BECOME A TUTOR </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login-button" href="#">Login / Register</a>
+                    </li>
+            </div>
+        </nav>
+
+       
+    </section>
+
+    <section class="body">
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-12 remove-margin">
+                        <!-- Filter options in here -->
+                        <div class="filter-tutors">
+                            <div class="title">
+                                FILTER TUTORS
+                            </div>
+                            <form action="" method="POST">
+                                <div class="filter-options">
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>District</option>
+                                            <option>Rajshahi</option>
+                                            <option>Dhaka</option>
+                                            <option>Khulna</option>
+                                            <option>Rangpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Area</option>
+                                            <option>Mirpur</option>
+                                            <option>Badda</option>
+                                            <option>Gulshan</option>
+                                            <option>Baridhara</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Subject</option>
+                                            <option>English</option>
+                                            <option>Bangla</option>
+                                            <option>Math</option>
+                                            <option>Physics</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Subject</option>
+                                            <option>English</option>
+                                            <option>Bangla</option>
+                                            <option>Math</option>
+                                            <option>Physics</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Subject</option>
+                                            <option>English</option>
+                                            <option>Bangla</option>
+                                            <option>Math</option>
+                                            <option>Physics</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Subject</option>
+                                            <option>English</option>
+                                            <option>Bangla</option>
+                                            <option>Math</option>
+                                            <option>Physics</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Subject</option>
+                                            <option>English</option>
+                                            <option>Bangla</option>
+                                            <option>Math</option>
+                                            <option>Physics</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Subject</option>
+                                            <option>English</option>
+                                            <option>Bangla</option>
+                                            <option>Math</option>
+                                            <option>Physics</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="request-tutor-tutorlist-page">Search Tutor <i
+                                            class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12">
+                        <div class="right-side">
+                            <!-- Fetchig tutor list in here -->
+                            <div class="tutor-search-result">
+                                <div class="title-lk-button">
+                                    <button class="title-button">TUTOR SEARCH RESULT</button>
+                                </div>
+                                <hr>
+                                <div class="result-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <div class="result-card">
+                                                    <div class="header">
+                                                        <span class="badge badge-secondary">New</span>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="left">
+                                                            <div class="profile-image">
+                                                                <img src="assets/vendor/images/tutorlist/me.jpg" alt=""
+                                                                    srcset="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="right">
+                                                            <div class="name">
+                                                                Manna Bhuiyan
+                                                            </div>
+                                                            <div class="subject">
+                                                                MBA in Marketing
+                                                            </div>
+                                                            <div class="university">
+                                                                Dhaka University
+                                                            </div>
+                                                            <div class="rating">
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <a class="tutorlist-profiile-details" href="">View Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="pagination-sections">
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination">
+                                                            <li class="page-item"><a class="page-link"
+                                                                    href="#">Previous</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="request-tutor-section">
+                                                    <div class="text">
+                                                        <div class="title">
+                                                            Did not find a desirable tutor?
+                                                        </div> 
+                                                        <div class="subtitle">
+                                                            Click the 'Request a Tutor' Button to let us know your requirements.
+                                                        </div>
+                                                        <div class="subtitle">
+                                                            We will send you more matched Tutor Profiles in a short time.
+                                                        </div> 
+                                                    </div>
+                                                    <div class="button-find">
+                                                        <div class="request-tutor-page">
+                                                            <a class="req-tutor" href="">Request a Tutor</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="social-fix-position">
+                                <div class="social-section">
+                                    <div class="logo">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">Facebook</a>
+                                    </div>
+                                </div>
+
+                                <div class="social-section">
+                                    <div class="logo">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">Instagram</a>
+                                    </div>
+                                </div>
+
+                                <div class="social-section">
+                                    <div class="logo">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">Tweeter</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" style="margin-top:30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="office-location">
+                        <div class="logo">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="address">
+                            Office Address: Gulshan - 02, Dhaka - 1212, Bangladesh
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-contact-social">
+                        <div class="mobile-contact">
+                            <div class="icon">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="text">
+                                (+880) 1737226676
+                            </div>
+                        </div>
+                        <div class="social-media-contact">
+                            <div class="icon">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="payment-options">
+                        <div class="text">
+                            We Accept:
+                        </div>
+                        <div class="icons">
+                            <div class="social-icons">
+                                <img src="assets/vendor/images/index/bkash.png" alt="" srcset="">
+                            </div>
+                            <div class="social-icons">
+                                <img src="assets/vendor/images/index/Dbbl_bank.png" alt="" srcset="">
+                            </div>
+                            <div class="social-icons">
+                                <img src="assets/vendor/images/index/roketlogo.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
