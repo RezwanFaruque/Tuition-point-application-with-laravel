@@ -262,23 +262,23 @@ section.footer .container .row .col-sm-12 .payment-options .icons .social-icons 
   height: 30px;
 }
 
-section.header .header-middle .container .row .col-sm-12.remove-margin {
+section.body .header-middle .container .row .col-sm-12.remove-margin {
   margin: 0;
 }
-section.header .header-middle .container .row .col-sm-12 .filter-tutors {
+section.body .header-middle .container .row .col-sm-12 .filter-tutors {
   height: 100%;
   padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: #E9ECEF;
 }
-section.header .header-middle .container .row .col-sm-12 .filter-tutors .title {
+section.body .header-middle .container .row .col-sm-12 .filter-tutors .title {
   font-size: 18px;
   padding-bottom: 10px;
   color: black;
   font-family: sans-serif;
 }
-section.header .header-middle .container .row .col-sm-12 .filter-tutors form .filter-options .request-tutor-tutorlist-page {
+section.body .header-middle .container .row .col-sm-12 .filter-tutors form .filter-options .request-tutor-tutorlist-page {
   width: 100%;
   height: 50px;
   background-color: #6d6363;
@@ -287,6 +287,153 @@ section.header .header-middle .container .row .col-sm-12 .filter-tutors form .fi
   color: white;
   font-size: 15px;
   font-family: sans-serif;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section {
+  display: flex;
+  background-color: #b5b5b5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 48px;
+  border-radius: 5%;
+  align-items: center;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .logo {
+  padding-right: 5px;
+  padding-left: 10px;
+  width: 36px;
+  height: auto;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .text a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #6E797F;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button .title-button {
+  border: none;
+  background-color: #212529;
+  color: white;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 10%;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card {
+  border: 1px solid #707070;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10%;
+  margin-bottom: 25px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header {
+  text-align: right;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body {
+  display: flex;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .left {
+  margin: auto;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .left .profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .name {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .subject {
+  font-size: 12px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .university {
+  font-size: 12px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right span.checked {
+  color: darkblue;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .footer {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .footer .tutorlist-profiile-details {
+  width: auto;
+  text-decoration: none;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  font-family: sans-serif;
+  background-color: #7D7D7E;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10%;
+}
+section.body .header-middle .container .row .col-sm-12 .pagination-sections {
+  display: flex;
+  justify-content: center;
+}
+section.body .header-middle .container .row .col-sm-12 .pagination-sections nav ul li a {
+  background-color: #7D7D7E;
+  color: white;
+  margin-left: 7px;
+  margin-right: 7px;
+  border-radius: 15%;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .text .title {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #37474FB8;
+  font-weight: bold;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .text .subtitle {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #37474FB8;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+  margin-left: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find .request-tutor-page .req-tutor {
+  width: 200px;
+  height: auto;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #37474FB8;
+  border-radius: 15%;
 }
 
 /*# sourceMappingURL=style.css.map */
