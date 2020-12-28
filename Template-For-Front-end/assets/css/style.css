@@ -721,11 +721,67 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor {
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section {
   margin: auto;
 }
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .image-preview img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #00000061;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .file-text-under {
   font-family: sans-serif;
   font-size: 15px;
   color: #0F0D0D;
   font-weight: bold;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .save-image {
+  margin-top: 20px;
+  width: 100px;
+  height: 36px;
+  background: #7D7D7E 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  font-size: 12px;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: black;
+  padding-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 3px 6px #00000061;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group .label-gender {
+  padding-right: 30px;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: black;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .sign-up-button-reg-tutor {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  background: #7D7D7E 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  font-size: 17px;
+  color: white;
+  font-family: sans-serif;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
