@@ -715,4 +715,17 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   background-color: #F32B2B;
 }
 
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor {
+  margin-top: 50px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section {
+  margin: auto;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .file-text-under {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #0F0D0D;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
