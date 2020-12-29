@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP_DEVELOPMENT</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/vendor/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -15,7 +18,7 @@
 
     <section class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light-color">
-            <a class="navbar-brand" href="#">Tuition Point</a>
+            <a class="navbar-brand wow bounceInUp" href="#">Tuition Point</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,22 +27,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link wow bounceInUp" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="premium-tutorlist.html">PREMIUM TUTOR</a>
+                        <a class="nav-link wow bounceInUp" href="premium-tutorlist.html">PREMIUM TUTOR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BECOME A TUTOR </a>
+                        <a class="nav-link wow bounceInUp" href="#">BECOME A TUTOR </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">ABOUT US</a>
+                        <a class="nav-link wow bounceInUp" href="about-us.html">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
+                        <a class="nav-link wow bounceInUp" href="faq.html">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link login-button" href="#">Login / Register</a>
+                        <a class="nav-link login-button wow bounceInUp" href="register-tutors.html">Login / Register</a>
                     </li>
             </div>
         </nav>
@@ -49,7 +52,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="left-side">
-                            <div class="search-for-tutor">
+                            <div class="search-for-tutor wow slideInLeft">
                                 <div class="info">
                                     <div class="title">
                                         SEARCH FOR TUTORS
@@ -120,7 +123,8 @@
                                                             </select>
                                                         </div>
 
-                                                        <button type="submit" class="request-tutor-indexpage">Search Tutor</button>
+                                                        <button type="submit" class="request-tutor-indexpage">Search
+                                                            Tutor</button>
 
                                                     </div>
 
@@ -131,7 +135,8 @@
                                             </div>
 
                                             <div class="align-center">
-                                                <a class="view-all-tutors-button-index" href="#">View All Tutor <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                <a class="view-all-tutors-button-index" href="#">View All Tutor <i
+                                                        class="fa fa-arrow-right" aria-hidden="true"></i>
                                                 </a>
                                             </div>
 
@@ -153,7 +158,7 @@
                                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
                                     </div>
                                     <div class="text">
-                                        <a href="#">Facebook</a> 
+                                        <a href="#">Facebook</a>
                                     </div>
                                 </div>
 
@@ -162,7 +167,7 @@
                                         <i class="fa fa-instagram" aria-hidden="true"></i>
                                     </div>
                                     <div class="text">
-                                        <a href="#">Instagram</a> 
+                                        <a href="#">Instagram</a>
                                     </div>
                                 </div>
 
@@ -171,7 +176,7 @@
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </div>
                                     <div class="text">
-                                       <a href="#">Tweeter</a>  
+                                        <a href="#">Tweeter</a>
                                     </div>
                                 </div>
                             </div>
@@ -257,6 +262,14 @@
     <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+
+    <script>
+        
+        new WOW().init();
+       
+       
+    </script>
 </body>
 
 </html>
