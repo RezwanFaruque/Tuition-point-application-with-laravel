@@ -29,7 +29,7 @@ section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button
   border: 1px solid white;
 }
 section.header .bg-light-color {
-  background-color: #29ABE2;
+  background-color: #4CAF50;
 }
 section.header .header-middle {
   width: 100%;
@@ -109,7 +109,7 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
   color: white;
   width: 162px;
   height: 50px;
-  background: #7D7D7E 0% 0% no-repeat padding-box;
+  background: #4CAF50;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .form-group {
   margin-bottom: 1.5rem;
@@ -159,7 +159,7 @@ section.header .header-middle .container .row .col-sm-12 .right-side .social-fix
 section.footer {
   width: 100%;
   height: 345px;
-  background-color: #29ABE2;
+  background-color: #4CAF50;
   border: 1px solid #979797;
   display: flex;
   align-items: center;
@@ -281,7 +281,7 @@ section.body .header-middle .container .row .col-sm-12 .filter-tutors .title {
 section.body .header-middle .container .row .col-sm-12 .filter-tutors form .filter-options .request-tutor-tutorlist-page {
   width: 100%;
   height: 50px;
-  background-color: #6d6363;
+  background-color: #4CAF50;
   border: none;
   border-radius: 5%;
   color: white;
@@ -295,7 +295,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-p
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section {
   display: flex;
-  background-color: #b5b5b5;
+  background-color: #4CAF50;
   margin-top: 15px;
   margin-bottom: 15px;
   height: 48px;
@@ -312,7 +312,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-p
   text-decoration: none;
   font-size: 20px;
   font-family: sans-serif;
-  color: #6E797F;
+  color: white;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button {
   margin-top: 20px;
@@ -320,7 +320,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button .title-button {
   border: none;
-  background-color: #212529;
+  background-color: #4CAF50;
   color: white;
   width: auto;
   padding-left: 10px;
@@ -340,6 +340,9 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header {
   text-align: right;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header span {
+  background-color: #4CAF50;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body {
   display: flex;
@@ -384,7 +387,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   color: white;
   font-size: 12px;
   font-family: sans-serif;
-  background-color: #7D7D7E;
+  background-color: #4CAF50;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -396,7 +399,7 @@ section.body .header-middle .container .row .col-sm-12 .pagination-sections {
   justify-content: center;
 }
 section.body .header-middle .container .row .col-sm-12 .pagination-sections nav ul li a {
-  background-color: #7D7D7E;
+  background-color: #4CAF50;
   color: white;
   margin-left: 7px;
   margin-right: 7px;
@@ -432,7 +435,7 @@ section.body .header-middle .container .row .col-sm-12 .request-tutor-section .b
   padding-left: 10px;
   padding-right: 10px;
   color: white;
-  background-color: #37474FB8;
+  background-color: #4CAF50;
   border-radius: 15%;
 }
 
@@ -574,7 +577,7 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
   width: auto;
   height: auto;
-  background: #7D7D7E;
+  background: #4CAF50;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
@@ -590,7 +593,7 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
   border: none;
   width: auto;
   height: auto;
-  background: #7D7D7E;
+  background: #4CAF50;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
@@ -601,15 +604,16 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
   width: 300px;
-  background-color: #CED4DA;
+  background-color: #4CAF50;
   margin-right: 20px;
   border-radius: 5%;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
   border-radius: 5%;
+  background-color: #616161;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
-  color: #37474FB8;
+  color: white;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
   background-color: #707070;
@@ -739,7 +743,7 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
   margin-top: 20px;
   width: 100px;
   height: 36px;
-  background: #7D7D7E 0% 0% no-repeat padding-box;
+  background: #4CAF50;
   border-radius: 11px;
   font-size: 12px;
   color: white;
@@ -776,7 +780,7 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
   margin-top: 20px;
   width: 100px;
   height: 40px;
-  background: #7D7D7E 0% 0% no-repeat padding-box;
+  background: #4CAF50;
   border-radius: 11px;
   font-size: 17px;
   color: white;

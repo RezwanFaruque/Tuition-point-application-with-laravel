@@ -63,7 +63,7 @@ section{
                                     a{
                                         width: auto;
                                         height: auto;
-                                        background: #7D7D7E;
+                                        background: $button-color;
                                         padding-left: 15px;
                                         padding-right: 15px;
                                         padding-top: 10px;
@@ -80,7 +80,7 @@ section{
                                             border: none;
                                             width: auto;
                                             height: auto;
-                                            background: #7D7D7E;
+                                            background: $button-color;
                                             padding-left: 15px;
                                             padding-right: 15px;
                                             padding-top: 10px;
@@ -105,15 +105,16 @@ section{
                                 ul{
                                     li{
                                         width: 300px;
-                                        background-color: #CED4DA;
+                                        background-color: $button-color;
                                         margin-right: 20px;
                                         border-radius: 5%;
                                         &.active{
                                             border-radius: 5%;
+                                            background-color: #616161;
                                         }
                                         
                                         a{
-                                            color: #37474FB8;
+                                            color: white;
                                             &.active{
                                                 background-color: #707070;
                                                 color: white;
