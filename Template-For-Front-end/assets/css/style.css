@@ -45,7 +45,6 @@ section.header .header-middle .container .row .col-sm-12 {
   margin: auto;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
-  border-radius: 5%;
   width: auto;
   height: 390px;
   background-color: #F1F3F5;
@@ -97,7 +96,7 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side .form-group .form-control {
   height: calc(1.5em + .75rem + 15px);
   background: #e4e3e3 0% 0% no-repeat padding-box;
-  border: 1px solid #828282;
+  border: none;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
   width: 50%;
@@ -117,7 +116,7 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .form-group .form-control {
   height: calc(1.5em + .75rem + 15px);
   background: #e4e3e3 0% 0% no-repeat padding-box;
-  border: 1px solid #828282;
+  border: none;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .align-center {
   text-align: center;
@@ -327,16 +326,15 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
-  border-radius: 10%;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card {
-  border: 1px solid #707070;
+  border: 1px solid #c3c0c0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  border-radius: 10%;
   margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header {
   text-align: right;
@@ -392,7 +390,6 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 10%;
 }
 section.body .header-middle .container .row .col-sm-12 .pagination-sections {
   display: flex;
@@ -403,7 +400,6 @@ section.body .header-middle .container .row .col-sm-12 .pagination-sections nav 
   color: white;
   margin-left: 7px;
   margin-right: 7px;
-  border-radius: 15%;
 }
 section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
   display: flex;
@@ -436,7 +432,6 @@ section.body .header-middle .container .row .col-sm-12 .request-tutor-section .b
   padding-right: 10px;
   color: white;
   background-color: #4CAF50;
-  border-radius: 15%;
 }
 
 section.body .container .row .col-sm-12 .middle-about-us {

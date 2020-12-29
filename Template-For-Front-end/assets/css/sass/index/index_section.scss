@@ -55,8 +55,6 @@ section{
                         margin: auto;
                         .left-side{
                             .search-for-tutor{
-                                
-                                border-radius: 5%;
                                 width: auto;
                                 height: 390px;
                                 background-color: #F1F3F5;
@@ -102,7 +100,7 @@ section{
                                                         .form-control{
                                                             height: calc(1.5em + .75rem + 15px);
                                                             background: #e4e3e3 0% 0% no-repeat padding-box;
-                                                            border: 1px solid #828282;
+                                                            border: none;
                                                         }
                                                     }
                                                 }
@@ -125,7 +123,7 @@ section{
                                                         .form-control{
                                                             height: calc(1.5em + .75rem + 15px);
                                                             background: #e4e3e3 0% 0% no-repeat padding-box;
-                                                            border: 1px solid #828282;
+                                                            border: none;
                                                         }
                                                     }
                                                 }
