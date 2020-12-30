@@ -29,17 +29,19 @@ section{
                                         .info{
                                             color: #37474F;
                                             &.name{
-                                                font-size: 26px;
-                                                font-family: sans-serif;
-                                                font-weight: bold;
+                                                font-size: 22px;
+                                                font-family: 'Montserrat-SemiBold';
+                                                
                                             }
 
                                             &.mobile{
-                                                font-size: 18px;
+                                                font-size: 15px;
+                                                font-family: 'Montserrat-Regular';
                                             }
 
                                             &.gmail{
                                                 font-size: 12px;
+                                                font-family: 'Montserrat-Regular';
                                             }
                                         }
 
@@ -71,6 +73,8 @@ section{
                                         text-decoration: none;
                                         color: white;
                                         border-radius: 10%;
+                                        font-size: 12px;
+                                        font-family: 'Montserrat-SemiBold';
                                     }
                                 }
                                 .btn-signout{
@@ -88,6 +92,8 @@ section{
                                             text-decoration: none;
                                             color: white;
                                             border-radius: 10%;
+                                            font-size: 12px;
+                                            font-family: 'Montserrat-SemiBold';
                                         }
                                     }
                                 }
@@ -115,6 +121,8 @@ section{
                                         
                                         a{
                                             color: white;
+                                            font-family: 'Montserrat-SemiBold';
+                                            font-size: 15px;
                                             &.active{
                                                 background-color: #707070;
                                                 color: white;
@@ -140,7 +148,7 @@ section{
                                                     .left-informations{
                                                         .info-left{
                                                             font-size: 15px;
-                                                            font-family: sans-serif;
+                                                            font-family: 'Montserrat-Regular';
                                                             color: #37474FB8;
                                                             padding-bottom: 20px;
                                                         }
@@ -148,7 +156,7 @@ section{
                                                     .right-information{
                                                         .info-right{
                                                             font-size: 15px;
-                                                            font-family: sans-serif;
+                                                            font-family: 'Montserrat-Regular';
                                                             color: #37474FB8;
                                                             padding-bottom: 20px;
                                                         }
@@ -205,7 +213,7 @@ section{
                                                                     .info{
                                                                         .info-inf{
                                                                             
-                                                                            font-family: sans-serif;
+                                                                            font-family: 'Montserrat-Medium';
                                                                             color: #37474F;
                                                                             &.name{
                                                                                 font-size: 10px;
@@ -234,7 +242,8 @@ section{
                                                                             padding-bottom: 3px;
                                                                             color: white;
                                                                             border-radius: 15px;
-                                                                            font-size: 12px;
+                                                                            font-size: 10px;
+                                                                            font-family: 'Montserrat-SemiBold';
                                                                             &.accept{
                                                                                 background-color: #00A99D;
                                                                                

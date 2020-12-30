@@ -9,7 +9,7 @@ section{
                             .title{
                                 margin-bottom: 30px;
                                 text-align: center;
-                                font-family: sans-serif;
+                                font-family: 'Montserrat-Bold';
                                 font-size: 22px;
                                 color: #37474FB8;
 
@@ -24,14 +24,15 @@ section{
                                                 button{
                                                     color: #37474F;
                                                     font-size: 17px;
-                                                    font-family: sans-serif;
-                                                    font-weight: bold;
+                                                    font-family: 'Montserrat-Semibold';
+                                                    
                                                 }
                                             }
                                         }
                                         .collapse{
                                             .card-body{
-
+                                                font-family: 'Montserrat-Medium';
+                                                font-size: 12px;
                                             }
                                         }
                                     }

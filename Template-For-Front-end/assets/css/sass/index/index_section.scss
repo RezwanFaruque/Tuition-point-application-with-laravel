@@ -14,11 +14,12 @@ section{
         nav{
             min-height: calc(100vh - 90vh);
             .navbar-brand{
-              font-size: 32px;
-              color: white;
-              font-family: sans-serif;
-              font-weight: bolder;
-              letter-spacing: 2px;
+                margin-left: 70px;
+              img{
+                  height: 50px;
+                  width: auto;
+                  
+              }
 
             }
             .navbar-collapse{
@@ -26,12 +27,22 @@ section{
                     .nav-item{
                         padding-left: 27px;
                         padding-right: 27px;
+                        
+
                         .nav-link{
-                            font-size: 17px;
+                            font-size: 15px;
                             font-family: sans-serif;
                             color: white;
+                            font-family: 'Montserrat-Medium';
+                            &:hover{
+                                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                            }
+
                             &.login-button{
                                 border: 1px solid white;
+                                &:hover{
+                                    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                                }
 
                             }
                         }
@@ -67,13 +78,14 @@ section{
                                     padding-bottom: 32px;
                                     .title{
                                         font-size: 18px;
-                                        font-family: sans-serif;
+                                        
                                         color: #495057;
+                                        font-family: 'Montserrat-SemiBold';
                                     }
 
                                     .sub-title{
                                         font-size: 12px;
-                                        font-family: sans-serif;
+                                        font-family: 'Montserrat-Regular';
                                         color: #495057;
                                     }
                                     .body-with-form{
@@ -101,6 +113,9 @@ section{
                                                             height: calc(1.5em + .75rem + 15px);
                                                             background: #e4e3e3 0% 0% no-repeat padding-box;
                                                             border: none;
+                                                            text-transform: uppercase;
+                                                            font-family: 'Montserrat-Medium';
+                                                            font-size: 15px;
                                                         }
                                                     }
                                                 }
@@ -117,6 +132,10 @@ section{
                                                         width: 162px;
                                                         height: 50px;
                                                         background: $button-color;
+                                                        font-family: 'Montserrat-SemiBold';
+                                                        &:hover{
+                                                            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+                                                        }
                                                     }
                                                     .form-group{
                                                         margin-bottom: 1.5rem;
@@ -124,6 +143,9 @@ section{
                                                             height: calc(1.5em + .75rem + 15px);
                                                             background: #e4e3e3 0% 0% no-repeat padding-box;
                                                             border: none;
+                                                            text-transform: uppercase;
+                                                            font-family: 'Montserrat-Medium';
+                                                            font-size: 15px;
                                                         }
                                                     }
                                                 }
@@ -136,7 +158,7 @@ section{
                                                 text-align: center;
                                                 .view-all-tutors-button-index{
                                                     font-size: 16px;
-                                                    font-family: sans-serif;
+                                                    font-family: 'Montserrat-SemiBold';
                                                     color: #4D4D4D;
                                                     line-height: 21px;
                                                     text-decoration: none;
@@ -164,6 +186,9 @@ section{
                                     height: 48px;
                                     border-radius: 5%;
                                     align-items: center;
+                                    &:hover{
+                                        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+                                    }
                                     .logo{
                                         padding-right: 5px;
                                         padding-left: 10px;
@@ -224,8 +249,8 @@ section{
                             }
                         }
                         .address{
-                            font-size: 16px;
-                            font-family: sans-serif;
+                            font-size: 15px;
+                            font-family: 'Montserrat-SemiBold';
                             color: #EEEEEE;
                         }
                     }
@@ -238,8 +263,9 @@ section{
                                 margin-top: 10px;
                                 a{
                                     text-decoration: none;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                     color: #EEEEEE;
+                                    font-family: 'Montserrat-SemiBold';
                                 }
                             }
                          }
@@ -258,6 +284,9 @@ section{
                                 text-align: center;
                                 border-radius: 30%;
                                 margin-right: 15px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 i{
                                     &::before{
                                         
@@ -268,9 +297,9 @@ section{
                                 }
                             }
                             .text{
-                                font-size: 22px;
+                                font-size: 17px;
                                 color: #FFFFFF;
-                                font-family: sans-serif;
+                                font-family: 'Montserrat-SemiBold';
                             }
                         }
                         .social-media-contact{
@@ -300,8 +329,8 @@ section{
                         display: flex;
                         align-items: center;
                         .text{
-                            font-size:18px;
-                            font-family: sans-serif;
+                            font-size:15px;
+                            font-family:  'Montserrat-SemiBold';
                             color: #F8F9FA;
                         }
                         .icons{

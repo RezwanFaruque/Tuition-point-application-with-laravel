@@ -17,10 +17,11 @@ section{
                             padding-right: 10px;
                             background-color: #E9ECEF;
                             .title{
-                                font-size: 18px;
+                                font-size: 15px;
                                 padding-bottom: 10px;
                                 color: black;
-                                font-family: sans-serif;
+                                font-family: 'Montserrat-SemiBold';
+                                text-align: center;
                             }
 
                             form{
@@ -43,7 +44,7 @@ section{
                                         border-radius: 5%;
                                         color: white;
                                         font-size: 15px;
-                                        font-family: sans-serif;
+                                        font-family: 'Montserrat-Medium';
 
 
                                     }
@@ -65,6 +66,9 @@ section{
                                         height: 48px;
                                         border-radius: 5%;
                                         align-items: center;
+                                        &:hover{
+                                            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+                                        }
                                         .logo{
                                             padding-right: 5px;
                                             padding-left: 10px;
@@ -78,8 +82,8 @@ section{
                                             
                                             a{
                                                 text-decoration: none;
-                                                font-size: 20px;
-                                                font-family: sans-serif;
+                                                font-size: 12px;
+                                                font-family: 'Montserrat-Medium';
                                                 color: white;
                                             }
                                         }
@@ -99,6 +103,8 @@ section{
                                         padding-right: 10px;
                                         padding-top: 7px;
                                         padding-bottom: 7px;
+                                        font-family: 'Montserrat-SemiBold';
+                                        font-size: 15px;
                                         
                                         
                                     }
@@ -115,6 +121,10 @@ section{
                                                     padding-left: 10px;
                                                     margin-bottom: 25px;
                                                     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                                                    transition: all .2s ease-in-out;
+                                                    &:hover{
+                                                        transform: scale(1.05);
+                                                    }
                                                     .header{
                                                         text-align: right;
                                                         span{
@@ -139,16 +149,19 @@ section{
                                                             text-align: left;
                                                             padding-left: 20px;
                                                             .name{
-                                                                font-size: 15px;
-                                                                font-family: sans-serif;
+                                                                font-size: 12px;
+                                                                font-family: 'Montserrat-Bold';
                                                                 font-weight: bold;
                                                             }
 
                                                             .subject{
-                                                                font-size: 12px;
+                                                                font-size: 10px;
+                                                                font-family: 'Montserrat-SemiBold';
+
                                                             }
                                                             .university{
-                                                                font-size: 12px;
+                                                                font-size: 10px;
+                                                                font-family: 'Montserrat-SemiBold';
                                                             }
 
                                                             .rating{
@@ -157,7 +170,7 @@ section{
 
                                                             span{
                                                                 &.checked{
-                                                                    color: darkblue;
+                                                                    color: #FAED26;
                                                                 }
                                                             }
                                                         }
@@ -174,7 +187,7 @@ section{
                                                             height:30px;
                                                             color:white;
                                                             font-size:12px;
-                                                            font-family:sans-serif;
+                                                            font-family:'Montserrat-SemiBold';
                                                             background-color: $button-color;
                                                             padding-left: 10px;
                                                             padding-right:10px;
@@ -203,6 +216,7 @@ section{
                                             color: white;
                                             margin-left: 7px;
                                             margin-right: 7px;
+                                            font-family: 'Montserrat-Regular';
                                             
                                         }
                                     }
@@ -221,13 +235,13 @@ section{
 
                                 .title{
                                     font-size: 20px;
-                                    font-family: sans-serif;
+                                    font-family: 'Montserrat-Bold';
                                     color: #37474FB8;
                                     font-weight: bold;
                                 }
                                 .subtitle{
                                     font-size: 12px;
-                                    font-family: sans-serif;
+                                    font-family: 'Montserrat-SemiBold';
                                     color: #37474FB8;
                                 }
                             }
@@ -245,6 +259,7 @@ section{
                                         padding-right: 10px;
                                         color: white;
                                         background-color: $button-color;
+                                        font-family: 'Montserrat-SemiBold';
                                         
 
                                     }

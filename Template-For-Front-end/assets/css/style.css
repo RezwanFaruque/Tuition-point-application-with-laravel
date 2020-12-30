@@ -1,3 +1,82 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.ttf") format("embedded-opentype"), url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.woff2") format("woff2"), url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.woff") format("woff"), url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Bold */
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Lato/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/Lato/fonts/Lato-Bold.woff2") format("woff2"), url("../vendor/fonts/Lato/fonts/Lato-Bold.woff") format("woff"), url("../vendor/fonts/Lato/fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-SemiBold */
+@font-face {
+  font-family: "Lato-SemiBold";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Lato/fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/Lato/fonts/Lato-Semibold.woff2") format("woff2"), url("../vendor/fonts/Lato/fonts/Lato-Semibold.woff") format("woff"), url("../vendor/fonts/Lato/fonts/Lato-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Light */
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Lato/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/Lato/fonts/Lato-Light.woff2") format("woff2"), url("../vendor/fonts/Lato/fonts/Lato-Light.woff") format("woff"), url("../vendor/fonts/Lato/fonts/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Regular*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Medium*/
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Bold*/
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-SemiBold*/
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../vendor/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Light*/
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
 section.header {
   background: linear-gradient(rgba(224, 219, 219, 0.5), rgba(241, 232, 232, 0.5)), url("../vendor/images/index/index_header_image.jpg");
   background-repeat: no-repeat;
@@ -10,23 +89,30 @@ section.header nav {
   min-height: calc(100vh - 90vh);
 }
 section.header nav .navbar-brand {
-  font-size: 32px;
-  color: white;
-  font-family: sans-serif;
-  font-weight: bolder;
-  letter-spacing: 2px;
+  margin-left: 70px;
+}
+section.header nav .navbar-brand img {
+  height: 50px;
+  width: auto;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item {
   padding-left: 27px;
   padding-right: 27px;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-size: 17px;
+  font-size: 15px;
   font-family: sans-serif;
   color: white;
+  font-family: "Montserrat-Medium";
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
   border: 1px solid white;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 section.header .bg-light-color {
   background-color: #4CAF50;
@@ -59,12 +145,12 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
   font-size: 18px;
-  font-family: sans-serif;
   color: #495057;
+  font-family: "Montserrat-SemiBold";
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
   font-size: 12px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Regular";
   color: #495057;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form {
@@ -97,6 +183,9 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
   height: calc(1.5em + .75rem + 15px);
   background: #e4e3e3 0% 0% no-repeat padding-box;
   border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
   width: 50%;
@@ -109,6 +198,10 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
   width: 162px;
   height: 50px;
   background: #4CAF50;
+  font-family: "Montserrat-SemiBold";
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .form-group {
   margin-bottom: 1.5rem;
@@ -117,13 +210,16 @@ section.header .header-middle .container .row .col-sm-12 .left-side .search-for-
   height: calc(1.5em + .75rem + 15px);
   background: #e4e3e3 0% 0% no-repeat padding-box;
   border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .align-center {
   text-align: center;
 }
 section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .align-center .view-all-tutors-button-index {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Montserrat-SemiBold";
   color: #4D4D4D;
   line-height: 21px;
   text-decoration: none;
@@ -142,6 +238,9 @@ section.header .header-middle .container .row .col-sm-12 .right-side .social-fix
   height: 48px;
   border-radius: 5%;
   align-items: center;
+}
+section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .logo {
   padding-right: 5px;
@@ -184,8 +283,8 @@ section.footer .container .row .col-sm-12 .office-location .logo i::before {
   color: white;
 }
 section.footer .container .row .col-sm-12 .office-location .address {
-  font-size: 16px;
-  font-family: sans-serif;
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
   color: #EEEEEE;
 }
 section.footer .container .row .col-sm-12 .footer-nav ul li {
@@ -195,8 +294,9 @@ section.footer .container .row .col-sm-12 .footer-nav ul li {
 }
 section.footer .container .row .col-sm-12 .footer-nav ul li a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   color: #EEEEEE;
+  font-family: "Montserrat-SemiBold";
 }
 section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
   display: flex;
@@ -211,14 +311,17 @@ section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact
   text-align: center;
   border-radius: 30%;
   margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i::before {
   color: white;
 }
 section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
-  font-size: 22px;
+  font-size: 17px;
   color: #FFFFFF;
-  font-family: sans-serif;
+  font-family: "Montserrat-SemiBold";
 }
 section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
   display: flex;
@@ -241,8 +344,8 @@ section.footer .container .row .col-sm-12 .payment-options {
   align-items: center;
 }
 section.footer .container .row .col-sm-12 .payment-options .text {
-  font-size: 18px;
-  font-family: sans-serif;
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
   color: #F8F9FA;
 }
 section.footer .container .row .col-sm-12 .payment-options .icons {
@@ -272,10 +375,11 @@ section.body .header-middle .container .row .col-sm-12 .filter-tutors {
   background-color: #E9ECEF;
 }
 section.body .header-middle .container .row .col-sm-12 .filter-tutors .title {
-  font-size: 18px;
+  font-size: 15px;
   padding-bottom: 10px;
   color: black;
-  font-family: sans-serif;
+  font-family: "Montserrat-SemiBold";
+  text-align: center;
 }
 section.body .header-middle .container .row .col-sm-12 .filter-tutors form .filter-options .request-tutor-tutorlist-page {
   width: 100%;
@@ -285,7 +389,7 @@ section.body .header-middle .container .row .col-sm-12 .filter-tutors form .filt
   border-radius: 5%;
   color: white;
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Medium";
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
   position: fixed;
@@ -301,6 +405,9 @@ section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-p
   border-radius: 5%;
   align-items: center;
 }
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
 section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .logo {
   padding-right: 5px;
   padding-left: 10px;
@@ -309,8 +416,8 @@ section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-p
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .text a {
   text-decoration: none;
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 12px;
+  font-family: "Montserrat-Medium";
   color: white;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button {
@@ -326,6 +433,8 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 15px;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card {
   border: 1px solid #c3c0c0;
@@ -335,6 +444,10 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   padding-left: 10px;
   margin-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.2s ease-in-out;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card:hover {
+  transform: scale(1.05);
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header {
   text-align: right;
@@ -359,18 +472,20 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   padding-left: 20px;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .name {
-  font-size: 15px;
-  font-family: sans-serif;
+  font-size: 12px;
+  font-family: "Montserrat-Bold";
   font-weight: bold;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .subject {
-  font-size: 12px;
+  font-size: 10px;
+  font-family: "Montserrat-SemiBold";
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .university {
-  font-size: 12px;
+  font-size: 10px;
+  font-family: "Montserrat-SemiBold";
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right span.checked {
-  color: darkblue;
+  color: #FAED26;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .footer {
   text-align: right;
@@ -384,7 +499,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   height: 30px;
   color: white;
   font-size: 12px;
-  font-family: sans-serif;
+  font-family: "Montserrat-SemiBold";
   background-color: #4CAF50;
   padding-left: 10px;
   padding-right: 10px;
@@ -400,6 +515,7 @@ section.body .header-middle .container .row .col-sm-12 .pagination-sections nav 
   color: white;
   margin-left: 7px;
   margin-right: 7px;
+  font-family: "Montserrat-Regular";
 }
 section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
   display: flex;
@@ -441,11 +557,11 @@ section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card 
   text-align: center;
 }
 section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .title {
-  font-size: 32px;
-  font-family: sans-serif;
+  font-size: 22px;
+  font-family: "Montserrat-Bold";
   color: #0F0D0D;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .body {
   width: 100%;
@@ -457,13 +573,16 @@ section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card 
   box-shadow: 0px 3px 6px #0000002B;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  text-align: justify;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section {
   margin-top: 50px;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section .title {
-  font-size: 34px;
-  font-family: sans-serif;
+  font-size: 22px;
+  font-family: "Montserrat-Bold";
   color: #0F0D0D;
   font-weight: bold;
   margin-bottom: 50px;
@@ -473,7 +592,6 @@ section.body .container .row .col-sm-12 .meet-the-team-section .team-member-sect
   width: 100%;
   background: #FCFCFC 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #0000008C;
-  border: 1px solid #707070;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -483,7 +601,7 @@ section.body .container .row .col-sm-12 .meet-the-team-section .team-member-sect
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .left-image {
   margin-right: 30px;
@@ -494,15 +612,14 @@ section.body .container .row .col-sm-12 .meet-the-team-section .team-member-sect
   border-radius: 50%;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .right-text .name {
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 17px;
+  font-family: "Montserrat-SemiBold";
   color: #37474F;
-  font-weight: bold;
   padding-bottom: 10px;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .right-text .designation {
-  font-family: 18px;
-  font-family: sans-serif;
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
   color: #37474F;
 }
 
@@ -512,16 +629,20 @@ section.body .faq-body {
 section.body .faq-body .container .row .col-sm-12 .faq-section .title {
   margin-bottom: 30px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Montserrat-Bold";
   font-size: 22px;
   color: #37474FB8;
 }
 section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .card-header h5 button {
   color: #37474F;
   font-size: 17px;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat-Semibold";
 }
+section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .collapse .card-body {
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+}
+
 section.body .tutor-profile-section {
   margin-top: 50px;
   background-color: #E9ECEF;
@@ -549,15 +670,16 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
   color: #37474F;
 }
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info.name {
-  font-size: 26px;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-size: 22px;
+  font-family: "Montserrat-SemiBold";
 }
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info.mobile {
-  font-size: 18px;
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
 }
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info.gmail {
   font-size: 12px;
+  font-family: "Montserrat-Regular";
 }
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout {
   height: 100%;
@@ -580,6 +702,8 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
   text-decoration: none;
   color: white;
   border-radius: 10%;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
 }
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
   margin-top: 20px;
@@ -596,6 +720,8 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
   text-decoration: none;
   color: white;
   border-radius: 10%;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
   width: 300px;
@@ -609,6 +735,8 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
   color: white;
+  font-family: "Montserrat-SemiBold";
+  font-size: 15px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
   background-color: #707070;
@@ -628,13 +756,13 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Regular";
   color: #37474FB8;
   padding-bottom: 20px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Regular";
   color: #37474FB8;
   padding-bottom: 20px;
 }
@@ -681,7 +809,7 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   border-radius: 50%;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
-  font-family: sans-serif;
+  font-family: "Montserrat-Medium";
   color: #37474F;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
@@ -705,7 +833,8 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   padding-bottom: 3px;
   color: white;
   border-radius: 15px;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: "Montserrat-SemiBold";
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
   background-color: #00A99D;
@@ -729,7 +858,7 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
   margin-bottom: 20px;
 }
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .file-text-under {
-  font-family: sans-serif;
+  font-family: "Montserrat-Medium";
   font-size: 15px;
   color: #0F0D0D;
   font-weight: bold;
@@ -742,19 +871,19 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
   border-radius: 11px;
   font-size: 12px;
   color: white;
-  font-family: sans-serif;
+  font-family: "Montserrat-Medium";
   border: none;
 }
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
   font-size: 25px;
-  font-family: sans-serif;
+  font-family: "Montserrat-SemiBold";
   font-weight: bold;
   color: black;
   padding-bottom: 20px;
 }
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
   font-size: 17px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Regular";
   color: black;
   padding-bottom: 20px;
 }
@@ -768,7 +897,7 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group .label-gender {
   padding-right: 30px;
   font-size: 17px;
-  font-family: sans-serif;
+  font-family: "Montserrat-Regular";
   color: black;
 }
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .sign-up-button-reg-tutor {
@@ -779,7 +908,7 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
   border-radius: 11px;
   font-size: 17px;
   color: white;
-  font-family: sans-serif;
+  font-family: "Montserrat-Medium";
   border: none;
 }
 
