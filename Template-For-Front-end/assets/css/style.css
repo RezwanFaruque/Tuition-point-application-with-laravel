@@ -96,8 +96,8 @@ section.header nav .navbar-brand img {
   width: auto;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item {
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 15px;
@@ -109,7 +109,7 @@ section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
-  border: 1px solid white;
+  border: 2px solid white;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button:hover {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -253,6 +253,51 @@ section.header .header-middle .container .row .col-sm-12 .right-side .social-fix
   font-size: 20px;
   font-family: sans-serif;
   color: #6E797F;
+}
+section.header .modal .modal-dialog .modal-content .modal-header {
+  background: #4CAF50;
+}
+section.header .modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 18px;
+  font-family: "Montserrat-Medium";
+  color: white;
+}
+section.header .modal .modal-dialog .modal-content .modal-body form .form-group label {
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  color: #100F0F;
+}
+section.header .modal .modal-dialog .modal-content .modal-body form .login {
+  width: 100px;
+  color: white;
+  border: none;
+  background: #4CAF50;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer {
+  background-color: #F1F3F5;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer .footer-section {
+  width: 100%;
+  justify-content: space-around;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer .footer-section .title {
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  color: black;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer .footer-section .reg-link a {
+  width: 150px;
+  color: white;
+  text-decoration: none;
+  background: #4CAF50;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 section.footer {
   width: 100%;
@@ -445,6 +490,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   margin-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: all 0.2s ease-in-out;
+  background-color: #E9ECEF;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card:hover {
   transform: scale(1.05);
@@ -702,7 +748,6 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
   padding-bottom: 10px;
   text-decoration: none;
   color: white;
-  border-radius: 10%;
   font-size: 12px;
   font-family: "Montserrat-SemiBold";
 }
@@ -720,7 +765,6 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
   padding-bottom: 10px;
   text-decoration: none;
   color: white;
-  border-radius: 10%;
   font-size: 12px;
   font-family: "Montserrat-SemiBold";
 }
