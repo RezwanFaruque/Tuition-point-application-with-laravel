@@ -1036,5 +1036,76 @@ section.body .container .row .col-sm-12 .image-section {
   display: flex;
   align-items: center;
 }
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section {
+  margin-top: 30px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+  width: 700px;
+  margin: auto;
+  background-color: #E9ECEF;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .title {
+  font-size: 18px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  text-align: center;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section {
+  margin-top: 30px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit .title {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  padding-right: 20px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit .digit-input .bkash-digit-input {
+  width: 50px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .screenshot-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .screenshot-submit .title {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  padding-right: 20px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .submit-button .payment-submit {
+  background-color: #4CAF50;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  font-family: "Montserrat-SemiBold";
+}
+.body .header-middle .container .row .col-sm-12 .right-side .make-easy-payment {
+  width: 700px;
+  margin: auto;
+  background-color: #E9ECEF;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

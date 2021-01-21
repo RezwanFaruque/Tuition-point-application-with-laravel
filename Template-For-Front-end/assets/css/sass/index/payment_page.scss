@@ -1,0 +1,100 @@
+.body{
+	.header-middle{
+		.container{
+			.row{
+				.col-sm-12{
+					.right-side{
+						.premium-tutor-submit-section{
+							margin-top: 30px;
+							.main-section{
+								width: 700px;
+								margin: auto;
+								background-color: #E9ECEF;
+								padding-left: 15px;
+								padding-right: 15px;
+								padding-top: 50px;
+								padding-bottom: 50px;
+								.title{
+									font-size: 18px;
+									font-family: 'Montserrat-Regular';
+									color: black;
+									text-align: center;
+								}
+								.form-section{
+									margin-top: 30px;
+									form{
+										.digit-submit{
+											display: flex;
+											justify-content: center;
+											margin-bottom: 30px;
+
+											.title{
+												font-size: 15px;
+												font-family: 'Montserrat-Regular';
+												color: black;
+												padding-right: 20px;
+											}
+
+											.digit-input{
+												.bkash-digit-input{
+													width: 50px;
+												}
+											}
+										}
+
+										.screenshot-submit{
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											.title{
+												font-size: 15px;
+												font-family: 'Montserrat-Regular';
+												color: black;
+												padding-right: 20px;
+											}
+											.file-upload{
+
+											}
+										}
+
+										.submit-button{
+											width: 100%;
+											display: flex;
+											justify-content: center;
+											margin-top: 20px;
+
+											.payment-submit{
+												background-color: $button-color;
+												border: none;
+												padding-top: 10px;
+												padding-bottom: 10px;
+												padding-left: 25px;
+												padding-right: 25px;
+												color: white;
+												font-family: 'Montserrat-SemiBold';
+
+											}
+										}
+									}
+								}
+
+							}
+						}
+
+						.make-easy-payment{
+							    width: 700px;
+							    margin: auto;
+							    background-color: #E9ECEF;
+							    padding-left: 15px;
+							    padding-right: 15px;
+							    padding-top: 50px;
+							    padding-bottom: 50px;
+
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
