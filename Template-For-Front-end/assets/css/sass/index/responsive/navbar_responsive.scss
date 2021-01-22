@@ -1,0 +1,23 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){ 
+        section{
+            &.header{
+                .navbar{
+                    .navbar-brand{
+                        img{
+
+                        }
+                    }
+                    .navbar-toggler{
+
+                    }
+
+                    .navbar-collapse{
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
