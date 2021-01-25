@@ -6,16 +6,6 @@
 // fonts
 @import './sass/fonts.scss';
 
-// import all funcitons
-@import './sass/functions.scss';
-
-// import all variable
-@import './sass/variable.scss';
-
-
-// responsive index import
-@import './sass/index/responsive/index/index_responsive.scss';
-
 
 
 
@@ -46,6 +36,17 @@
 
 // payment page
 @import './sass/index/payment_page.scss';
+
+
+
+// import all funcitons
+@import './sass/functions.scss';
+
+// import all variable
+@import './sass/variable.scss';
+
+// responsive section
+@import './sass/index/responsive/index/index_responsive.scss';
 
 
 

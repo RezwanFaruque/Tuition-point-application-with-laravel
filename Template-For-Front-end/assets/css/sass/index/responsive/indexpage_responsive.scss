@@ -1,0 +1,251 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){ 
+        section{
+            &.header{
+                .header-middle{
+                    .container{
+                        .row{  
+                            .col-sm-12{
+                                margin-top: 25px;
+                                .left-side{
+                                    .search-for-tutor{
+                                        width: auto;
+                                        height: auto;
+                                        .info{
+                                          
+                                            .title{
+                                               text-align: center;
+                                            }
+        
+                                            .sub-title{
+                                               text-align: center;
+                                            }
+                                            .body-with-form{
+                                               
+                                                form{
+                                                    
+                                                    .body{
+                                                       
+                                                       .flex-part{
+                                                        height: 100%;
+                                                        
+                                                        flex-direction: column;
+                                                         
+                                                           .site{
+                                                              
+                                                              
+                                                           }
+                                                        .left-side{
+                                                           
+                                                            width: 100%;
+                                                            margin-top: 20px;
+                                                            .form-group{
+                                                               
+                                                                .form-control{
+                                                                   
+                                                                }
+                                                            }
+                                                        }
+        
+                                                        .right-side{
+                                                            
+                                                            width: 100%;
+                                                            margin-top: 20px;
+                                                            .request-tutor-indexpage{
+                                                                width: 100%;
+                                                                margin-bottom: 10px;
+                                                                &:hover{
+                                                                   
+                                                                }
+                                                            }
+                                                            .form-group{
+                                                                
+                                                                .form-control{
+                                                                  
+                                                                }
+                                                            }
+                                                        }
+            
+                                                       }
+                                             
+                                                    }
+        
+                                                    .align-center{
+                                                        
+                                                        .view-all-tutors-button-index{
+                                                          
+                                                        }
+                                                    }
+                                                    
+                                                }
+                                               
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                .right-side{
+                                    .social-fix-position{
+                                        display: none;
+                                       
+                                        .social-section{
+                                            
+                                            &:hover{
+                                               
+                                            }
+                                            .logo{
+                                                
+                                                i{
+        
+                                                }
+                                            }
+                                            .text{
+                                                
+                                                a{
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+        
+                            }
+        
+                        }
+                    }
+                }
+            }
+
+            &.footer{
+               @if($width >= 765){
+                   height: 450px;
+               }
+               
+                .container{
+                    .row{
+                        .col-sm-12{
+                            
+                            .office-location{
+                              
+                                flex-direction: column;
+                                text-align: center;
+                                .logo{
+                                    @if($width >= 765){
+                                        width: #{make_for_mobile($width,45)}px;
+                                        height: #{make_for_mobile($width,45)}px;
+                                        margin-bottom: 5px;
+                                    }
+                                    i{
+                                        @if($width >= 765){
+                                            font-size: 12px;
+                                        }
+                                        &::before{
+                                           
+                                        }
+                                    }
+                                }
+                                .address{
+                                   
+                                }
+                            }
+        
+                            .footer-nav{
+                                text-align: center;
+                                margin-bottom: 20px;
+                                margin-top: 20px;
+                                ul{
+                                    padding-left: 0;
+                                    li{
+                                      
+                                        a{
+                                           
+                                        }
+                                    }
+                                 }
+                            }
+                            .footer-contact-social{
+                                .mobile-contact{
+                                   flex-direction: column;
+                                   align-items: center;
+        
+                                    .icon{
+                                        @if($width >= 765){
+                                            width: #{make_for_mobile($width,45)}px;
+                                            height: #{make_for_mobile($width,45)}px;
+                                            margin-bottom: 5px;
+                                        }
+                                        
+                                        i{
+                                            @if($width >= 765){
+                                                font-size: 12px;
+                                            }
+                                            &::before{
+                                                
+                                             
+                                                
+                                            }
+                                        }
+                                    }
+                                    .text{
+                                        @if($width >= 765){
+                                            font-size: #{make_for_mobile($width,22)}px;
+                                        }
+                                      
+                                    }
+                                }
+                                .social-media-contact{
+                                    align-items: center;
+                                    justify-content: center;
+                                    @if($width >= 765){
+                                        margin-bottom: 15px;
+                                    }
+                                  
+                                    .icon{
+                                        @if($width >= 765){
+                                            width: #{make_for_mobile($width,45)}px;
+                                            height: #{make_for_mobile($width,45)}px;
+                                        }
+                                        i{
+                                            @if($width >= 765){
+                                                font-size: 12px;
+                                            }
+                                            &::before{
+                                        
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .payment-options{
+                               flex-direction: column;
+                                .text{
+                                    @if($width >= 765){
+                                        font-size: 14px;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                .icons{
+                                 
+                                    .social-icons{
+                                     
+                                        img{
+                                         
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+    
+        }
+      
+    }
+    
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}

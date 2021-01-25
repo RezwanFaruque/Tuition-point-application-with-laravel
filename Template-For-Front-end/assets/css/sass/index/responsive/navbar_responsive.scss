@@ -1,8 +1,10 @@
 @each $width in $resposive-width {
     @media screen and (max-width: #{$width}px){ 
+        
         section{
             &.header{
                 .navbar{
+
                     .navbar-brand{
                         img{
 
@@ -13,11 +15,44 @@
                     }
 
                     .navbar-collapse{
-                        
+                        &.show{
+                                position: absolute;
+                                height: 100vh;
+                                width: 100%;
+                                z-index: 9;
+                                top: 75px;
+                                left: 0;
+                                background-color: #87ef8b;
+                                opacity: 0.9;
+                            }
+                            ul{
+                                height: 80%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-around;
+                                li{
+                                    a{
+                                        color: black!important;
+                                        font-family: 'Montserrat-SemiBold';
+                                        font-size: 15px;
+                                        font-weight: bolder;
+                                        &.login-button{
+                                            padding-left: 7px;
+                                            padding-right: 7px;
+                                        }
+                                    }
+                                }
+                            
+                            }
                     }
                 }
             }
         }
     }
     
+}
+
+.body-overflow-hidden{
+    overflow: hidden;
 }
