@@ -25,13 +25,14 @@ section{
             .navbar-collapse{
                 .navbar-nav{
                     .nav-item{
-                        padding-left: 15px;
-                        padding-right: 15px;
+                        padding-left: 10px;
+                        padding-right: 10px;
                         
 
                         .nav-link{
-                            font-size: 15px;
-                            font-family: sans-serif;
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            
                             color: white;
                             font-family: 'Montserrat-Medium';
                             &:hover{

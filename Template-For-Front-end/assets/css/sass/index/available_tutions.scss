@@ -1,0 +1,106 @@
+section{
+    &.body{
+        .header-middle{
+            .container{
+                .row{
+                    .col-sm-12{
+                        .right-side{
+                            .title{
+                                background-color: #4CAF50;
+                                width: 200px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 17px;
+                                font-family: 'Montserrat-SemiBold';
+                                color: white;
+                                margin-top: 30px;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+                            hr{
+
+                            }
+                            .active-tutions-card{
+                                .container{
+                                    .row{
+                                        .col-sm-12{
+                                            .tutions-card{
+                                                border: 1px solid #c3c0c0;
+                                                padding-top: 10px;
+                                                padding-bottom: 10px;
+                                                padding-right: 10px;
+                                                padding-left: 10px;
+                                                margin-bottom: 25px;
+                                                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                                                transition: all 0.2s ease-in-out;
+                                                background-color: #E9ECEF;
+                                                .header{
+                                                    background-color: #4CAF50;
+                                                    height: 40px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    padding-left: 30px;
+                            
+                                                    .location{
+                                                        font-family: 'Montserrat-Medium';
+                                                        color: white;
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                                .body{
+                                                    padding-top: 10px;
+                                                    .tution-info-body{
+                                                        font-size: 12px;
+                                                        font-family: 'Montserrat-Regular';
+                                                        color: black;
+                                                        padding-bottom: 10px;
+
+                                                        span{
+                                                            font-size: 12px;
+                                                            font-family: 'Montserrat-Medium';
+                                                            color: black;
+                                                        }
+                                                    }
+                                                }
+
+                                                .footer{
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    background-color: #FFFF;
+                                                    height: 40px;
+                                                    align-items: center;
+                                                    padding-right: 10px;
+                                                    padding-left: 10px;
+
+                                                    .posting-date{
+                                                        font-size: 12px;
+                                                        font-family: 'Montserrat-Medium';
+                                                        color: black;
+                                                    }
+                                                    .view-details{
+                                                        a{
+                                                            background-color: $button-color;
+                                                            text-decoration: none;
+                                                            padding-left: 7px;
+                                                            padding-right: 7px;
+                                                            padding-top: 5px;
+                                                            padding-bottom: 5px;
+                                                            font-size: 12px;
+                                                            font-family: 'Montserrat-SemiBold';
+                                                            color: white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
