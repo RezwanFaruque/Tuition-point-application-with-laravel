@@ -14,10 +14,13 @@
                                                 .image-illustration-section{
                                                     
                                                     form{
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        align-items: center;
-                                                        justify-content: center;
+                                                        @if($width >= 767){
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                        }
+                                                        
                                                         input{
                                                            
                                                         }
@@ -35,25 +38,40 @@
                                                     }
                                                 }
                                                 .right-side-form{
-                                                    margin-top: 30px;
+                                                    @if($width >= 767){
+                                                        margin-top: 30px;
+                                                    }
+                                                    
                                                     .title{
-                                                       text-align: center;
+                                                        @if($width >= 767){
+                                                            text-align: center;
+                                                        }
+                                                      
                                                     }
         
                                                     .subtitle{
-                                                        text-align: center;
+                                                        @if($width >= 767){
+                                                            text-align: center;
+                                                        }
+                                                       
         
                                                     }
         
                                                     .registration-form{
                                                        
                                                         form{
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            justify-content: center;
-                                                            align-items: center;
+                                                            @if($width >= 767){
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                            }
+                                                           
                                                             .form-group{
-                                                                width: 100%;
+                                                                @if($width >= 767){
+                                                                    width: 100%;
+                                                                }
+                                                                
                                                                 .label-gender{
                                                                    
                                                                 }
