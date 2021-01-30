@@ -1,0 +1,191 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){ 
+        section{
+            &.body{
+                .header-middle{
+                    
+                    .container{
+                        .row{
+                            .col-sm-12{
+                               
+                                &.remove-margin{
+                                 
+                                }
+                                
+                                .filter-tutors{
+                                   
+                                    .title{
+                                      
+                                    }
+        
+                                    form{
+                                       
+                                        .filter-options{
+                                            
+                                            .form-group{
+                                                select{
+                                                    option{
+                                                      
+                                                    }
+                                                }
+                                            }
+        
+                                            .request-tutor-tutorlist-page{
+                                             
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                .right-side{
+                                    
+                                        .social-fix-position{
+                                            display: none;
+                                          
+                                            .social-section{
+                                             
+                                                &:hover{
+                                                   
+                                                }
+                                                .logo{
+                                                  
+                                                    i{
+            
+                                                    }
+                                                }
+                                                .text{
+                                                    
+                                                    a{
+                                                       
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                    .tutor-search-result{
+                                        .title-lk-button{
+                                          
+                                            .title-button{
+                                              
+                                                
+                                                
+                                            }
+                                        }
+                                        .result-body{
+                                            .container{
+                                                .row{
+                                                    .col-sm-12{
+                                                        .result-card{
+                                                         
+                                                            &:hover{
+                                                                
+                                                            }
+                                                            .header{
+                                                               
+                                                                span{
+                                                                   
+                                                                }
+                                                            }
+                                                            .body{
+                                                                
+        
+                                                                .left{
+                                                                   
+                                                                    .profile-image{
+                                                                        img{
+                                                                           
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .right{
+                                                                   
+                                                                    .name{
+                                                                      
+                                                                    }
+        
+                                                                    .subject{
+                                                                       
+                                                                    }
+                                                                    .university{
+                                                                       
+                                                                    }
+        
+                                                                    .rating{
+        
+                                                                    }
+        
+                                                                    span{
+                                                                        &.checked{
+                                                                          
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+        
+                                                            .footer{
+                                                               
+                                                                .tutorlist-profiile-details{
+                                                                  
+                                                                    
+        
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                .pagination-sections{
+                                  
+                                    nav{
+                                        ul{
+                                            li{
+                                                a{
+                                                   
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                .request-tutor-section{
+                                   
+                                    flex-direction: column;
+                                    .text{
+        
+                                        .title{
+                                           
+                                        }
+                                        .subtitle{
+                                           
+                                        }
+                                    }
+        
+                                    .button-find{
+                                        @if($width >= 767){
+                                            margin-left: 0;
+                                            margin-top: 10px;
+                                        }
+                                      
+                                        .request-tutor-page{
+                                            .req-tutor{
+                                              
+                                                
+        
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
