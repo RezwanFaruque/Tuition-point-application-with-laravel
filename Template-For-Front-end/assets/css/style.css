@@ -2413,5 +2413,265 @@ section.body .header-middle .container .row .col-sm-12 .right-side .active-tutio
     display: none;
   }
 }
+@media screen and (max-width: 1280px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

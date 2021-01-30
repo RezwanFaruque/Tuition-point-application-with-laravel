@@ -1,0 +1,84 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){
+        section{
+            &.body{
+                .header-middle{
+                    .container{
+                        .row{
+                            .col-sm-12{
+                                .register-as-tutor{
+                                    
+                                    .container{
+                                        .row{
+                                            .col-sm-12{
+                                                .image-illustration-section{
+                                                    
+                                                    form{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        input{
+                                                           
+                                                        }
+                                                        .image-preview{
+                                                            img{
+                                                               
+                                                            }
+                                                        }
+                                                        .file-text-under{
+                                                          
+                                                        }
+                                                        .save-image{
+                                                           
+                                                        }
+                                                    }
+                                                }
+                                                .right-side-form{
+                                                    margin-top: 30px;
+                                                    .title{
+                                                       text-align: center;
+                                                    }
+        
+                                                    .subtitle{
+                                                        text-align: center;
+        
+                                                    }
+        
+                                                    .registration-form{
+                                                       
+                                                        form{
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            .form-group{
+                                                                width: 100%;
+                                                                .label-gender{
+                                                                   
+                                                                }
+                                                                input{
+        
+                                                                }
+                                                            }
+        
+                                                            .sign-up-button-reg-tutor{
+                                                               
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
