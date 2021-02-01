@@ -6,7 +6,12 @@
                     .container{
                         .row{  
                             .col-sm-12{
-                                margin-top: 25px;
+                                // margin-top: 25px;
+                                @if($width >=767px){
+                                    margin-top: 135px;
+                                }@else{
+                                    margin-top:  25px;
+                                }
                                 .left-side{
                                     .search-for-tutor{
                                         width: auto;
