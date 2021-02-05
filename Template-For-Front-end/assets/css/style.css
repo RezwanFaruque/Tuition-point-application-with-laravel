@@ -1187,6 +1187,74 @@ section.body .header-middle .container .row .col-sm-12 .right-side .active-tutio
   color: white;
 }
 
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+  background: #4CAF50;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
+  color: white;
+  padding-left: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+  background-color: #F1F3F5;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+  font-size: 14px;
+  font-family: "Montserrat-Medium";
+  color: black;
+  line-height: 12px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+  border: none;
+  background-color: #4CAF50;
+  width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
+  color: white;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+  background: #4CAF50;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 60px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+  font-family: "Montserrat-SemiBold";
+  font-size: 15px;
+  color: white;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+  border: 1px solid white;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Montserrat-Medium";
+  font-size: 13px;
+  color: white;
+}
+
 @media screen and (max-width: 1280px) {
   section.header .navbar .navbar-collapse.show {
     position: absolute;
