@@ -1,0 +1,47 @@
+section{
+    &.body{
+        .faq-body{
+            margin-top: 50px;
+            .container{
+                .row{
+                    .col-sm-12{
+                        .faq-section{
+                            .title{
+                                margin-bottom: 30px;
+                                text-align: center;
+                                font-family: 'Montserrat-Bold';
+                                font-size: 22px;
+                                color: #37474FB8;
+
+
+                            }
+                            .faq-collapse-body{
+                                #accordion{
+                                    .card{
+                                        .card-header{
+                                            h5{
+                                                
+                                                button{
+                                                    color: #37474F;
+                                                    font-size: 17px;
+                                                    font-family: 'Montserrat-Semibold';
+                                                    
+                                                }
+                                            }
+                                        }
+                                        .collapse{
+                                            .card-body{
+                                                font-family: 'Montserrat-Medium';
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

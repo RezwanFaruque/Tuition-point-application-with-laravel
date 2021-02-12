@@ -1,0 +1,62 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){
+        section{
+            &.body{
+                .container{
+                    .row{
+                        .col-sm-12{
+                            .req-tutor-left-side{
+                              
+                                .title{
+                                   
+                                }
+            
+                                .form-section{
+                                    .container{
+                                        form{
+                                            .row{
+                                                .col-sm-12{
+                                                    .form-group{
+                                                        .form-control{
+                                                           
+                                                        }
+            
+                                                        select{
+                                                            option{
+            
+                                                            }
+                                                        }
+                                                    }
+                                                }
+        
+                                                .submit-button{
+                                                  
+                                                    button{
+                                                     
+                                                        &:hover{
+                                                           
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                           
+        
+                            .image-section{
+                                display: none;
+                             
+                                .req-tutor-image-right{
+        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+     }
+}
+

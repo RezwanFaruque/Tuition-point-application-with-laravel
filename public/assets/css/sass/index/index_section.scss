@@ -1,0 +1,452 @@
+$button-color: #4CAF50;
+
+section{
+
+
+    &.header{
+        background: linear-gradient(rgb(224 219 219 / 50%), rgb(241 232 232 / 50%)),url('../vendor/images/index/index_header_image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: calc(100vh);
+        mask-image: linear-gradient(to bottom, transparent 10%, black);
+
+        nav{
+            min-height: calc(100vh - 90vh);
+            .navbar-brand{
+                margin-left: 70px;
+              img{
+                  height: 50px;
+                  width: auto;
+                  
+              }
+
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        &.dropdown{
+                            border: 1px solid white;
+                            &.show{
+                                
+                                .dropdown-menu{
+                                    background-color: $button-color;
+                                    .dropdown-item{
+                                        font-size: 13px;
+                                        text-transform: uppercase;
+                                        
+                                        color: white;
+                                        font-family: 'Montserrat-Medium';
+                                       
+                                    }
+
+                                    .dropdown-item:focus, .dropdown-item:hover {
+                                        color: white;
+                                        text-decoration: none;
+                                        background-color: $button-color;
+                                    }
+                                }
+                            }
+                        }
+
+                        .nav-link{
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            
+                            color: white;
+                            font-family: 'Montserrat-Medium';
+                            &:hover{
+                                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                            }
+
+                            &.login-button{
+                                border: 2px solid white;
+                                &:hover{
+                                    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bg-light-color{
+            background-color: #4CAF50;
+        }
+
+        .header-middle{
+            width: 100%;
+            height: calc(100vh - 83px);
+            .container{
+                height: 100%;
+
+                .row{
+                    height: 100%;
+                    .col-sm-12{
+                        margin: auto;
+                        .left-side{
+                            .search-for-tutor{
+                                width: auto;
+                                height: 390px;
+                                background-color: #F1F3F5;
+                                box-shadow: 0px 0px 77px #0000000F;
+                                .info{
+                                    height: 100%;
+                                    padding-right: 32px;
+                                    padding-left: 32px;
+                                    padding-top: 32px;
+                                    padding-bottom: 32px;
+                                    .title{
+                                        font-size: 18px;
+                                        
+                                        color: #495057;
+                                        font-family: 'Montserrat-SemiBold';
+                                    }
+
+                                    .sub-title{
+                                        font-size: 12px;
+                                        font-family: 'Montserrat-Regular';
+                                        color: #495057;
+                                    }
+                                    .body-with-form{
+                                        height: 100%;
+                                        form{
+                                            height: 100%;
+                                            .body{
+                                                height: 80%;
+                                                margin: auto;
+                                               .flex-part{
+                                                   display: flex;
+                                                   margin: auto;
+                                                   height: 100%;
+                                                   .site{
+                                                       padding-left: 10px;
+                                                       padding-right: 10px;
+                                                   }
+                                                .left-side{
+                                                    width: 50%;
+                                                    margin-top: 20px;
+
+                                                    .form-group{
+                                                        margin-bottom: 1.5rem;
+                                                        .form-control{
+                                                            height: calc(1.5em + .75rem + 15px);
+                                                            background: #e4e3e3 0% 0% no-repeat padding-box;
+                                                            border: none;
+                                                            text-transform: uppercase;
+                                                            font-family: 'Montserrat-Medium';
+                                                            font-size: 15px;
+                                                        }
+                                                    }
+                                                }
+
+                                                .right-side{
+                                                    width: 50%;
+                                                    margin-top: 20px;
+                                                    
+                                                    .request-tutor-indexpage{
+                                                        border: none;
+                                                        border-radius: 5%;
+
+                                                        color: white;
+                                                        width: 162px;
+                                                        height: 50px;
+                                                        background: $button-color;
+                                                        font-family: 'Montserrat-SemiBold';
+                                                        &:hover{
+                                                            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+                                                        }
+                                                    }
+                                                    .form-group{
+                                                        margin-bottom: 1.5rem;
+                                                        .form-control{
+                                                            height: calc(1.5em + .75rem + 15px);
+                                                            background: #e4e3e3 0% 0% no-repeat padding-box;
+                                                            border: none;
+                                                            text-transform: uppercase;
+                                                            font-family: 'Montserrat-Medium';
+                                                            font-size: 15px;
+                                                        }
+                                                    }
+                                                }
+    
+                                               }
+                                     
+                                            }
+
+                                            .align-center{
+                                                text-align: center;
+                                                .view-all-tutors-button-index{
+                                                    font-size: 16px;
+                                                    font-family: 'Montserrat-SemiBold';
+                                                    color: #4D4D4D;
+                                                    line-height: 21px;
+                                                    text-decoration: none;
+                                                    text-align: center;
+                                                }
+                                            }
+                                            
+                                        }
+                                       
+                                    }
+                                }
+                            }
+                        }
+
+                        .right-side{
+                            .social-fix-position{
+                                position: fixed;
+                                right: 0;
+                                top: 50%;
+                                .social-section{
+                                    display: flex;
+                                    background-color: #FFFFFF;
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    height: 48px;
+                                    border-radius: 5%;
+                                    align-items: center;
+                                    &:hover{
+                                        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+                                    }
+                                    .logo{
+                                        padding-right: 5px;
+                                        padding-left: 10px;
+                                        width: 36px;
+                                        height: auto;
+                                        i{
+
+                                        }
+                                    }
+                                    .text{
+                                        
+                                        a{
+                                            text-decoration: none;
+                                            font-size: 20px;
+                                            font-family: sans-serif;
+                                            color: #6E797F;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .modal{
+            .modal-dialog{
+                .modal-content{
+                    .modal-header{
+                        background: #4CAF50;
+                        .modal-title{
+                            font-size: 18px;
+                            font-family: 'Montserrat-Medium';
+                            color: white;
+                            button{
+    
+                            }
+                        }
+                    }
+    
+                    .modal-body{
+                        form{
+                            .form-group{
+                                label{
+                                    font-size: 15px;
+                                    font-family: 'Montserrat-Medium';
+                                    color: #100F0F;
+                                }
+                                input{
+    
+                                }
+                            }
+    
+                            .login{
+                                    width: 100px;
+                                    color: white;
+                                    border: none;
+                                    background: #4CAF50;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    padding-top: 7px;
+                                    padding-bottom: 7px;
+                            }
+                        }
+                    }
+    
+                    .modal-footer{
+                        background-color: #F1F3F5;
+                        .footer-section{
+                            width: 100%;
+                            justify-content: space-around;
+                            .title{
+                                font-size: 15px;
+                                font-family: 'Montserrat-Medium';
+                                color: black;
+
+                            }
+    
+                            .reg-link{
+                                a{
+                                    width: 150px;
+                                    color: white;
+                                    text-decoration: none;
+                                    background: #4CAF50;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    padding-top: 7px;
+                                    padding-bottom: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+    &.footer{
+        width: 100%;
+        height: 345px;
+        background-color: #4CAF50;
+        border: 1px solid #979797;
+        display: flex;
+        align-items: center;
+        .container{
+            .row{
+                .col-sm-12{
+                    margin:auto;
+                    .office-location{
+                        display: flex;
+                        align-items: center;
+
+                        .logo{
+                            width: 61px;
+                            height: 35px;
+                            background: black;
+                            margin-right: 20px;
+                            border-radius: 30%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            i{
+                                &::before{
+                                    color: white;
+                                }
+                            }
+                        }
+                        .address{
+                            font-size: 15px;
+                            font-family: 'Montserrat-SemiBold';
+                            color: #EEEEEE;
+                        }
+                    }
+
+                    .footer-nav{
+                        ul{
+                            li{
+                                list-style: none;
+                                margin-bottom: 10px;
+                                margin-top: 10px;
+                                a{
+                                    text-decoration: none;
+                                    font-size: 15px;
+                                    color: #EEEEEE;
+                                    font-family: 'Montserrat-SemiBold';
+                                }
+                            }
+                         }
+                    }
+                    .footer-contact-social{
+                        .mobile-contact{
+                            display: flex;
+                            margin-bottom: 20px;
+
+                            .icon{
+                                height: 35px;
+                                width: 35px;
+                                /* background: white; */
+                                background-color: black;
+                                /* display: flex; */
+                                text-align: center;
+                                border-radius: 30%;
+                                margin-right: 15px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                i{
+                                    &::before{
+                                        
+                                            
+                                            color: white;
+                                        
+                                    }
+                                }
+                            }
+                            .text{
+                                font-size: 17px;
+                                color: #FFFFFF;
+                                font-family: 'Montserrat-SemiBold';
+                            }
+                        }
+                        .social-media-contact{
+                            display: flex;
+                            .icon{
+                                width: 35px;
+                                height: 35px;
+                                background-color: black;
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+                                border-radius: 30%;
+                                margin-right: 15px;
+
+                                i{
+                                    &::before{
+                                        
+                                            
+                                            color: white;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .payment-options{
+                        display: flex;
+                        align-items: center;
+                        .text{
+                            font-size:15px;
+                            font-family:  'Montserrat-SemiBold';
+                            color: #F8F9FA;
+                        }
+                        .icons{
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+                            .social-icons{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                background-color: white;
+                                border-radius: 5%;
+                                img{
+                                    width:30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

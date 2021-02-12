@@ -1,0 +1,2658 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.ttf") format("embedded-opentype"), url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.woff2") format("woff2"), url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.woff") format("woff"), url("../vendor/../vendor/fonts/Lato/fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Bold */
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Lato/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/Lato/fonts/Lato-Bold.woff2") format("woff2"), url("../vendor/fonts/Lato/fonts/Lato-Bold.woff") format("woff"), url("../vendor/fonts/Lato/fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-SemiBold */
+@font-face {
+  font-family: "Lato-SemiBold";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Lato/fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/Lato/fonts/Lato-Semibold.woff2") format("woff2"), url("../vendor/fonts/Lato/fonts/Lato-Semibold.woff") format("woff"), url("../vendor/fonts/Lato/fonts/Lato-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Light */
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../vendor/fonts/Lato/fonts/Lato-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../vendor/fonts/Lato/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/Lato/fonts/Lato-Light.woff2") format("woff2"), url("../vendor/fonts/Lato/fonts/Lato-Light.woff") format("woff"), url("../vendor/fonts/Lato/fonts/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Regular*/
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Medium*/
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Bold*/
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-SemiBold*/
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../vendor/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/*Montserrat-Light*/
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../vendor/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+section.header {
+  background: linear-gradient(rgba(224, 219, 219, 0.5), rgba(241, 232, 232, 0.5)), url("../vendor/images/index/index_header_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh);
+  mask-image: linear-gradient(to bottom, transparent 10%, black);
+}
+section.header nav {
+  min-height: calc(100vh - 90vh);
+}
+section.header nav .navbar-brand {
+  margin-left: 70px;
+}
+section.header nav .navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item.dropdown {
+  border: 1px solid white;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu {
+  background-color: #4CAF50;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu .dropdown-item {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat-Medium";
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu .dropdown-item:focus, section.header nav .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu .dropdown-item:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #4CAF50;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat-Medium";
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
+  border: 2px solid white;
+}
+section.header nav .navbar-collapse .navbar-nav .nav-item .nav-link.login-button:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+section.header .bg-light-color {
+  background-color: #4CAF50;
+}
+section.header .header-middle {
+  width: 100%;
+  height: calc(100vh - 83px);
+}
+section.header .header-middle .container {
+  height: 100%;
+}
+section.header .header-middle .container .row {
+  height: 100%;
+}
+section.header .header-middle .container .row .col-sm-12 {
+  margin: auto;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+  width: auto;
+  height: 390px;
+  background-color: #F1F3F5;
+  box-shadow: 0px 0px 77px #0000000F;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info {
+  height: 100%;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+  font-size: 18px;
+  color: #495057;
+  font-family: "Montserrat-SemiBold";
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+  font-size: 12px;
+  font-family: "Montserrat-Regular";
+  color: #495057;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form {
+  height: 100%;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form {
+  height: 100%;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body {
+  height: 80%;
+  margin: auto;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .site {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+  width: 50%;
+  margin-top: 20px;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side .form-group {
+  margin-bottom: 1.5rem;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side .form-group .form-control {
+  height: calc(1.5em + .75rem + 15px);
+  background: #e4e3e3 0% 0% no-repeat padding-box;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+  width: 50%;
+  margin-top: 20px;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+  border: none;
+  border-radius: 5%;
+  color: white;
+  width: 162px;
+  height: 50px;
+  background: #4CAF50;
+  font-family: "Montserrat-SemiBold";
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .form-group {
+  margin-bottom: 1.5rem;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .form-group .form-control {
+  height: calc(1.5em + .75rem + 15px);
+  background: #e4e3e3 0% 0% no-repeat padding-box;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .align-center {
+  text-align: center;
+}
+section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .align-center .view-all-tutors-button-index {
+  font-size: 16px;
+  font-family: "Montserrat-SemiBold";
+  color: #4D4D4D;
+  line-height: 21px;
+  text-decoration: none;
+  text-align: center;
+}
+section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section {
+  display: flex;
+  background-color: #FFFFFF;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 48px;
+  border-radius: 5%;
+  align-items: center;
+}
+section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .logo {
+  padding-right: 5px;
+  padding-left: 10px;
+  width: 36px;
+  height: auto;
+}
+section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .text a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #6E797F;
+}
+section.header .modal .modal-dialog .modal-content .modal-header {
+  background: #4CAF50;
+}
+section.header .modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 18px;
+  font-family: "Montserrat-Medium";
+  color: white;
+}
+section.header .modal .modal-dialog .modal-content .modal-body form .form-group label {
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  color: #100F0F;
+}
+section.header .modal .modal-dialog .modal-content .modal-body form .login {
+  width: 100px;
+  color: white;
+  border: none;
+  background: #4CAF50;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer {
+  background-color: #F1F3F5;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer .footer-section {
+  width: 100%;
+  justify-content: space-around;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer .footer-section .title {
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  color: black;
+}
+section.header .modal .modal-dialog .modal-content .modal-footer .footer-section .reg-link a {
+  width: 150px;
+  color: white;
+  text-decoration: none;
+  background: #4CAF50;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+section.footer {
+  width: 100%;
+  height: 345px;
+  background-color: #4CAF50;
+  border: 1px solid #979797;
+  display: flex;
+  align-items: center;
+}
+section.footer .container .row .col-sm-12 {
+  margin: auto;
+}
+section.footer .container .row .col-sm-12 .office-location {
+  display: flex;
+  align-items: center;
+}
+section.footer .container .row .col-sm-12 .office-location .logo {
+  width: 61px;
+  height: 35px;
+  background: black;
+  margin-right: 20px;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.footer .container .row .col-sm-12 .office-location .logo i::before {
+  color: white;
+}
+section.footer .container .row .col-sm-12 .office-location .address {
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
+  color: #EEEEEE;
+}
+section.footer .container .row .col-sm-12 .footer-nav ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+section.footer .container .row .col-sm-12 .footer-nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #EEEEEE;
+  font-family: "Montserrat-SemiBold";
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+  display: flex;
+  margin-bottom: 20px;
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+  height: 35px;
+  width: 35px;
+  /* background: white; */
+  background-color: black;
+  /* display: flex; */
+  text-align: center;
+  border-radius: 30%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i::before {
+  color: white;
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+  font-size: 17px;
+  color: #FFFFFF;
+  font-family: "Montserrat-SemiBold";
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+  display: flex;
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 30%;
+  margin-right: 15px;
+}
+section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i::before {
+  color: white;
+}
+section.footer .container .row .col-sm-12 .payment-options {
+  display: flex;
+  align-items: center;
+}
+section.footer .container .row .col-sm-12 .payment-options .text {
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
+  color: #F8F9FA;
+}
+section.footer .container .row .col-sm-12 .payment-options .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.footer .container .row .col-sm-12 .payment-options .icons .social-icons {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 5%;
+}
+section.footer .container .row .col-sm-12 .payment-options .icons .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+section.body .header-middle .container .row .col-sm-12.remove-margin {
+  margin: 0;
+}
+section.body .header-middle .container .row .col-sm-12 .filter-tutors {
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #E9ECEF;
+}
+section.body .header-middle .container .row .col-sm-12 .filter-tutors .title {
+  font-size: 15px;
+  padding-bottom: 10px;
+  color: black;
+  font-family: "Montserrat-SemiBold";
+  text-align: center;
+}
+section.body .header-middle .container .row .col-sm-12 .filter-tutors form .filter-options .request-tutor-tutorlist-page {
+  width: 100%;
+  height: 50px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section {
+  display: flex;
+  background-color: #4CAF50;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 48px;
+  border-radius: 5%;
+  align-items: center;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .logo {
+  padding-right: 5px;
+  padding-left: 10px;
+  width: 36px;
+  height: auto;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position .social-section .text a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Montserrat-Medium";
+  color: white;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .title-lk-button .title-button {
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 15px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card {
+  border: 1px solid #c3c0c0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.2s ease-in-out;
+  background-color: #E9ECEF;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card:hover {
+  transform: scale(1.05);
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header {
+  text-align: right;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header span {
+  background-color: #4CAF50;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body {
+  display: flex;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .left {
+  margin: auto;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .left .profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .name {
+  font-size: 12px;
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .subject {
+  font-size: 10px;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right .university {
+  font-size: 10px;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .right span.checked {
+  color: #FAED26;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .footer {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .footer .tutorlist-profiile-details {
+  width: auto;
+  text-decoration: none;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
+  background-color: #4CAF50;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+section.body .header-middle .container .row .col-sm-12 .pagination-sections {
+  display: flex;
+  justify-content: center;
+}
+section.body .header-middle .container .row .col-sm-12 .pagination-sections nav ul li a {
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-family: "Montserrat-Regular";
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .text .title {
+  font-size: 20px;
+  font-family: "Montserrat-Bold";
+  color: #37474FB8;
+  font-weight: bold;
+  background: none;
+  width: 100%;
+  text-align: left;
+  justify-content: flex-start;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .text .subtitle {
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
+  color: #37474FB8;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+  margin-left: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find .request-tutor-page .req-tutor {
+  width: 200px;
+  height: auto;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #4CAF50;
+  font-family: "Montserrat-SemiBold";
+}
+
+section.body .container .row .col-sm-12 .middle-about-us {
+  margin-top: 50px;
+}
+section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card {
+  text-align: center;
+}
+section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .title {
+  font-size: 22px;
+  font-family: "Montserrat-Bold";
+  color: #0F0D0D;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .body {
+  width: 100%;
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 25px;
+  color: #0F0D0D;
+  box-shadow: 0px 3px 6px #0000002B;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  text-align: justify;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section {
+  margin-top: 50px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .title {
+  font-size: 22px;
+  font-family: "Montserrat-Bold";
+  color: #0F0D0D;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section {
+  width: 100%;
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000008C;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .left-image {
+  margin-right: 30px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .left-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .right-text .name {
+  font-size: 17px;
+  font-family: "Montserrat-SemiBold";
+  color: #37474F;
+  padding-bottom: 10px;
+}
+section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section .container .row .col-sm-12 .team-member-card .right-text .designation {
+  font-size: 15px;
+  font-family: "Montserrat-Medium";
+  color: #37474F;
+}
+
+section.body .faq-body {
+  margin-top: 50px;
+}
+section.body .faq-body .container .row .col-sm-12 .faq-section .title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  color: #37474FB8;
+}
+section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .card-header h5 button {
+  color: #37474F;
+  font-size: 17px;
+  font-family: "Montserrat-Semibold";
+}
+section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .collapse .card-body {
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+}
+
+section.body .tutor-profile-section {
+  margin-top: 50px;
+  background-color: #E9ECEF;
+  box-shadow: 0px 0px 77px #0000000F;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+section.body .tutor-profile-section .basic-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name {
+  display: flex;
+  align-items: center;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .left {
+  margin-right: 30px;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info {
+  color: #37474F;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info.name {
+  font-size: 22px;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info.mobile {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info .bs-info-name .right .info.gmail {
+  font-size: 12px;
+  font-family: "Montserrat-Regular";
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout {
+  height: 100%;
+  text-align: right;
+  padding-right: 50px;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+  width: auto;
+  height: auto;
+  background: #4CAF50;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+  margin-top: 20px;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+  border: none;
+  width: auto;
+  height: auto;
+  background: #4CAF50;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+  width: 300px;
+  background-color: #4CAF50;
+  margin-right: 20px;
+  border-radius: 5%;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+  border-radius: 5%;
+  background-color: #616161;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+  color: white;
+  font-family: "Montserrat-SemiBold";
+  font-size: 15px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+  background-color: #707070;
+  color: white;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content {
+  background: #E9ECEF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000008A;
+  border-radius: 20px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: #37474FB8;
+  padding-bottom: 20px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: #37474FB8;
+  padding-bottom: 20px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+  background: #E9ECEF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000008A;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000004A;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+  padding-right: 15px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+  font-family: "Montserrat-Medium";
+  color: #37474F;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+  font-size: 10px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+  font-size: 8px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+  font-size: 7px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+  margin-bottom: 10px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+  text-decoration: none;
+  background: #7D7D7E;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+  border-radius: 15px;
+  font-size: 10px;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+  background-color: #00A99D;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+  background-color: #F32B2B;
+}
+
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor {
+  margin-top: 50px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section {
+  margin: auto;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .image-preview img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #00000061;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .file-text-under {
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
+  color: #0F0D0D;
+  font-weight: bold;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form .save-image {
+  margin-top: 20px;
+  width: 100px;
+  height: 36px;
+  background: #4CAF50;
+  border-radius: 11px;
+  font-size: 12px;
+  color: white;
+  font-family: "Montserrat-Medium";
+  border: none;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+  font-size: 25px;
+  font-family: "Montserrat-SemiBold";
+  font-weight: bold;
+  color: black;
+  padding-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+  font-size: 17px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  padding-bottom: 20px;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 3px 6px #00000061;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group .label-gender {
+  padding-right: 30px;
+  font-size: 17px;
+  font-family: "Montserrat-Regular";
+  color: black;
+}
+section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .sign-up-button-reg-tutor {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  background: #4CAF50;
+  border-radius: 11px;
+  font-size: 17px;
+  color: white;
+  font-family: "Montserrat-Medium";
+  border: none;
+}
+
+section.body .tutor-profile-section .details-information {
+  padding-top: 30px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tabs-options .nav a {
+  background-color: #4CAF50;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: "Montserrat-SemiBold";
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tabs-options .nav a.active {
+  background-color: #CED4DA;
+  color: black;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content {
+  background-color: #E9ECEF;
+  box-shadow: 0px 3px 6px #0000008A;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: #37474FB8;
+  padding-bottom: 10px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: #37474FB8;
+  padding-bottom: 10px;
+}
+
+section.body .container .row .col-sm-12 .req-tutor-left-side {
+  margin-top: 50px;
+  background-color: #F1F3F5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section.body .container .row .col-sm-12 .req-tutor-left-side .title {
+  font-size: 27px;
+  font-family: "Montserrat-SemiBold";
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section.body .container .row .col-sm-12 .req-tutor-left-side .form-section .container form .row .col-sm-12 .form-group .form-control {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+section.body .container .row .col-sm-12 .req-tutor-left-side .form-section .container form .row .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section.body .container .row .col-sm-12 .req-tutor-left-side .form-section .container form .row .submit-button button {
+  margin-top: 15px;
+  border: none;
+  font-family: "Montserrat-Regular";
+  color: white;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: #4CAF50;
+}
+section.body .container .row .col-sm-12 .req-tutor-left-side .form-section .container form .row .submit-button button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+section.body .container .row .col-sm-12 .image-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section {
+  margin-top: 30px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+  width: 700px;
+  margin: auto;
+  background-color: #E9ECEF;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .title {
+  font-size: 18px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  text-align: center;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section {
+  margin-top: 30px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit .title {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  padding-right: 20px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit .digit-input .bkash-digit-input {
+  width: 50px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .screenshot-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .screenshot-submit .title {
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  padding-right: 20px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .submit-button .payment-submit {
+  background-color: #4CAF50;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  font-family: "Montserrat-SemiBold";
+}
+.body .header-middle .container .row .col-sm-12 .right-side .make-easy-payment {
+  width: 700px;
+  margin: auto;
+  background-color: #E9ECEF;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.body .header-middle .container .row .col-sm-12 .right-side .title {
+  background-color: #4CAF50;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-family: "Montserrat-SemiBold";
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card {
+  border: 1px solid #c3c0c0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.2s ease-in-out;
+  background-color: #E9ECEF;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .header {
+  background-color: #4CAF50;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .header .location {
+  font-family: "Montserrat-Medium";
+  color: white;
+  font-size: 14px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body {
+  padding-top: 10px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body .tution-info-body {
+  font-size: 12px;
+  font-family: "Montserrat-Regular";
+  color: black;
+  padding-bottom: 10px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body .tution-info-body span {
+  font-size: 12px;
+  font-family: "Montserrat-Medium";
+  color: black;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFF;
+  height: 40px;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .footer .posting-date {
+  font-size: 12px;
+  font-family: "Montserrat-Medium";
+  color: black;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .footer .view-details a {
+  background-color: #4CAF50;
+  text-decoration: none;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
+  color: white;
+}
+
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+  background: #4CAF50;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
+  color: white;
+  padding-left: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+  background-color: #F1F3F5;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+  font-size: 14px;
+  font-family: "Montserrat-Medium";
+  color: black;
+  line-height: 12px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+  border: none;
+  background-color: #4CAF50;
+  width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
+  color: white;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+  background: #4CAF50;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 60px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+  font-family: "Montserrat-SemiBold";
+  font-size: 15px;
+  color: white;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+  border: 1px solid white;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Montserrat-Medium";
+  font-size: 13px;
+  color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.header .navbar .navbar-collapse.show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    top: 75px;
+    left: 0;
+    background-color: #87ef8b;
+    opacity: 0.9;
+  }
+  section.header .navbar .navbar-collapse ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.header .navbar .navbar-collapse ul li a {
+    color: black !important;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  section.header .navbar .navbar-collapse ul li a.login-button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+.body-overflow-hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 135px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer {
+    height: 450px;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+    font-size: 21px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+    width: 42px;
+    height: 42px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+  section.footer .container .row .col-sm-12 .payment-options .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 135px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer {
+    height: 450px;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo {
+    width: 39px;
+    height: 39px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+    width: 39px;
+    height: 39px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+    font-size: 19px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+    width: 39px;
+    height: 39px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+  section.footer .container .row .col-sm-12 .payment-options .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 135px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer {
+    height: 450px;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+    font-size: 17px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+    width: 35px;
+    height: 35px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+  section.footer .container .row .col-sm-12 .payment-options .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 135px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer {
+    height: 450px;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo {
+    width: 33px;
+    height: 33px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+    width: 33px;
+    height: 33px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+    font-size: 17px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+    width: 33px;
+    height: 33px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+  section.footer .container .row .col-sm-12 .payment-options .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 135px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer {
+    height: 450px;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+    font-size: 16px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+    width: 32px;
+    height: 32px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+  section.footer .container .row .col-sm-12 .payment-options .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 135px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer {
+    height: 450px;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .office-location .logo i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact .text {
+    font-size: 13px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon {
+    width: 25px;
+    height: 25px;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact .icon i {
+    font-size: 12px;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+  section.footer .container .row .col-sm-12 .payment-options .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 25px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 25px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 25px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.header .header-middle .container .row .col-sm-12 {
+    margin-top: 25px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor {
+    width: auto;
+    height: auto;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .sub-title {
+    text-align: center;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part {
+    height: 100%;
+    flex-direction: column;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.header .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.footer .container .row .col-sm-12 .office-location {
+    flex-direction: column;
+    text-align: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  section.footer .container .row .col-sm-12 .footer-nav ul {
+    padding-left: 0;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .mobile-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.footer .container .row .col-sm-12 .footer-contact-social .social-media-contact {
+    align-items: center;
+    justify-content: center;
+  }
+  section.footer .container .row .col-sm-12 .payment-options {
+    flex-direction: column;
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section .button-find {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .social-fix-position {
+    display: none;
+  }
+  section.body .header-middle .container .row .col-sm-12 .request-tutor-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1280px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.body .container .row .col-sm-12 .image-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .image-illustration-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form {
+    margin-top: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .title {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
+    text-align: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
