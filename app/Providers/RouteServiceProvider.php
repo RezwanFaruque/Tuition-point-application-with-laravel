@@ -15,13 +15,8 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     protected $namespace = 'App\Http\Controllers';
-
-    /**
-     * The path to the "home" route for your application.
-     *
-     * @var string
-     */
     public const HOME = '/home';
+
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -89,7 +84,7 @@ class RouteServiceProvider extends ServiceProvider
     // map admin routes
     protected function mapAdminRoutes()
     {
-        Route::middleware('is_admin')
+        Route::middleware(['web','auth'])
             ->namespace($this->namespace)
             ->group(base_path('routes/admin.php'));
     }
@@ -99,7 +94,7 @@ class RouteServiceProvider extends ServiceProvider
     // map Tutor routes
     protected function mapTutorRoutes()
     {
-        Route::middleware('is_tutor')
+        Route::middleware(['web','auth'])
             ->namespace($this->namespace)
             ->group(base_path('routes/tutor.php'));
     }
@@ -109,7 +104,7 @@ class RouteServiceProvider extends ServiceProvider
     // map Gurdian routes
     protected function mapGurdianRoutes()
     {
-        Route::middleware('is_gurdian')
+        Route::middleware(['web','auth'])
             ->namespace($this->namespace)
             ->group(base_path('routes/gurdian.php'));
     }

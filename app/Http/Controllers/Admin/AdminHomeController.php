@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 class AdminHomeController extends Controller
 {
 
+    
+
     /**
      * Show the admin dashboard.
      *
