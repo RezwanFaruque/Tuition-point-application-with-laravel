@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\Model\TutorInfo;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -41,20 +43,7 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
-    }
+   
 
     /**
      * Create a new user instance after a valid registration.
@@ -62,12 +51,58 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function register(Request $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+        
+
+        $request->validate([
+            'user_role' => 'required',
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email',
+            'phone_number' => 'required',
+            'gender' => 'required',
+            'password' => 'required',
+            'confirm_password' => 'required|same:password',
+
         ]);
+
+        ;
+        $user = new User();
+
+        $user->name = $request->name;
+        $user->phone_number = $request->phone_number;
+        if($request->user_role == 'tutor'){
+            $user->is_tutor = '1';
+        }
+        if($request->user_role == 'gurdian'){
+            $user->is_gurdian = '1';
+        }
+        $user->gender = $request->gender;
+        $user->email = $request->email;
+
+        // making password with hash
+        $password = Hash::make($request->password);
+        $confirm_password = Hash::make($request->confirm_password);
+        
+        $user->password = $password;
+        // $user->confirm_password = $confirm_password;
+
+        $user->save();
+
+        // dd($user->name);
+        if($user->save()){
+            $tutorinfo = new TutorInfo();
+            $tutorinfo->name = $user->name;
+            $tutorinfo->gender = $user->gender;
+            $tutorinfo->mobile_number = $user->phone_number;
+
+            $tutorinfo->save();
+
+            if($tutorinfo->save()){
+                return redirect()->route('login');
+            }
+        }
+
+       
     }
 }

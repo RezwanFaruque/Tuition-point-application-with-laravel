@@ -26,7 +26,7 @@
                 Do not have account?
             </div>
             <div class="register-page">
-                <a class="register-page-link" href="register-tutors.html">Register</a>
+                <a class="register-page-link" href="{{route('register')}}">Register</a>
             </div>
         </div>
     </div>

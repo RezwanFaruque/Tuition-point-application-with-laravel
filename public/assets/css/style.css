@@ -946,6 +946,10 @@ section.body .header-middle .container .row .col-sm-12 .register-as-tutor .conta
   font-weight: bold;
   color: black;
   padding-bottom: 20px;
+  background: none;
+  width: auto;
+  padding-top: 0;
+  display: block;
 }
 section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .subtitle {
   font-size: 17px;

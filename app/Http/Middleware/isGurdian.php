@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-// use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth;
 
 class isGurdian
 {
@@ -16,9 +16,9 @@ class isGurdian
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->is_gurdian == 1){
+        if(Auth::user()->is_gurdian == 1){
             return $next($request);
         }
-        return redirect()->route('home')->with('error',"You are log in as a Gurdian not as a Tutor");
+        return redirect()->route('login');
     }
 }
