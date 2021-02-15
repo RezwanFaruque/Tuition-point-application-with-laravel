@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="img/logo/logo.png" rel="icon">
-    <title>RuangAdmin - Dashboard</title>
+    {{-- <link href="img/logo/logo.png" rel="icon"> --}}
+    <title>TutionPoint Dashboard</title>
     <link href="{{ asset('admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/css/ruang-admin.min.css') }}" rel="stylesheet">
@@ -321,28 +321,16 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('admin.home')}}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol>
                     </div>
 
                     <div class="row mb-3">
-
+                        @yield('content')
 
                     </div>
-                    <!--Row-->
-
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <p>Do you like this template ? you can download from <a
-                                    href="https://github.com/indrijunanda/RuangAdmin" class="btn btn-primary btn-sm"
-                                    target="_blank"><i class="fab fa-fw fa-github"></i>&nbsp;GitHub</a></p>
-                        </div>
-                    </div>
-
-
-
-
+                    
                 </div>
                 <!---Container Fluid-->
             </div>

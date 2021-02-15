@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use App\Model\TutorInfo;
+use App\Model\GurdianInfo;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -92,13 +93,26 @@ class RegisterController extends Controller
         // dd($user->name);
         if($user->save()){
             $tutorinfo = new TutorInfo();
+            $gurdianinfo = new GurdianInfo();
+
+            // tutor info
             $tutorinfo->name = $user->name;
             $tutorinfo->gender = $user->gender;
             $tutorinfo->mobile_number = $user->phone_number;
 
+            // gurdian info
+            $gurdianinfo->name = $user->name;
+            $gurdianinfo->gender = $user->gender;
+            $gurdianinfo->phone_number = $user->phone_number;
+            $gurdianinfo->email = $user->email;
+
+            // save tutor info
             $tutorinfo->save();
 
-            if($tutorinfo->save()){
+            // save gurdian info
+            $gurdianinfo->save();
+
+            if($tutorinfo->save() && $gurdianinfo->save()){
                 return redirect()->route('login');
             }
         }

@@ -55,11 +55,12 @@ class LoginController extends Controller
                 return redirect()->route('admin.home');
 
             }elseif(Auth::user()->is_tutor == '1'){
+                return redirect()->route('tutor.home');
 
-            }elseif(Auth::user()->is_tutor == '1'){
-
+            }elseif(Auth::user()->is_gurdian == '1'){
+                return redirect()->route('gurdian.home');
             }else{
-                return redirect()->route('home');
+                // return redirect()->route('home');
             }
 
         }else{
