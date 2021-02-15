@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use App\Providers\RouteServiceProvider;
+// use App\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
@@ -19,7 +19,13 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            return redirect(RouteServiceProvider::HOME);
+            if(Auth::user()->is_gurdian == '1'){
+                return redirect()->route('gurdian.home');
+            }elseif (Auth::user()->is_tutor == '1') {
+                return redirect()->route('tutor.home');
+            }elseif (Auth::user()->is_admin == '1') {
+                return redirect()->route('admin.home');
+            }
         }
 
         return $next($request);

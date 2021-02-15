@@ -73,7 +73,7 @@
                         {{-- if user authenticate --}}
                     @else
                     {{-- if user not admin and user is a tutor --}}
-                        @if (Auth::user()->is_admin != '1' && Auth::user()->is_tutor = '1')
+                        @if (Auth::user()->is_admin != '1' && Auth::user()->is_tutor == '1')
 
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -86,6 +86,9 @@
                                                     document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
+                                <a class="dropdown-item" href="{{route('tutor.home') }}">
+                                    Profile Dashboard
+                                </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                     style="display: none;">
@@ -93,7 +96,7 @@
                                 </form>
                             </div>
                         </li>
-                        @elseif(Auth::user()->is_admin != '1' && Auth::user()->is_gurdian =='1')
+                        @elseif(Auth::user()->is_admin != '1' && Auth::user()->is_gurdian == '1')
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -104,6 +107,10 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{route('gurdian.home') }}">
+                                        Profile Dashboard
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
@@ -125,6 +132,7 @@
                                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                         style="display: none;">

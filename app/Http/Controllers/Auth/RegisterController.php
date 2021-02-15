@@ -9,7 +9,6 @@ use App\Model\TutorInfo;
 use App\Model\GurdianInfo;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 class RegisterController extends Controller
@@ -55,12 +54,14 @@ class RegisterController extends Controller
     protected function register(Request $request)
     {
         
+        
 
         $request->validate([
             'user_role' => 'required',
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'phone_number' => 'required',
+            'profile_image' => 'required',
             'gender' => 'required',
             'password' => 'required',
             'confirm_password' => 'required|same:password',
@@ -72,6 +73,14 @@ class RegisterController extends Controller
 
         $user->name = $request->name;
         $user->phone_number = $request->phone_number;
+
+        if($request->hasFile('profile_image')){
+            $file = $request->file('profile_image');
+            $filename = time(). '.' . $file->getClientOriginalExtension();
+            $path = public_path('assets/vendor/images/registerpage');
+            $file->move($path, $filename);
+            $user->profile_image = 'assets/vendor/images/registerpage/'.$filename;
+        }
         if($request->user_role == 'tutor'){
             $user->is_tutor = '1';
         }
