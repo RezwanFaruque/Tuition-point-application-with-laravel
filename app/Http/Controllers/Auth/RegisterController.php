@@ -105,11 +105,13 @@ class RegisterController extends Controller
             $gurdianinfo = new GurdianInfo();
 
             // tutor info
+            $tutorinfo->user_id = $user->id;
             $tutorinfo->name = $user->name;
             $tutorinfo->gender = $user->gender;
             $tutorinfo->mobile_number = $user->phone_number;
 
             // gurdian info
+            $gurdianinfo->user_id = $user->id;
             $gurdianinfo->name = $user->name;
             $gurdianinfo->gender = $user->gender;
             $gurdianinfo->phone_number = $user->phone_number;

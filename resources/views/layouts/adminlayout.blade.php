@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    {{-- <link href="img/logo/logo.png" rel="icon"> --}}
+    <link href="img/logo/logo.png" rel="icon">
     <title>TutionPoint Dashboard</title>
     <link href="{{ asset('admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/css/ruang-admin.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+    @yield('style')
 </head>
 
 <body id="page-top">
@@ -22,11 +24,11 @@
                 <div class="sidebar-brand-icon">
                     <img src="img/logo/logo2.png">
                 </div>
-                <div class="sidebar-brand-text mx-3">RuangAdmin</div>
+                <div class="sidebar-brand-text mx-3">MeetTutor</div>
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('admin.home') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -34,32 +36,31 @@
             <div class="sidebar-heading">
                 Features
             </div>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-                    aria-expanded="true" aria-controls="collapseBootstrap">
-                    <i class="far fa-fw fa-window-maximize"></i>
-                    <span>Bootstrap UI</span>
-                </a>
-                <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Bootstrap UI</h6>
-                        <a class="collapse-item" href="alerts.html">Alerts</a>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="dropdowns.html">Dropdowns</a>
-                        <a class="collapse-item" href="modals.html">Modals</a>
-                        <a class="collapse-item" href="popovers.html">Popovers</a>
-                        <a class="collapse-item" href="progress-bar.html">Progress Bars</a>
-                    </div>
-                </div>
-            </li>
+
+            {{-- Tutor List Pages --}}
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm"
                     aria-expanded="true" aria-controls="collapseForm">
                     <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Forms</span>
+                    <span>TutorList</span>
                 </a>
                 <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Forms</h6>
+                        <a class="collapse-item" href="{{ route('admin.fetchalltutors') }}">All Tutors</a>
+                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
+                    </div>
+                </div>
+            </li>
+
+            {{-- Gurdian List Pages --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm1"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>GurdianLists</span>
+                </a>
+                <div id="collapseForm1" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Forms</h6>
                         <a class="collapse-item" href="form_basics.html">Form Basics</a>
@@ -67,54 +68,71 @@
                     </div>
                 </div>
             </li>
+
+
+            {{-- Active Tutions List Pages --}}
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable"
-                    aria-expanded="true" aria-controls="collapseTable">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm2"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Active TutionsList</span>
                 </a>
-                <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                <div id="collapseForm2" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tables</h6>
-                        <a class="collapse-item" href="simple-tables.html">Simple Tables</a>
-                        <a class="collapse-item" href="datatables.html">DataTables</a>
+                        <h6 class="collapse-header">Forms</h6>
+                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
+                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
                     </div>
                 </div>
             </li>
+
+            {{-- GurdianFeedback Pages --}}
             <li class="nav-item">
-                <a class="nav-link" href="ui-colors.html">
-                    <i class="fas fa-fw fa-palette"></i>
-                    <span>UI Colors</span>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Gurdian Feedback</span>
                 </a>
-            </li>
-            <hr class="sidebar-divider">
-            <div class="sidebar-heading">
-                Examples
-            </div>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage"
-                    aria-expanded="true" aria-controls="collapsePage">
-                    <i class="fas fa-fw fa-columns"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
+                <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Example Pages</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">Forms</h6>
+                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
+                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
                     </div>
                 </div>
             </li>
+
+            {{-- Premium Tutor List Pages --}}
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm4"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Premium TutorList</span>
                 </a>
+                <div id="collapseForm4" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Forms</h6>
+                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
+                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
+                    </div>
+                </div>
             </li>
-            <hr class="sidebar-divider">
-            <div class="version" id="version-ruangadmin"></div>
+
+            {{-- Request Tutor List Pages --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm5"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Request TutorList</span>
+                </a>
+                <div id="collapseForm5" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Forms</h6>
+                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
+                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
+                    </div>
+                </div>
+            </li>
         </ul>
         <!-- Sidebar -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -321,16 +339,16 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('admin.home')}}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('admin.home') }}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol>
                     </div>
 
-                    <div class="row mb-3">
+                    <div class="row">
                         @yield('content')
 
                     </div>
-                    
+
                 </div>
                 <!---Container Fluid-->
             </div>
@@ -359,9 +377,13 @@
     <script src="{{ asset('admin/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('adminjs/ruang-admin.min.js') }}"></script>
+    <script src="{{ asset('admin/js/ruang-admin.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/chart.js/Chart.min.js') }}"></script>
     <script src="{{ asset('admin/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{ asset('admin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('admin/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    @yield('script')
+    
 </body>
 
 </html>

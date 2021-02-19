@@ -4,6 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Model\TutorInfo;
+use App\Model\GurdianInfo;
+use App\Model\ActiveTution;
+
+
 
 class AdminHomeController extends Controller
 {
@@ -17,7 +22,17 @@ class AdminHomeController extends Controller
      */
     public function index()
     {
-        return view('admin.adminhome');
+        // all tutors
+        $alltutors = TutorInfo::all()->count();
+        
+        // all gurdian
+        $allgurdians = GurdianInfo::all()->count();
+
+        // all active tutions
+        $activetutions = ActiveTution::all()->count();
+
+
+        return view('admin.adminhome',compact('alltutors','allgurdians','activetutions'));
     }
     
 }
