@@ -10,6 +10,7 @@
                 Find the best tutor in your area
             </div>
 
+            <input type="hidden" name="authcheker" id="auth_check" value="{{Auth::check() ? 'yes' : 'no'}}">
             <div class="body-with-form">
                 <form action="" method="POST">
                     <div class="body">
@@ -17,53 +18,44 @@
                             <div class="left-side site">
                                 <div class="form-group">
 
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>District</option>
-                                        <option>Rajshahi</option>
-                                        <option>Dhaka</option>
-                                        <option>Khulna</option>
-                                        <option>Rangpur</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Medium</option>
-                                        <option>English</option>
-                                        <option>Bangla</option>
-                                        <option>IELTS</option>
+                                    <select class="form-control" id="district">
+                                        @foreach ($districts as $district)
+                                            <option value="" disabled selected hidden>Select District</option>
+                                            <option value="{{ $district->district_name }}">{{ $district->district_name }}
+                                            </option>
+                                        @endforeach
 
                                     </select>
                                 </div>
                                 <div class="form-group">
 
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Class</option>
-                                        <option>Class 1</option>
-                                        <option>Class 2</option>
-                                        <option>Class 3</option>
-                                        <option>Class 4</option>
-                                        <option>Class 5</option>
+                                    <select class="form-control" id="medium">
+                                        <option value="" disabled selected hidden>Select Medium</option>
+                                        @foreach ($mediums as $medium)
+                                            <option value="{{ $medium->medium_name }}">{{ $medium->medium_name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="form-group">
+
+                                    <select class="form-control" name="classes" id="classes">
+                                        <option value="" disabled selected hidden>Select Classes</option>
+                                       
                                     </select>
                                 </div>
                             </div>
                             <div class="right-side site">
                                 <div class="form-group">
 
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Area</option>
-                                        <option>Mirpur</option>
-                                        <option>Badda</option>
-                                        <option>Gulshan</option>
-                                        <option>Baridhara</option>
-
+                                    <select class="form-control" id="area">
+                                        <option value="" disabled selected hidden>Select Area</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group">
 
                                     <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Gender</option>
+                                        <option value="" disabled selected hidden>Select Gender</option>
                                         <option>Male</option>
                                         <option>Female</option>
 
@@ -89,4 +81,69 @@
 
     </div>
 
+@endsection
+
+@section('script')
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            let area_url = '';
+            let class_url = '';
+
+            if($('#auth_check').value == 'yes'){
+                area_url = "/gurdian/fetch-area";
+                class_url    = "/gurdian/fetch-class";
+            }else{
+                area_url = "/fetch-area";
+                class_url    = "/fetch-classes";
+            }
+            $('#district').on('change', function() {
+
+                $.ajax({
+                    type: "POST",
+                    url: area_url,
+                    data: {
+                        'district_name': this.value,
+                    },
+
+                    ajaxStart: function() {
+                        $('#area_null').append("<option value=''>please wait..</option>");
+                    },
+                    success: function(data) {
+                        $('#area').empty();
+                        data.forEach(element => {
+                            $("#area").append("<option value='" + element.area_name +
+                                "'>" + element.area_name + "</option>");
+                        });
+                    }
+                });
+            });
+
+            $('#medium').on('change',function(){
+                $.ajax({
+                    type: "POST",
+                    url: class_url,
+                    data: {
+                        'medium_name': this.value,
+                    },
+                   
+                    success: function (data) {
+                        $('#classes').empty();
+                        data.forEach(element => {
+                            $("#classes").append("<option value='" + element.classes_name +
+                                "'>" + element.classes_name + "</option>");
+                        });
+
+                    }
+                });
+            })
+        })
+
+    </script>
 @endsection

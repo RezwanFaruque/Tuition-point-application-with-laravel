@@ -53,6 +53,39 @@
                 </div>
             </li>
 
+
+            {{-- All Service areas Pages --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Service District/Area</span>
+                </a>
+                <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">District & Areas</h6>
+                        <a class="collapse-item" href="{{route('admin.tutorservicedistrict')}}">All District</a>
+                        
+                    </div>
+                </div>
+            </li>
+
+            {{-- All Mediums And Clases --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Medium & Classes</span>
+                </a>
+                <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Medium & Classes</h6>
+                        <a class="collapse-item" href="{{route('admin.tutorservicedistrict')}}">All District</a>
+                        
+                    </div>
+                </div>
+            </li>
+
             {{-- Gurdian List Pages --}}
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm1"

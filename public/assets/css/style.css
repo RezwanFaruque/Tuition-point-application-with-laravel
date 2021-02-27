@@ -437,9 +437,11 @@ section.body .header-middle .container .row .col-sm-12 .filter-tutors {
   background-color: #E9ECEF;
 }
 section.body .header-middle .container .row .col-sm-12 .filter-tutors .title {
+  width: auto !important;
+  background: none !important;
   font-size: 15px;
   padding-bottom: 10px;
-  color: black;
+  color: black !important;
   font-family: "Montserrat-SemiBold";
   text-align: center;
 }
@@ -1025,11 +1027,13 @@ section.body .container .row .col-sm-12 .req-tutor-left-side {
   padding-right: 20px;
 }
 section.body .container .row .col-sm-12 .req-tutor-left-side .title {
-  font-size: 27px;
-  font-family: "Montserrat-SemiBold";
-  color: black;
-  text-align: center;
+  width: auto !important;
+  font-size: 27px !important;
+  font-family: "Montserrat-SemiBold" !important;
+  color: black !important;
+  text-align: center !important;
   margin-bottom: 30px;
+  background: none !important;
 }
 section.body .container .row .col-sm-12 .req-tutor-left-side .form-section .container form .row .col-sm-12 .form-group .form-control {
   border: none;

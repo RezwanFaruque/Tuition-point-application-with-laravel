@@ -3,26 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\ServiceDistrict;
+use App\Model\ServiceMediumCategory;
 
 class HomeController extends Controller
 {
-    // /**
-    //  * Create a new controller instance.
-    //  *
-    //  * @return void
-    //  */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function welcome(){
 
-    // /**
-    //  * Show the application dashboard.
-    //  *
-    //  * @return \Illuminate\Contracts\Support\Renderable
-    //  */
-    // public function index()
-    // {
-    //     return view('tutorprofilehome');
-    // }
+        $districts = ServiceDistrict::all();
+        $mediums = ServiceMediumCategory::all();
+        
+        return view('welcome',compact('districts','mediums'));
+    }
+
+
+    public function fetchArea(Request $request){
+
+        dd($request->all());
+
+    }
+
+    public function fetchClasses(Request $request){
+
+    }
 }

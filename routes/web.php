@@ -11,11 +11,25 @@
 |
 */
 
+Route::middleware('guest')->namespace('Guest')->group(function () {
+
+    Route::get('/tutors','GuestUserController@fetchAllTutors')->name('guest.fetchalltutors');
+
+    Route::get('/request-for-tutors','GuestUserController@requestForTutor')->name('guest.requestfortutor');
+
+    Route::post('/fetch-area','GuestUserController@fetchArea')->name('guest.fetcharea');
+
+    Route::post('/fetch-classes','GuestUserController@fetchClasses')->name('guest.fetchclasses');
+
+    Route::post('/search-tutor','GuestUserController@searchTutor')->name('guest.searchTutor');
+
+});
 
 
-    Route::get('/', function () {
-        return view('welcome');
-    });
+
+Route::get('/','HomeController@welcome')->name('index.home');
+
+    
     
 
 

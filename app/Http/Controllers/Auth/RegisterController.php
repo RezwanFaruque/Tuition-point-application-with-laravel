@@ -43,7 +43,7 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-   
+
 
     /**
      * Create a new user instance after a valid registration.
@@ -53,8 +53,8 @@ class RegisterController extends Controller
      */
     protected function register(Request $request)
     {
-        
-        
+
+
 
         $request->validate([
             'user_role' => 'required',
@@ -66,25 +66,23 @@ class RegisterController extends Controller
             'password' => 'required',
             'confirm_password' => 'required|same:password',
 
-        ]);
-
-        ;
+        ]);;
         $user = new User();
 
         $user->name = $request->name;
         $user->phone_number = $request->phone_number;
 
-        if($request->hasFile('profile_image')){
+        if ($request->hasFile('profile_image')) {
             $file = $request->file('profile_image');
-            $filename = time(). '.' . $file->getClientOriginalExtension();
+            $filename = time() . '.' . $file->getClientOriginalExtension();
             $path = public_path('assets/vendor/images/registerpage');
             $file->move($path, $filename);
-            $user->profile_image = 'assets/vendor/images/registerpage/'.$filename;
+            $user->profile_image = 'assets/vendor/images/registerpage/' . $filename;
         }
-        if($request->user_role == 'tutor'){
+        if ($request->user_role == 'tutor') {
             $user->is_tutor = '1';
         }
-        if($request->user_role == 'gurdian'){
+        if ($request->user_role == 'gurdian') {
             $user->is_gurdian = '1';
         }
         $user->gender = $request->gender;
@@ -93,41 +91,44 @@ class RegisterController extends Controller
         // making password with hash
         $password = Hash::make($request->password);
         $confirm_password = Hash::make($request->confirm_password);
-        
+
         $user->password = $password;
         // $user->confirm_password = $confirm_password;
 
         $user->save();
 
         // dd($user->name);
-        if($user->save()){
+        if ($user->save()) {
             $tutorinfo = new TutorInfo();
             $gurdianinfo = new GurdianInfo();
 
             // tutor info
-            $tutorinfo->user_id = $user->id;
-            $tutorinfo->name = $user->name;
-            $tutorinfo->gender = $user->gender;
-            $tutorinfo->mobile_number = $user->phone_number;
+            if ($user->is_tutor == '1') {
 
-            // gurdian info
-            $gurdianinfo->user_id = $user->id;
-            $gurdianinfo->name = $user->name;
-            $gurdianinfo->gender = $user->gender;
-            $gurdianinfo->phone_number = $user->phone_number;
-            $gurdianinfo->email = $user->email;
+                $tutorinfo->user_id = $user->id;
+                $tutorinfo->name = $user->name;
+                $tutorinfo->gender = $user->gender;
+                $tutorinfo->mobile_number = $user->phone_number;
 
-            // save tutor info
-            $tutorinfo->save();
-
-            // save gurdian info
-            $gurdianinfo->save();
-
-            if($tutorinfo->save() && $gurdianinfo->save()){
-                return redirect()->route('login');
+                $tutorinfo->save();
             }
-        }
 
-       
+            if ($user->is_gurdian == '1') {
+                // gurdian info
+                $gurdianinfo->user_id = $user->id;
+                $gurdianinfo->name = $user->name;
+                $gurdianinfo->gender = $user->gender;
+                $gurdianinfo->phone_number = $user->phone_number;
+                $gurdianinfo->email = $user->email;
+
+                // save gurdian info
+                $gurdianinfo->save();
+            }
+
+           
+
+
+            return redirect()->route('login');
+        }
     }
 }

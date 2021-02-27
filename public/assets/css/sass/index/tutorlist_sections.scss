@@ -17,9 +17,11 @@ section{
                             padding-right: 10px;
                             background-color: #E9ECEF;
                             .title{
+                                width: auto!important;
+                                background: none!important;
                                 font-size: 15px;
                                 padding-bottom: 10px;
-                                color: black;
+                                color: black!important;
                                 font-family: 'Montserrat-SemiBold';
                                 text-align: center;
                             }

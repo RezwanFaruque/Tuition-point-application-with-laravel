@@ -267,6 +267,38 @@
                                                                     </div>
                                                                 </div>
 
+                                                                <div class="info-right">
+                                                                    <div class="form-group">
+                                                                        <label for="my-input">Experiences (Years)</label>
+                                                                        <input id="my-input" class="form-control"
+                                                                            value="{{$getuser->tutorinfo->experience_years}}" type="text" name="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="info-right">
+                                                                    <div class="form-group">
+                                                                        <label for="my-input">Prefered Medium</label>
+                                                                        <input id="my-input" class="form-control"
+                                                                            value="{{$getuser->tutorinfo->experience_subjects}}" type="text" name="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="info-right">
+                                                                    <div class="form-group">
+                                                                        <label for="my-input">Salary Range From</label>
+                                                                        <input id="my-input" class="form-control"
+                                                                            value="{{$getuser->tutorinfo->salar_range_from}}" type="text" name="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="info-right">
+                                                                    <div class="form-group">
+                                                                        <label for="my-input">Salary Range To</label>
+                                                                        <input id="my-input" class="form-control"
+                                                                            value="{{$getuser->tutorinfo->salary_range_to}}" type="text" name="">
+                                                                    </div>
+                                                                </div>
+
                                                                 <button
                                                                     style="border: none; padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;background: #4CAF50; color: white;"
                                                                     type="submit">Update Profile</button>
