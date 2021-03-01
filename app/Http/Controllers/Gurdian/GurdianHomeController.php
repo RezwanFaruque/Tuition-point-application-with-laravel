@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceMediumCategory;
+use App\Model\TutorInfo;
 use Illuminate\Http\JsonResponse;
 
 class GurdianHomeController extends Controller
@@ -82,34 +83,78 @@ class GurdianHomeController extends Controller
 
     public function searchTutor(Request $request){
 
-        if($request->district){
+        // dd($request->all());
+
+        $searchtutors = TutorInfo::with('getuser');
+
+
+        if($request->has('district') && $request->district != ''){
             $district = $request->district;
-        }
-        if($request->area){
+
+            $searchtutors->where('district_name','LIKE','%'.$district.'%');
+        } 
+
+        if($request->has('area') && $request->area != ''){
             $area = $request->area;
+
+            $searchtutors->where('area','LIKE','%'.$area.'%');
         }
-        if($request->medium){
+
+        // dd($searchtutors->get());
+
+
+        if($request->has('medium') && $request->medium != ''){
             $medium = $request->medium;
+
+            $searchtutors->where('medium','LIKE','%'.$medium.'%');
         }
 
-        if($request->classes){
-            $classes= $request->classes;
+        if($request->has('classes') && $request->classes != ''){
+            $class = $request->classes;
+
+            $searchtutors->where('prefered_class','LIKE','%'.$class.'%');
         }
-        
-        if($request->subject){
+
+        if($request->has('subject') && $request->subject != ''){
             $subject = $request->subject;
+
+            $searchtutors->where('prefered_subject','LIKE','%'.$subject.'%');
         }
 
-        if($request->gender){
+
+        if($request->has('gender') && $request->gender != ''){
             $gender = $request->gender;
+
+            $searchtutors->where('gender','=', $gender);
         }
 
-        if($request->salary_range){
-            $salary_range = $request->salary_range;
+        if($request->has('salary') && $request->salary != ''){
+            $salary_range = $request->salary;
+
+            $salary_range_array = explode("-",$salary_range);
+
+            $searchtutors->where('salar_range_from','LIKE','%'.$salary_range_array[0].'%');
+
         }
-        if($request->days_per_week){
+
+        if($request->has('days_per_week') && $request->days_per_week != ''){
             $days_per_week = $request->days_per_week;
+
+            $searchtutors->where('days_per_week','LIKE','%'.$days_per_week.'%');
+
         }
+
+        if($searchtutors != ''){
+           $searchtutorresult = $searchtutors->paginate(15);
+        }
+
+        // dd($searchtutorresult);
+
+        $districts = ServiceDistrict::all();
+        $mediums = ServiceMediumCategory::all();
+
+
+        return view('gurdian.searchtutorresult',compact('searchtutorresult','districts','mediums'));
     }
 
 

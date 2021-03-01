@@ -95,7 +95,7 @@
                     <div class="result-body">
                         <div class="container">
                             <div class="row">
-                                @foreach ($tutorusers as $tutoruser)
+                                @foreach ($searchtutorresult as $searchtutor)
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="result-card">
                                             <div class="header">
@@ -104,19 +104,19 @@
                                             <div class="body">
                                                 <div class="left">
                                                     <div class="profile-image">
-                                                        <img src="{{ asset($tutoruser->profile_image) }}" alt=""
-                                                            srcset="">
+                                                        <img src="{{ asset($searchtutor->getuser->profile_image) }}"
+                                                            alt="" srcset="">
                                                     </div>
                                                 </div>
                                                 <div class="right">
                                                     <div class="name">
-                                                        {{ $tutoruser->tutorinfo->name }}
+                                                        {{ $searchtutor->name }}
                                                     </div>
                                                     <div class="subject">
-                                                        {{ $tutoruser->tutorinfo->subject }}
+                                                        {{ $searchtutor->subject }}
                                                     </div>
                                                     <div class="university">
-                                                        {{ $tutoruser->tutorinfo->university_or_collage }}
+                                                        {{ $searchtutor->university_or_collage }}
                                                     </div>
                                                     <div class="rating">
                                                         <span class="fa fa-star checked"></span>
@@ -133,14 +133,18 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                 @endforeach
 
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="pagination-sections">
-                                        {{ $tutorusers->links() }}
+                                        {{ $searchtutorresult->links() }}
                                     </div>
+
+
                                 </div>
                             </div>
 

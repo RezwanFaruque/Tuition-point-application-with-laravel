@@ -9,10 +9,10 @@
             <div class="sub-title">
                 Find the best tutor in your area
             </div>
-
             <input type="hidden" name="authcheker" id="auth_check" value="{{Auth::check() ? 'yes' : 'no'}}">
             <div class="body-with-form">
-                <form action="" method="POST">
+                <form action="{{route('guest.searchTutor')}}" method="POST">
+                    {{ csrf_field() }}
                     <div class="body">
                         <div class="flex-part">
                             <div class="left-side site">
@@ -54,7 +54,7 @@
 
                                 <div class="form-group">
 
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control" name="gender" id="exampleFormControlSelect1">
                                         <option value="" disabled selected hidden>Select Gender</option>
                                         <option>Male</option>
                                         <option>Female</option>

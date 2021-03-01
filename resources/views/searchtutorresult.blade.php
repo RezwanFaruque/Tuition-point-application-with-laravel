@@ -8,7 +8,7 @@
                 <div class="title">
                     FILTER TUTORS
                 </div>
-                <form action="{{ route('gurdian.searchtutor') }}" method="POST">
+                <form action="{{route('guest.searchTutor')}}" method="POST">
                     {{ csrf_field() }}
                     <div class="filter-options">
                         <div class="form-group">
@@ -40,42 +40,42 @@
                         <div class="form-group">
                             <select class="form-control" name="subject" id="subject">
                                 <option value="" selected hidden>Subjects</option>
-                                <option value="english">English</option>
-                                <option value="bangla">Bangla</option>
-                                <option value="math">Math</option>
-                                <option value="physics">Physics</option>
+                                <option>English</option>
+                                <option>Bangla</option>
+                                <option>Math</option>
+                                <option>Physics</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="gender" id="gender">
                                 <option value="" selected hidden>Tutor Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
+                                <option>Male</option>
+                                <option>Female</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="salary" id="salary">
                                 <option value="" selected hidden>Salary Range</option>
-                                <option value="1000-2000">1000-2000</option>
-                                <option value="2000-3000">2000-3000</option>
-                                <option value="3000-4000">3000-4000</option>
-                                <option value="4000-5000">4000-5000</option>
-                                <option value="5000-6000">5000-6000</option>
-                                <option value="6000-7000">6000-7000</option>
-                                <option value="7000-8000">7000-8000</option>
-                                <option value="9000-10000">8000-9000</option>
-                                <option value="10000-11000">9000-10000</option>
-                                <option value="11000-12000">10000-11000</option>
+                                <option>1000-2000</option>
+                                <option>2000-3000</option>
+                                <option>3000-4000</option>
+                                <option>4000-5000</option>
+                                <option>5000-6000</option>
+                                <option>6000-7000</option>
+                                <option>7000-8000</option>
+                                <option>8000-9000</option>
+                                <option>9000-10000</option>
+                                <option>10000-11000</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="days_per_week" id="days_per_week">
                                 <option value="" selected hidden>Days Per Week</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
                             </select>
                         </div>
                         <button type="submit" class="request-tutor-tutorlist-page">Search Tutor <i class="fa fa-arrow-right"
@@ -95,7 +95,7 @@
                     <div class="result-body">
                         <div class="container">
                             <div class="row">
-                                @foreach ($tutorusers as $tutoruser)
+                                @foreach ($searchtutorresult as $searchtutor)
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="result-card">
                                             <div class="header">
@@ -104,19 +104,19 @@
                                             <div class="body">
                                                 <div class="left">
                                                     <div class="profile-image">
-                                                        <img src="{{ asset($tutoruser->profile_image) }}" alt=""
+                                                        <img src="{{ asset($searchtutor->getuser->profile_image) }}" alt=""
                                                             srcset="">
                                                     </div>
                                                 </div>
                                                 <div class="right">
                                                     <div class="name">
-                                                        {{ $tutoruser->tutorinfo->name }}
+                                                        {{ $searchtutor->name }}
                                                     </div>
                                                     <div class="subject">
-                                                        {{ $tutoruser->tutorinfo->subject }}
+                                                        {{ $searchtutor->subject }}
                                                     </div>
                                                     <div class="university">
-                                                        {{ $tutoruser->tutorinfo->university_or_collage }}
+                                                        {{ $searchtutor->university_or_collage }}
                                                     </div>
                                                     <div class="rating">
                                                         <span class="fa fa-star checked"></span>
@@ -133,14 +133,18 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                 @endforeach
 
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="pagination-sections">
-                                        {{ $tutorusers->links() }}
+                                        {{ $searchtutorresult->links() }}
                                     </div>
+
+
                                 </div>
                             </div>
 
@@ -217,7 +221,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "/gurdian/fetch-area",
+                    url: "/fetch-area",
                     data: {
                         'district_name': this.value,
                     },

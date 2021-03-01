@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class TutorInfo extends Model
 {
     public function getuser(){
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class,'user_id','id');
     }
 }
