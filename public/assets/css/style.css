@@ -629,9 +629,11 @@ section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card 
 section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .title {
   font-size: 22px;
   font-family: "Montserrat-Bold";
-  color: #0F0D0D;
+  color: #0F0D0D !important;
   font-weight: bold;
   margin-bottom: 20px;
+  width: auto !important;
+  background: none !important;
 }
 section.body .container .row .col-sm-12 .middle-about-us .about-us-section-card .body {
   width: 100%;
@@ -651,12 +653,14 @@ section.body .container .row .col-sm-12 .meet-the-team-section {
   margin-top: 50px;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section .title {
-  font-size: 22px;
-  font-family: "Montserrat-Bold";
-  color: #0F0D0D;
+  font-size: 22px !important;
+  font-family: "Montserrat-Bold" !important;
+  color: #0F0D0D !important;
   font-weight: bold;
   margin-bottom: 50px;
   text-align: center;
+  width: auto !important;
+  background: none !important;
 }
 section.body .container .row .col-sm-12 .meet-the-team-section .team-member-section {
   width: 100%;
@@ -693,22 +697,21 @@ section.body .container .row .col-sm-12 .meet-the-team-section .team-member-sect
   color: #37474F;
 }
 
-section.body .faq-body {
-  margin-top: 50px;
-}
-section.body .faq-body .container .row .col-sm-12 .faq-section .title {
+section.body .header-middle .container .row .col-sm-12 .right-side .row .col-sm-12 .faq-section .title {
   margin-bottom: 30px;
   text-align: center;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold" i !important;
   font-size: 22px;
-  color: #37474FB8;
+  color: #37474fb8 !important;
+  width: auto !important;
+  background: none !important;
 }
-section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .card-header h5 button {
-  color: #37474F;
+section.body .header-middle .container .row .col-sm-12 .right-side .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .card-header h5 button {
+  color: #37474f;
   font-size: 17px;
   font-family: "Montserrat-Semibold";
 }
-section.body .faq-body .container .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .collapse .card-body {
+section.body .header-middle .container .row .col-sm-12 .right-side .row .col-sm-12 .faq-section .faq-collapse-body #accordion .card .collapse .card-body {
   font-family: "Montserrat-Medium";
   font-size: 12px;
 }
@@ -1007,15 +1010,21 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
   font-size: 15px;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Bold";
   color: #37474FB8;
   padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
   font-size: 15px;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Bold";
   color: #37474FB8;
   padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 section.body .container .row .col-sm-12 .req-tutor-left-side {
@@ -1200,7 +1209,8 @@ section.body .header-middle .container .row .col-sm-12 .right-side .active-tutio
   font-family: "Montserrat-Medium";
   color: black;
 }
-section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .footer .view-details a {
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .footer .view-details button {
+  border: none;
   background-color: #4CAF50;
   text-decoration: none;
   padding-left: 7px;
@@ -1210,6 +1220,21 @@ section.body .header-middle .container .row .col-sm-12 .right-side .active-tutio
   font-size: 12px;
   font-family: "Montserrat-SemiBold";
   color: white;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .modal .modal-dialog .modal-content .modal-body .info {
+  display: flex;
+  margin-bottom: 10px;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .modal .modal-dialog .modal-content .modal-body .info .info-title {
+  width: 40%;
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
+  color: black;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .modal .modal-dialog .modal-content .modal-body .info div {
+  font-size: 12px;
+  font-family: "Montserrat-Medium";
+  color: black;
 }
 
 section.body .header-middle .container .row .col-sm-12 .right-side .login-form {

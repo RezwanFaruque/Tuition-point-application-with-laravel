@@ -16,9 +16,12 @@ class isTutor
      */
     public function handle($request, Closure $next)
     {
+        // dd(1);
         if(Auth::user()->is_tutor == 1){
             return $next($request);
+        }else{
+            return redirect()->route('login');
         }
-        return redirect()->route('login');
+       
     }
 }

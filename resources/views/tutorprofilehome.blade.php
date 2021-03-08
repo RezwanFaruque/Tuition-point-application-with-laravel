@@ -17,13 +17,13 @@
                                     </div>
                                     <div class="right">
                                         <div class="info name">
-                                            Rayhan Ahmed
+                                            {{$user->name}}
                                         </div>
                                         <div class="info mobile">
-                                            (+880) 1737226676
+                                            {{$user->phone_number}}
                                         </div>
                                         <div class="info gmail">
-                                            example@gmail.com
+                                            {{$user->email}}
                                         </div>
                                     </div>
                                 </div>

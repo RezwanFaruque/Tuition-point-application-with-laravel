@@ -22,6 +22,12 @@ Route::middleware('is_admin')->namespace('Admin')->group(function () {
     Route::post('admin/save-service-area','AdminHomeController@saveServiceArea')->name('admin.saveservicearea');
 
     // Route::get('admin/all-mediums','AdminHomeController@allMediums')->name('admin.mediums');
+
+    Route::get('admin/all-tutions','AdminHomeController@allTutions')->name('admin.alltutions');
+
+    Route::get('admin/add-tutions','AdminHomeController@addTuionsView')->name('admin.addtutionsview');
+
+    Route::post('admin/save-tutions','AdminHomeController@saveTutions')->name('admin.savetutions');
 });
 
 

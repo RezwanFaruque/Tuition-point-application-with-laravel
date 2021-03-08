@@ -49,19 +49,34 @@ class LoginController extends Controller
         ]);
 
         if(Auth::attempt(array('email' => $request->email, 'password' => $request->password))){
+
             
             if(Auth::user()->is_admin == '1'){
                 
                 return redirect()->route('admin.home');
 
-            }elseif(Auth::user()->is_tutor == '1'){
+            }else{
+                return redirect()->route('login');
+
+            }
+            
+            if(Auth::user()->is_tutor == '1'){
+
+
                 return redirect()->route('tutor.home');
 
-            }elseif(Auth::user()->is_gurdian == '1'){
+            }else{
+                return redirect()->route('login');
+            }
+            
+            if(Auth::user()->is_gurdian == '1'){
+
                 return redirect()->route('gurdian.home');
             }else{
-                // return redirect()->route('home');
+                return redirect()->route('login');
+                
             }
+            
 
         }else{
             return redirect()->route('login')->with('error','Email-Address And Password Are Wrong.');

@@ -10,9 +10,11 @@ section{
                             .title{
                                 font-size: 22px;
                                 font-family: 'Montserrat-Bold';
-                                color: #0F0D0D;
+                                color: #0F0D0D!important;
                                 font-weight: bold;
                                 margin-bottom: 20px;
+                                width: auto!important;
+                                background: none!important;
                             }
 
                             .body{
@@ -35,12 +37,15 @@ section{
                     .meet-the-team-section{
                         margin-top: 50px;
                         .title{
-                            font-size: 22px;
-                            font-family: 'Montserrat-Bold';
-                            color: #0F0D0D;
+                            font-size: 22px!important;
+                            font-family: 'Montserrat-Bold'!important;
+                            color: #0F0D0D!important;
                             font-weight: bold;
                             margin-bottom: 50px;
                             text-align: center;
+                            width: auto!important;
+                            background: none!important;
+
                         }
 
                         .team-member-section{

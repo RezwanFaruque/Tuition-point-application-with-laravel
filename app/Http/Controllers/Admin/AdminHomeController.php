@@ -9,8 +9,7 @@ use App\Model\GurdianInfo;
 use App\Model\ActiveTution;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceArea;
-
-
+use App\Model\ServiceClassCategory;
 
 class AdminHomeController extends Controller
 {
@@ -117,4 +116,27 @@ class AdminHomeController extends Controller
     // public function allMediums(){
 
     // }
+
+
+    public function allTutions(){
+
+        $activetutions = ActiveTution::all();
+
+        return view('admin.activetutions',compact('activetutions'));
+    }
+
+
+
+    public function addTuionsView(){
+
+        $classes = ServiceClassCategory::all();
+
+        return view('admin.addtution',compact('classes'));
+    }
+
+
+    // save tutions
+    public function saveTutions(Request $request){
+        
+    }
 }

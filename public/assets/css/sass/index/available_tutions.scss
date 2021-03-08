@@ -79,7 +79,8 @@ section{
                                                         color: black;
                                                     }
                                                     .view-details{
-                                                        a{
+                                                        button{
+                                                            border: none;
                                                             background-color: $button-color;
                                                             text-decoration: none;
                                                             padding-left: 7px;
@@ -91,6 +92,38 @@ section{
                                                             color: white;
                                                         }
                                                     }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .modal{
+                                .modal-dialog{
+                                    .modal-content{
+                                        .modal-header{
+                                            .modal-title{
+
+                                            }
+                                        }
+
+                                        .modal-body{
+                                            .info{
+                                                display: flex;
+                                                margin-bottom: 10px;
+
+                                                .info-title{
+                                                    width: 40%;
+                                                    font-size: 15px;
+                                                    font-family: 'Montserrat-SemiBold';
+                                                    color: black;
+
+                                                }
+                                                div{
+                                                     font-size: 12px;
+                                                     font-family: 'Montserrat-Medium';
+                                                     color: black;
                                                 }
                                             }
                                         }

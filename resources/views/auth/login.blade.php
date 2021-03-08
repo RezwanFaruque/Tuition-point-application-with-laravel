@@ -7,7 +7,7 @@
             LOG IN to continue
         </div>
         <div class="form-body">
-            <form action="{{route('login')}}" method="post">
+            <form action="{{route('login')}}" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="my-input">Email</label>

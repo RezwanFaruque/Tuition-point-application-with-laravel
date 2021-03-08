@@ -10,7 +10,9 @@ use App\User;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceMediumCategory;
 use App\Model\TutorInfo;
+use App\Model\RequestTutor;
 use Illuminate\Http\JsonResponse;
+use PDO;
 
 class GurdianHomeController extends Controller
 {
@@ -155,6 +157,58 @@ class GurdianHomeController extends Controller
 
 
         return view('gurdian.searchtutorresult',compact('searchtutorresult','districts','mediums'));
+    }
+
+
+    // save request for tutor
+    public function saveRequestTutor(Request $request){
+
+        $request->validate([
+            'full_name' => 'required',
+            'school_university' => 'required',
+            'medium' => 'required',
+            'subject' => 'required',
+            'day_per_week' => 'required|integer',
+            'salary_range' => 'required|integer',
+            'contact_number' => 'required|integer',
+            'district' => 'required',
+            'area' => 'required',
+            'student_gender' => 'required',
+            'tutor_gender' => 'required',
+        ]);
+
+        $requesttutor = new RequestTutor();
+
+        $requesttutor->full_name = $request->full_name;
+        $requesttutor->school_or_collage = $request->school_university;
+        $requesttutor->medium_or_category = $request->medium;
+        $requesttutor->class_or_grade = $request->class;
+        $requesttutor->subject = $request->subject;
+        $requesttutor->days_per_week = $request->day_per_week;
+        $requesttutor->desire_tutor_gender = $request->tutor_gender;
+        $requesttutor->desire_student_gender = $request->student_gender;
+        $requesttutor->salary_range = $request->salary_range;
+        $requesttutor->contact_number = $request->contact_number;
+        $requesttutor->additional_information = $request->aditional_info;
+        $requesttutor->email = $request->email;
+        $requesttutor->district = $request->district;
+        $requesttutor->area = $request->area;
+
+        $requesttutor->save();
+
+        return redirect()->route('gurdian.requestfortutor')->with('message','Your Request For Desire Tutor Is Submited wait until MeetTutor contact with you');
+    }
+
+
+    // gurdian about us page
+    public function aboutUs(){
+        return view('aboutus');
+    }
+
+
+    // gurdian faq
+    public function faq(){
+        return view('faq');
     }
 
 

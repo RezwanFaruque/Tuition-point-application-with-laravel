@@ -8,50 +8,59 @@
                 <div class="title">
                     Request For a Tutor
                 </div>
+                @if (session('message'))
+                    <div class="alert alert-success">
+                        {!! session('message') !!}
+                    </div>
+                @endif
                 <div class="form-section">
                     <div class="container">
-                        <form action="" method="post">
+                        <form action="{{ route('gurdian.saverequestfortutor') }}" method="POST">
+                            {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <input id="my-input" class="form-control" placeholder="Full Name" type="text"
-                                            name="">
+                                            name="full_name">
                                     </div>
 
                                     <div class="form-group">
                                         <input id="my-input" class="form-control" placeholder="School/University"
-                                            type="text" name="">
+                                            type="text" name="school_university">
                                     </div>
 
                                     <div class="form-group">
 
-                                        <select class="form-control" id="classes">
+                                        <select class="form-control" name="class" id="classes">
                                             <option value="" disabled selected hidden>Select Medium First</option>
+
                                         </select>
                                     </div>
+
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Subject" type="text" name="">
+                                        <input id="my-input" name="subject" class="form-control" placeholder="Subject"
+                                            type="text">
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Days Per Week" type="text"
-                                            name="">
+                                        <input id="my-input" name="day_per_week" class="form-control"
+                                            placeholder="Days Per Week" type="text">
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Salary Range" type="text"
-                                            name="">
+                                        <input id="my-input" name="salary_range" class="form-control"
+                                            placeholder="Salary Range" type="text">
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Contact Number" type="text"
-                                            name="">
+                                        <input id="my-input" name="contact_number" class="form-control"
+                                            placeholder="Contact Number" type="text">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
 
-                                        <select name="district_name" class="form-control" id="district">
+                                        <select class="form-control" name="district" id="district">
                                             @foreach ($districts as $district)
                                                 <option value="" disabled selected hidden>Select District</option>
                                                 <option value="{{ $district->district_name }}">
@@ -62,20 +71,18 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" name="area_name" id="area">
-
-                                            <option id="area_null" value="">Choose Area First</option>
+                                        <select class="form-control" name="area" id="area">
+                                            <option id="area_null" value="">Choose District First</option>
 
                                         </select>
                                     </div>
 
                                     <div class="form-group">
 
-                                        <select class="form-control" id="medium">
-                                            @foreach ($mediums as $medium)
+                                        <select class="form-control" name="medium" id="medium">
+                                            @foreach ($mediums as $gmedium)
                                                 <option value="" disabled selected hidden>Select Medium</option>
-
-                                                <option value="{{ $medium->medium_name }}">{{ $medium->medium_name }}
+                                                <option value="{{ $gmedium->medium_name }}">{{ $gmedium->medium_name }}
                                                 </option>
                                             @endforeach
                                         </select>
@@ -83,7 +90,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <select class="form-control" name="student_gender" id="exampleFormControlSelect1">
                                             <option>Student Gender</option>
 
                                             <option>Male</option>
@@ -93,7 +100,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <select class="form-control" name="tutor_gender" id="exampleFormControlSelect1">
                                             <option>Tutor Gender</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -103,12 +110,12 @@
 
                                     <div class="form-group">
                                         <input id="my-input" class="form-control" placeholder="Aditional-Info" type="text"
-                                            name="">
+                                            name="aditional_info">
                                     </div>
 
                                     <div class="form-group">
                                         <input id="my-input" class="form-control" placeholder="Email Address" type="email"
-                                            name="">
+                                            name="email">
                                     </div>
 
                                 </div>

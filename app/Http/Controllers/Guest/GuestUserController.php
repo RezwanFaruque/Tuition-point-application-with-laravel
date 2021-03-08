@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Model\ActiveTution;
 use Illuminate\Http\Request;
 use App\Model\TutorInfo;
 use App\User;
@@ -10,6 +11,7 @@ use App\Model\ServiceDistrict;
 use App\Model\ServiceArea;
 use App\Model\ServiceMediumCategory;
 use App\Model\ServiceClassCategory;
+use App\Model\RequestTutor;
 use Illuminate\Http\JsonResponse;
 
 class GuestUserController extends Controller
@@ -134,5 +136,92 @@ class GuestUserController extends Controller
         $mediums = ServiceMediumCategory::all();
         
         return view('searchtutorresult',compact('searchtutorresult','districts','mediums'));
+    }
+
+
+    public function saveRequestForTutor(Request $request){
+
+        // dd($request->all());
+
+        $request->validate([
+            'full_name' => 'required',
+            'school_university' => 'required',
+            'medium' => 'required',
+            'subject' => 'required',
+            'day_per_week' => 'required|integer',
+            'salary_range' => 'required|integer',
+            'contact_number' => 'required|integer',
+            'district' => 'required',
+            'area' => 'required',
+            'student_gender' => 'required',
+            'tutor_gender' => 'required',
+        ]);
+
+        $requesttutor = new RequestTutor();
+
+        $requesttutor->full_name = $request->full_name;
+        $requesttutor->school_or_collage = $request->school_university;
+        $requesttutor->medium_or_category = $request->medium;
+        $requesttutor->class_or_grade = $request->class;
+        $requesttutor->subject = $request->subject;
+        $requesttutor->days_per_week = $request->day_per_week;
+        $requesttutor->desire_tutor_gender = $request->tutor_gender;
+        $requesttutor->desire_student_gender = $request->student_gender;
+        $requesttutor->salary_range = $request->salary_range;
+        $requesttutor->contact_number = $request->contact_number;
+        $requesttutor->additional_information = $request->aditional_info;
+        $requesttutor->email = $request->email;
+        $requesttutor->district = $request->district;
+        $requesttutor->area = $request->area;
+
+        $requesttutor->save();
+
+        return redirect()->route('guest.requestfortutor')->with('message','Your Request For Desire Tutor Is Submited wait until MeetTutor contact with you');
+
+
+    }
+
+
+    // about us page
+    public function aboutUs(){
+        return view('aboutus');
+    }
+
+    // frequently asked question page
+    public function faq(){
+        return view('faq');
+    }
+
+
+    // single tutor view detials for public view
+
+    public function tutorProfilePublicView($id){
+
+
+        $tutor = User::where('id',$id)->with('tutorinfo')->first();
+
+        // dd($tutor);
+
+        return view('singletutorpublicview',compact('tutor'));
+
+    }
+
+
+    public function activeTutions(){
+
+        $available_tutions = ActiveTution::all();
+
+        return view('activetutions',compact('available_tutions'));
+    }
+
+
+    public function singleActiveTution($id){
+
+        $tution = ActiveTution::find($id);
+        if($tution){
+
+             return response()->json($tution);
+
+        }
     }
 }
