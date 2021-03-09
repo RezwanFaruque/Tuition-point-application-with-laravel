@@ -10,6 +10,8 @@ use App\Model\ActiveTution;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceArea;
 use App\Model\ServiceClassCategory;
+use App\Model\RequestTutor;
+use Illuminate\Http\JsonResponse;
 
 class AdminHomeController extends Controller
 {
@@ -137,6 +139,101 @@ class AdminHomeController extends Controller
 
     // save tutions
     public function saveTutions(Request $request){
+        // dd($request->all());
+
+        $request->validate([
+            'title' => 'required',
+            'full_name' => 'required',
+            'student_gender' => 'required',
+            'classes' => 'required',
+            'days_per_week'  => 'required',
+            'address' => 'required',
+            'phone_number' => 'required',
+            'location' => 'required',
+            'desire_tutor_gender' => 'required',
+            'salary_range' => 'required',
+            'email' => 'required',
+        ]);
+
+
+        $active_tution = new ActiveTution();
+
+        $active_tution->title = $request->title;
+        $active_tution->tutor_id = uniqid(rand(5,7000000));
+        $active_tution->full_name = $request->full_name;
+        $active_tution->student_gender = $request->student_gender;
+        $active_tution->class = $request->classes;
+        $active_tution->days_per_week = $request->days_per_week;
+        $active_tution->address = $request->address;
+        $active_tution->phone_number = $request->phone_number;
+        $active_tution->location = $request->location;
+        $active_tution->desire_tutor_gender = $request->desire_tutor_gender;
         
+        $subjects = implode(",",$request->subjects);
+
+
+        $active_tution->subjects = $subjects;
+
+        $active_tution->salary_range = $request->salary_range;
+        $active_tution->email = $request->email;
+
+        $active_tution->save();
+
+        if($active_tution->save()){
+            return redirect()->route('admin.alltutions')->with('message','Tution added successfully');
+        }
+    }
+
+
+   
+
+    // edit save tution
+    public function editSaveTution($id){
+
+        
+
+    }
+
+    // update tutions
+    public function updateTution($id){
+
+    }
+
+    // delete tution
+    public function deleteTution($id){
+
+    }
+
+
+
+
+    
+
+
+
+    // view all request tutor
+    public function getRequestTutorList(){
+
+        $request_tutors = RequestTutor::all();
+
+        return view('admin.requesttutors',compact('request_tutors'));
+
+    }
+
+    // view single request tutor
+    public function viewRequestTutor($id){
+
+        $request_tutor = RequestTutor::find($id);
+        if($request_tutor){
+
+            return response()->json($request_tutor);
+        }
+
+    }
+
+
+    // delete single request tutor
+    public function deleteRequestTutor($id){
+
     }
 }

@@ -28,6 +28,22 @@ Route::middleware('is_admin')->namespace('Admin')->group(function () {
     Route::get('admin/add-tutions','AdminHomeController@addTuionsView')->name('admin.addtutionsview');
 
     Route::post('admin/save-tutions','AdminHomeController@saveTutions')->name('admin.savetutions');
+
+    
+    Route::get('admin/edit-save-tution/{id}','AdminHomeController@editSaveTution')->name('admin.editsavetution');
+
+    Route::delete('admin/delete-tution/{id}','AdminHomeController@deleteTution')->name('admin.deletetution');
+
+    Route::post('admin/tutions/update/{id}','AdminHomeController@updateTution')->name('admin.updatetutions');
+
+
+    // request tutor section
+    Route::get('admin/all-request-tutorlist','AdminHomeController@getRequestTutorList')->name('admin.getrequesttutorlist');
+
+    Route::get('admin/request-tutorlist/{id}','AdminHomeController@viewRequestTutor')->name('admin.viewrequesttuor');
+
+    Route::delete('admin/delete-requesttutor/{id}','AdminHomeController@deleteRequestTutor')->name('admin.deleterequesttutor');
+
 });
 
 

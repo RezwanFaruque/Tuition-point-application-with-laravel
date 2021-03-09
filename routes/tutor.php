@@ -14,5 +14,7 @@ Route::middleware('is_tutor')->namespace('Tutor')->group(function () {
 
     Route::get('/tutor/active-tution/{id}','TutorHomeController@singleTutionView')->name('tutor.singletutorview');
 
+    Route::post('/tutor/apply-active-tution','TutorHomeController@applyForActiveTution')->name('tutor.applyforactivetution');
+
     
 });

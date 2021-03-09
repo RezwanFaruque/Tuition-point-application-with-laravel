@@ -41,7 +41,7 @@
                                     <td>{{ $activetution->title }}</td>
                                     <td>{{ $activetution->location }}</td>
                                     <td>{{ $activetution->class }}</td>
-                                    <td>{{ $activetution->subject }}</td>
+                                    <td>{{ $activetution->subjects }}</td>
                                     <td>{{ $activetution->desire_tutor_gender }}</td>
                                     <td>{{ $activetution->days_per_week }}</td>
                                     <td>{{ $activetution->salary_range }}</td>

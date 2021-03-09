@@ -161,9 +161,9 @@
                 </a>
                 <div id="collapseForm5" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Forms</h6>
-                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
-                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
+                        
+                        <a class="collapse-item" href="{{route('admin.getrequesttutorlist')}}">Lists</a>
+                        
                     </div>
                 </div>
             </li>

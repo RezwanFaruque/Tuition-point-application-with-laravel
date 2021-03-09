@@ -124,12 +124,13 @@
 
                     </div>
                     <div class="modal-footer">
-
+                        
+                        <input type="hidden" id="auth_user" value="{{ Auth::user()->id }}">
                         @guest
                             <button type="button" disabled class="btn btn-danger">Register For Apply</button>
                         @else
                             @if (Auth::user()->is_tutor == '1')
-                                <button type="button" class="btn btn-primary">Apply</button>
+                                <button type="button" id="apply_tutor" data-id="" class="btn btn-primary">Apply</button>
                             @else
                                 <button type="button" disabled class="btn btn-primary">Register For Apply</button>
                             @endif
@@ -175,26 +176,63 @@
 @section('script')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#view_details_modal').on('click', function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $('body').on('click', '#view_details_modal', function() {
                 let id = $(this).data('id');
+                console.log(id);
                 if (id) {
                     var url = "{{ route('tutor.singletutorview', ':id') }}".replace(':id', id);
+                    $('#apply_tutor').attr('data-id', '');
+                    $('#title').text('');
+                    $('#location').text('');
+                    $('#classes').text('');
+                    $('#subject').text('');
+                    $('#tutor_gender').text('');
+                    $('#days_per_week').text('');
+                    $('#salary').text('');
+                    $('#student_gender').text('');
                     $.ajax({
                         type: "GET",
                         url: url,
                         success: function(data) {
-                            $('#title').html(data.title);
-                            $('#location').html(data.location);
-                            $('#classes').html(data.class);
-                            $('#subject').html(data.subjects);
-                            $('#tutor_gender').html(data.desire_tutor_gender);
-                            $('#days_per_week').html(data.days_per_week);
-                            $('#salary').html(data.salary_range);
-                            $('#student_gender').html(data.student_gender);
+                            $('#apply_tutor').attr('data-id', data.id);
+                            $('#title').text(data.title);
+                            $('#location').text(data.location);
+                            $('#classes').text(data.class);
+                            $('#subject').text(data.subjects);
+                            $('#tutor_gender').text(data.desire_tutor_gender);
+                            $('#days_per_week').text(data.days_per_week);
+                            $('#salary').text(data.salary_range);
+                            $('#student_gender').text(data.student_gender);
                         }
                     });
                 }
+            });
+
+            $('body').on('click', '#apply_tutor', function() {
+                let tutionpostid = $(this).attr('data-id');
+                let userid = $('#auth_user').val();
+                console.log(userid);
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{route('tutor.applyforactivetution')}}",
+                    data: {
+                        tution_post_id: tutionpostid,
+                        user_id : userid,
+                    },
+                    
+                    success: function (data) {
+                        
+                    }
+                });
             })
+
         });
 
     </script>

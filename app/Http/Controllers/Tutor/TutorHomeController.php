@@ -8,6 +8,7 @@ use App\Model\TutorInfo;
 use Illuminate\Support\Facades\DB;
 use App\User;
 use App\Model\ActiveTution;
+use App\Model\AppliedTutorForTution;
 use Illuminate\Support\Facades\Auth;
 
 class TutorHomeController extends Controller
@@ -72,5 +73,41 @@ class TutorHomeController extends Controller
 
             return response()->json($tution);
         }
+    }
+
+    // apply for single active tution
+    public function applyForActiveTution(Request $request){
+
+        // dd($request->all());
+
+        $appliedtutor = new AppliedTutorForTution();
+        $tutor = TutorInfo::where('user_id',$request->user_id)->first();
+
+        $appliedtutor->name = $tutor->name;
+        $appliedtutor->active_tution_post_id = $request->tution_post_id;
+        $appliedtutor->university = $tutor->university_or_collage;
+        $appliedtutor->phone_number = $tutor->mobile_number;
+        $appliedtutor->area = $tutor->area;
+        $appliedtutor->tutor_id = $tutor->user_id;
+
+        $appliedtutor->save();
+
+
+
+        if($appliedtutor->save()){
+
+           $data = [
+               "status" => 'Success',
+               "message" => 'You applied for this tution wait untill our team contact with you'
+           ];
+           
+           return response()->json($data);
+           
+            
+            
+        }
+
+
+
     }
 }
