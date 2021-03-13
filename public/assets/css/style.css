@@ -83,7 +83,6 @@ section.header {
   background-size: cover;
   width: 100%;
   height: calc(100vh);
-  mask-image: linear-gradient(to bottom, transparent 10%, black);
 }
 section.header nav {
   min-height: calc(100vh - 90vh);

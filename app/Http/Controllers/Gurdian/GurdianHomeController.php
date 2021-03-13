@@ -212,4 +212,21 @@ class GurdianHomeController extends Controller
     }
 
 
+    // public view
+     public function singleTutorPublic($id){
+
+         $tutor = User::where('id',$id)->with('tutorinfo')->first();
+
+        return view('singletutorpublicview',compact('tutor'));
+        
+    }
+
+
+    // premium tutors
+    public function getPremiumTutor(){
+        $premium_tutors  = TutorInfo::where('is_premium','1')->with('getuser')->paginate(15);
+
+        
+    }
+
 }

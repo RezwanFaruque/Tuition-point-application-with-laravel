@@ -36,6 +36,20 @@
                 </li>
             @endif
 
+
+            @guest
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('guest.premium-tutor') }}">PREMIUM TUTORS</a>
+                </li>
+            @else
+                @if(Auth::user()->is_tutor == '1')
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('gurdian.getpremium-tutor') }}">PREMIUM TUTORS</a>
+                </li>
+                @else
+                
+            @endguest
+
             @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('register') }}">BECOME A TUTOR </a>

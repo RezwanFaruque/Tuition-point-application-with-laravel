@@ -21,7 +21,7 @@ class CreateAppliedTutorForTutionsTable extends Migration
             $table->string('tutor_id')->nullable();
             $table->string('area')->nullable();
             $table->bigInteger('active_tution_post_id')->unsigned();
-            $table->foreign('active_tution_post_id')->references('id')->on('active_tutions');
+            $table->foreign('active_tution_post_id')->references('id')->on('active_tutions')->onDelete('cascade');
             $table->timestamps();
         });
     }

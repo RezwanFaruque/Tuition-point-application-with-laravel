@@ -47,4 +47,6 @@ Route::middleware('guest')->namespace('Guest')->group(function () {
     Route::get('/active-tutions','GuestUserController@activeTutions')->name('guest.activetutions');
 
     Route::get('active-tutions/{id}','GuestUserController@singleActiveTution')->name('guest.singleactivetution');
+
+    Route::get('/premium-tutor','GuestUserController@getPremiumTutor')->name('guest.premium-tutor');
 });

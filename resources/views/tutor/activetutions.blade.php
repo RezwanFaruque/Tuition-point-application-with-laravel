@@ -124,7 +124,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        
+
                         <input type="hidden" id="auth_user" value="{{ Auth::user()->id }}">
                         @guest
                             <button type="button" disabled class="btn btn-danger">Register For Apply</button>
@@ -221,15 +221,26 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "{{route('tutor.applyforactivetution')}}",
+                    url: "{{ route('tutor.applyforactivetution') }}",
                     data: {
                         tution_post_id: tutionpostid,
-                        user_id : userid,
+                        user_id: userid,
                     },
-                    
-                    success: function (data) {
-                        
+
+
+
+                    success: function(data) {
+                        if (data.status == 'success') {
+                            swal("Success!!", data.message, "success");
+                        }
+
+                    },
+
+                    error: function(request, status, error) {
+                        swal("Sorry!!", "You Already Applied For This Tution.", "error");
                     }
+
+
                 });
             })
 

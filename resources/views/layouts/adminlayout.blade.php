@@ -417,6 +417,7 @@
     <script src="{{ asset('admin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{asset('admin/vendor/select2/dist/js/select2.min.js')}}"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     @yield('script')
     
 </body>

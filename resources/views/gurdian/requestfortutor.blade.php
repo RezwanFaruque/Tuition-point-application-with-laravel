@@ -20,47 +20,71 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Full Name" type="text"
+                                        <input id="my-input"  class="form-control @error('full_name') is-invalid @enderror" placeholder="Full Name" type="text"
                                             name="full_name">
+                                            @error('full_name')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="School/University"
+                                        <input id="my-input"  class="form-control @error('school_university') is-invalid @enderror" placeholder="School/University"
                                             type="text" name="school_university">
+
+                                            @error('school_university')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="form-group">
 
-                                        <select class="form-control" name="class" id="classes">
+                                        <select class="form-control" required  name="class @error('medium') is-invalid @enderror" id="classes">
                                             <option value="" disabled selected hidden>Select Medium First</option>
+
+                                            @error('medium')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
 
                                         </select>
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" name="subject" class="form-control" placeholder="Subject"
+                                        <input id="my-input" name="subject" class="form-control @error('subject') is-invalid @enderror" placeholder="Subject"
                                             type="text">
+                                            @error('subject')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" name="day_per_week" class="form-control"
+                                        <input id="my-input" name="day_per_week" class="form-control @error('day_per_week') is-invalid @enderror"
                                             placeholder="Days Per Week" type="text">
+                                            @error('day_per_week')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" name="salary_range" class="form-control"
+                                        <input id="my-input" name="salary_range" class="form-control @error('salary_range') is-invalid @enderror"
                                             placeholder="Salary Range" type="text">
+                                            @error('salary_range')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" name="contact_number" class="form-control"
+                                        <input id="my-input" name="contact_number" class="form-control @error('contact_number') is-invalid @enderror"
                                             placeholder="Contact Number" type="text">
+
+                                            @error('contact_number')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
 
-                                        <select class="form-control" name="district" id="district">
+                                        <select class="form-control" required name="district" id="district">
                                             @foreach ($districts as $district)
                                                 <option value="" disabled selected hidden>Select District</option>
                                                 <option value="{{ $district->district_name }}">
@@ -71,7 +95,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" name="area" id="area">
+                                        <select class="form-control" required name="area" id="area">
                                             <option id="area_null" value="">Choose District First</option>
 
                                         </select>
@@ -79,7 +103,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" name="medium" id="medium">
+                                        <select class="form-control" required name="medium" id="medium">
                                             @foreach ($mediums as $gmedium)
                                                 <option value="" disabled selected hidden>Select Medium</option>
                                                 <option value="{{ $gmedium->medium_name }}">{{ $gmedium->medium_name }}
@@ -90,7 +114,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" name="student_gender" id="exampleFormControlSelect1">
+                                        <select class="form-control" required name="student_gender" id="exampleFormControlSelect1">
                                             <option>Student Gender</option>
 
                                             <option>Male</option>
@@ -100,7 +124,7 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" name="tutor_gender" id="exampleFormControlSelect1">
+                                        <select class="form-control" required name="tutor_gender" id="exampleFormControlSelect1">
                                             <option>Tutor Gender</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -109,13 +133,19 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Aditional-Info" type="text"
+                                        <input id="my-input" class="form-control @error('aditional_info') is-invalid @enderror" placeholder="Aditional-Info" type="text"
                                             name="aditional_info">
+                                            @error('aditional_info')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="my-input" class="form-control" placeholder="Email Address" type="email"
+                                        <input id="my-input" class="form-control  @error('email') is-invalid @enderror" placeholder="Email Address" type="email"
                                             name="email">
+                                            @error('email')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                 </div>

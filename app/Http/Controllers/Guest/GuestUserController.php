@@ -148,15 +148,16 @@ class GuestUserController extends Controller
             'school_university' => 'required',
             'medium' => 'required',
             'subject' => 'required',
-            'day_per_week' => 'required|integer',
-            'salary_range' => 'required|integer',
-            'contact_number' => 'required|integer',
+            'day_per_week' => 'required',
+            'salary_range' => 'required',
+            'contact_number' => 'required',
             'district' => 'required',
             'area' => 'required',
             'student_gender' => 'required',
             'tutor_gender' => 'required',
         ]);
 
+        // dd(1);
         $requesttutor = new RequestTutor();
 
         $requesttutor->full_name = $request->full_name;
@@ -224,4 +225,17 @@ class GuestUserController extends Controller
 
         }
     }
+
+
+    // premiumtutor
+
+    public function getPremiumTutor(){
+
+        $premium_tutors = TutorInfo::where('is_premium','1')->with('getuser')->paginate(15);
+
+        
+    }
+
+
+
 }

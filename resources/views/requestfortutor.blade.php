@@ -43,7 +43,7 @@
 
                                     <div class="form-group">
                                         <input id="my-input" name="day_per_week" class="form-control"
-                                            placeholder="Days Per Week" type="text">
+                                            placeholder="Days Per Week" type="number">
                                     </div>
 
                                     <div class="form-group">
@@ -53,7 +53,7 @@
 
                                     <div class="form-group">
                                         <input id="my-input" name="contact_number" class="form-control"
-                                            placeholder="Contact Number" type="text">
+                                            placeholder="Contact Number" type="number">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">

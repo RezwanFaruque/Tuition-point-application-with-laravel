@@ -78,7 +78,13 @@ class TutorHomeController extends Controller
     // apply for single active tution
     public function applyForActiveTution(Request $request){
 
-        // dd($request->all());
+        // dd($request->tution_post_id);
+
+        $request->validate([
+            
+            'user_id'  => 'unique:applied_tutor_for_tutions,tutor_id,NULL,id,active_tution_post_id,'.$request->tution_post_id,
+            
+        ]);
 
         $appliedtutor = new AppliedTutorForTution();
         $tutor = TutorInfo::where('user_id',$request->user_id)->first();
@@ -97,7 +103,7 @@ class TutorHomeController extends Controller
         if($appliedtutor->save()){
 
            $data = [
-               "status" => 'Success',
+               "status" => 'success',
                "message" => 'You applied for this tution wait untill our team contact with you'
            ];
            
@@ -105,6 +111,13 @@ class TutorHomeController extends Controller
            
             
             
+        }else{
+            $data = [
+                "status" => 'error',
+                "message" => 'You Already Applied For This Tution'
+            ];
+            
+            return response()->json($data);
         }
 
 

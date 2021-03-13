@@ -20,6 +20,11 @@ Route::middleware('is_gurdian')->namespace('Gurdian')->group(function () {
 
     Route::get('gurdian/faq','GurdianHomeController@faq')->name('gurdian.faq');
 
+    Route::get('/gurdian/view-tutor-profile/{id}','GurdianHomeController@singleTutorPublic')->name(
+    	'gurdian.singletutor');
+
+    Route::get('/gurdian/premium-tutor','GurdianHomeController@getPremiumTutor')->name('gurdian.getpremium-tutor');
+
     
     
 });

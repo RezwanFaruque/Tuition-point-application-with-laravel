@@ -13,7 +13,7 @@
 
                     <a class="btn btn-primary" href="{{ route('admin.addtutionsview') }}">Add Tutions</a>
 
-                    
+
 
                 </div>
                 <div class="table-responsive">
@@ -46,15 +46,14 @@
                                     <td>{{ $activetution->days_per_week }}</td>
                                     <td>{{ $activetution->salary_range }}</td>
                                     <td>
-                                        <form action=""
-                                            method="POST">
-                                            
-                                            <button class="btn btn-danger" type="submit">Details</button>
-                                        </form>
+                                        <a href="{{ route('admin.editsavetution', $activetution->id) }}"
+                                            class="btn btn-primary">Details</a>
                                     </td>
                                     <td>
-                                        <form action=""
-                                            method="POST">
+                                        <form action="{{ route('admin.deletetution', $activetution->id) }}" method="POST">
+                                            {{ csrf_field() }}
+                                            
+                                            @method('delete')
                                             
                                             <button class="btn btn-danger" type="submit">Delete</button>
                                         </form>

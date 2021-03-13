@@ -128,7 +128,7 @@
                                                 </div>
                                             </div>
                                             <div class="footer">
-                                                <a class="tutorlist-profiile-details" href="tutor-profilepage.html">View
+                                                <a class="tutorlist-profiile-details" href="{{route('gurdian.singletutor',$tutoruser->id)}}">View
                                                     Details</a>
                                             </div>
                                         </div>
