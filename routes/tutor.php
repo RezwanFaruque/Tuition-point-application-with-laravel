@@ -16,5 +16,7 @@ Route::middleware('is_tutor')->namespace('Tutor')->group(function () {
 
     Route::post('/tutor/apply-active-tution','TutorHomeController@applyForActiveTution')->name('tutor.applyforactivetution');
 
+    Route::post('tutor/update-profile','TutorHomeController@updateProfile')->name('tutor.updateprofile');
+
     
 });

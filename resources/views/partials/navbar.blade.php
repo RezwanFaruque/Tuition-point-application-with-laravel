@@ -42,11 +42,13 @@
                     <a class="nav-link" href="{{ route('guest.premium-tutor') }}">PREMIUM TUTORS</a>
                 </li>
             @else
-                @if(Auth::user()->is_tutor == '1')
+                @if(Auth::user()->is_gurdian == '1')
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('gurdian.getpremium-tutor') }}">PREMIUM TUTORS</a>
                 </li>
                 @else
+
+                @endif
                 
             @endguest
 

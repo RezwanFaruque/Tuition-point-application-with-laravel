@@ -233,7 +233,11 @@ class GuestUserController extends Controller
 
         $premium_tutors = TutorInfo::where('is_premium','1')->with('getuser')->paginate(15);
 
-        
+        $districts = ServiceDistrict::all();
+
+        $mediums =  ServiceMediumCategory::all();
+
+        return view('premiumtutorlist',compact('premium_tutors','districts','mediums'));
     }
 
 

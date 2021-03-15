@@ -25,6 +25,9 @@ Route::middleware('is_gurdian')->namespace('Gurdian')->group(function () {
 
     Route::get('/gurdian/premium-tutor','GurdianHomeController@getPremiumTutor')->name('gurdian.getpremium-tutor');
 
+
+    Route::post('/gurdian/tuotr-feedback','GurdianHomeController@giveFeedback')->name('gurddian.givefeedback');
+
     
     
 });

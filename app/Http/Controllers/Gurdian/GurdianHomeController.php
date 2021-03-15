@@ -10,6 +10,7 @@ use App\User;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceMediumCategory;
 use App\Model\TutorInfo;
+use App\Model\TutorFeedback;
 use App\Model\RequestTutor;
 use Illuminate\Http\JsonResponse;
 use PDO;
@@ -216,8 +217,9 @@ class GurdianHomeController extends Controller
      public function singleTutorPublic($id){
 
          $tutor = User::where('id',$id)->with('tutorinfo')->first();
+         $tutor_feedbacks = TutorFeedback::where('tutor_id',$id)->get();
 
-        return view('singletutorpublicview',compact('tutor'));
+        return view('singletutorpublicview',compact('tutor','tutor_feedbacks'));
         
     }
 
@@ -226,7 +228,39 @@ class GurdianHomeController extends Controller
     public function getPremiumTutor(){
         $premium_tutors  = TutorInfo::where('is_premium','1')->with('getuser')->paginate(15);
 
+        $districts = ServiceDistrict::all();
+
+        $mediums = ServiceMediumCategory::all();
+
+
+        return view('premiumtutorlist',compact('premium_tutors','districts','mediums'));
+
         
+    }
+
+    // Give Feedbak to a tutor
+    public function giveFeedback(Request $request){
+        
+        $request->validate([
+            'name' => 'required',
+            'feedback_message' => 'required',
+            'mobile_number' => 'required',
+        ]);
+
+
+        
+        $feedback = new TutorFeedback();
+
+        $feedback->tutor_id = $request->tutor_id;
+        $feedback->name = $request->name;
+        $feedback->phone_number = $request->mobile_number;
+        $feedback->feedback_message = $request->feedback_message;
+
+        $feedback->save();
+
+        return redirect()->route('gurdian.singletutor',$request->tutor_id)->with('message','Thank you for your Feedback');
+
+
     }
 
 }

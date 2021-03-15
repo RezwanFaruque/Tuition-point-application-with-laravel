@@ -123,4 +123,63 @@ class TutorHomeController extends Controller
 
 
     }
+
+
+    // update personal profile
+    public function updateProfile(Request $request){
+        
+
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+        ]);
+
+
+        $user = User::find($request->profile_id);
+        if($user && $user->is_tutor == '1'){
+            $tutoruser = TutorInfo::where('user_id',$request->profile_id)->first();
+
+            $user->name = $request->name;
+            $user->profile_image = $request->profile_image;
+            $user->phone_number = $request->phone_number;
+            $user->gender = $request->gender;
+            $user->email = $request->email;
+            $user->profile_image = $request->profile_image;
+
+            $tutoruser->parents_phone_number = $request->parents_phone_number;
+            $tutoruser->university_or_collage = $request->university_name;
+            $tutoruser->area = $request->area;
+            $tutoruser->subject = $request->subject;
+            $tutoruser->district_name = $request->district_name;
+            $tutoruser->medium = $request->medium;
+            $tutoruser->h_school_name = $request->h_school_name;
+            $tutoruser->h_school_section = $request->h_school_section;
+            $tutoruser->h_school_result = $request->h_school_result;
+            $tutoruser->collage_name = $request->collage_name;
+            $tutoruser->collage_section = $request->collage_section;
+            $tutoruser->collage_result = $request->collage_result;
+            $tutoruser->university_name = $request->university_name;
+            $tutoruser->subject = $request->subject;
+            $tutoruser->university_result = $request->university_result;
+            $tutoruser->university_passing_year = $request->university_passing_year;
+            $tutoruser->prefered_class = $request->prefered_class;
+            $tutoruser->prefered_subject = $request->prefered_subject;
+            $tutoruser->prefared_area = $request->prefared_area;
+            $tutoruser->prefered_medium = $request->prefered_medium;
+
+            $tutoruser->experience_years = $request->experience_years;
+            $tutoruser->experience_subjects = $request->experience_subjects;
+
+            $tutoruser->salar_range_from = $request->salar_range_from;
+            $tutoruser->salary_range_to = $request->salary_range_to;
+
+            $user->update();
+
+            $tutoruser->update();
+
+            return redirect()->route('tutor.editprofile',$request->profile_id)->with('message','Your Profile Updated');
+
+
+        }
+    }
 }
