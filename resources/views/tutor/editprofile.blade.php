@@ -25,6 +25,16 @@
                                             {!! session('message') !!}
                                         </div>
                                     @endif
+
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li style="list-style: none;">{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
 
