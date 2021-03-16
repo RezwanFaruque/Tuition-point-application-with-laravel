@@ -12,6 +12,8 @@ use App\Model\ServiceArea;
 use App\Model\ServiceClassCategory;
 use App\Model\AppliedTutorForTution;
 use App\Model\RequestTutor;
+use App\User;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\JsonResponse;
 
 class AdminHomeController extends Controller
@@ -290,6 +292,57 @@ class AdminHomeController extends Controller
 
     // delete single request tutor
     public function deleteRequestTutor($id){
+
+    }
+
+
+    // creat tutor page
+
+    public function viewCreateTutor(){
+        return view('admin.createtutor');
+    }
+
+
+    /*
+        save tutor posted by admin
+    */
+
+    public function saveTuotor(Request $request){
+
+        // dd($request->all());
+
+        $request->validate([
+
+            'name' => 'required',
+            'phone_number' => 'required',
+            'email' => 'required|unique:users',
+            'password' => 'required',
+            'gender' => 'required',
+        ]);
+
+        $user_for_user_table = new User();
+        $tutor_for_tutor_table = new TutorInfo();
+
+        $user_for_user_table->name = $request->name;
+        $user_for_user_table->phone_number = $request->phone_number;
+        $user_for_user_table->gender = $request->gender;
+        $user_for_user_table->is_tutor = 1;
+        $user_for_user_table->email  = $request->email;
+        $user_for_user_table->password = Hash::make($request->password);
+
+        $tutor_for_tutor_table->name = $request->name;
+        $tutor_for_tutor_table->mobile_number = $request->phone_number;
+        $tutor_for_tutor_table->gender = $request->gender;
+
+
+        $user_for_user_table->save();
+
+        $tutor_for_tutor_table->user_id = $user_for_user_table->id;
+        
+        $tutor_for_tutor_table->save();
+
+        return redirect()->route('admin.viewcreatetutor')->with('message','Tutor Created Successfully');
+
 
     }
 }

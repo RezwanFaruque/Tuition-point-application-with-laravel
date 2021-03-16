@@ -44,6 +44,11 @@ Route::middleware('is_admin')->namespace('Admin')->group(function () {
 
     Route::delete('admin/delete-requesttutor/{id}','AdminHomeController@deleteRequestTutor')->name('admin.deleterequesttutor');
 
+
+    Route::get('admin/create-tutor-user','AdminHomeController@viewCreateTutor')->name('admin.viewcreatetutor');
+
+    Route::post('admin/save-tutor-user','AdminHomeController@saveTuotor')->name('admin.savetutor');
+
 });
 
 

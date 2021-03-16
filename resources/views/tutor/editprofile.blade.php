@@ -20,6 +20,13 @@
                                     <div class="info gmail">
                                         {{$getuser->email}}
                                     </div>
+                                     <div class="info gmail">
+                                        Profile Complete
+                                    </div>
+                                    <div class="progress">
+
+                                      <div class="progress-bar" role="progressbar" style="width: {{$prgress}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$prgress}}%</div>
+                                    </div>
                                     @if (session('message'))
                                         <div class="alert alert-success">
                                             {!! session('message') !!}

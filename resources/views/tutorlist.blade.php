@@ -99,24 +99,32 @@
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="result-card">
                                             <div class="header">
-                                                <span class="badge badge-secondary">New</span>
+                                                <div class="premium-tutor-logo">
+                                                    @if($tutoruser->is_premium == '1')
+                                                        <span class="badge badge-danger">Premium Tutor</span>
+                                                    @else
+                                                        <span class="badge badge-secondary">New Tutor</span>
+                                                    @endif
+                                                </div>
+                                                
                                             </div>
                                             <div class="body">
                                                 <div class="left">
                                                     <div class="profile-image">
-                                                        <img src="{{ asset($tutoruser->profile_image) }}" alt=""
+                                                        <img src="{{ asset($tutoruser->getuser->profile_image) }}" alt=""
                                                             srcset="">
                                                     </div>
+
                                                 </div>
                                                 <div class="right">
                                                     <div class="name">
-                                                        {{ $tutoruser->tutorinfo->name }}
+                                                        {{ $tutoruser->name }}
                                                     </div>
                                                     <div class="subject">
-                                                        {{ $tutoruser->tutorinfo->subject }}
+                                                        {{ $tutoruser->subject }}
                                                     </div>
                                                     <div class="university">
-                                                        {{ $tutoruser->tutorinfo->university_or_collage }}
+                                                        {{ $tutoruser->university_or_collage }}
                                                     </div>
                                                     <div class="rating">
                                                         <span class="fa fa-star checked"></span>
@@ -128,7 +136,7 @@
                                                 </div>
                                             </div>
                                             <div class="footer">
-                                                <a class="tutorlist-profiile-details" href="{{route('guest.tutorprofilepublicview',$tutoruser->id)}}">View
+                                                <a class="tutorlist-profiile-details" href="{{route('guest.tutorprofilepublicview',$tutoruser->user_id)}}">View
                                                     Details</a>
                                             </div>
                                         </div>
@@ -239,25 +247,7 @@
                 });
             });
 
-            // $('#medium').on('change', function() {
-            //     $.ajax({
-            //         type: "POST",
-            //         url: "/gurdian/fetch-class",
-            //         data: {
-            //             'medium_name': this.value,
-            //         },
-
-            //         success: function(data) {
-            //             $('#classes').empty();
-            //             data.forEach(element => {
-            //                 $("#classes").append("<option value='" + element
-            //                     .classes_name +
-            //                     "'>" + element.classes_name + "</option>");
-            //             });
-
-            //         }
-            //     });
-            // })
+            
         })
 
     </script>

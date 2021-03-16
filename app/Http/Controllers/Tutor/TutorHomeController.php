@@ -36,8 +36,101 @@ class TutorHomeController extends Controller
 
         $getuser = User::where('id', Auth::user()->id)->with('tutorinfo')->first();
 
+        $tutorinfo = TutorInfo::where('user_id',$id)->first();
 
-        return view('tutor.editprofile', compact('getuser'));
+        
+
+        // calculating the profile complete progress;
+
+        $prgress = 0;
+
+        if($tutorinfo->name && $tutorinfo->university_or_collage && $tutorinfo->area && $tutorinfo->subject != ''){
+            $prgress = $prgress+12;
+        }
+        if($tutorinfo->medium != ''){
+            $prgress = $prgress+4;
+        }
+        if($tutorinfo->medium != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->days_per_week != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->mobile_number != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->gender != ''){
+            $prgress = $prgress+4;
+        }
+        if($tutorinfo->h_school_name != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->h_school_section != ''){
+            $prgress = $prgress+4;
+        }if($tutorinfo->h_school_result != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->collage_name != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->collage_result != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->university_name != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->university_passing_year != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->experience_subjects != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->experience_years != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->prefered_subject != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->prefered_medium != ''){
+            $prgress = $prgress+4;
+        }
+        if($tutorinfo->prefared_area != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->salar_range_from != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->salary_range_to != ''){
+            $prgress = $prgress+4;
+        }
+
+        if($tutorinfo->district_name != ''){
+            $prgress = $prgress+4;
+        }
+
+
+        if($prgress == '92'){
+            $prgress = 100;
+        }else{
+            $prgress = $prgress;
+        }
+
+
+        return view('tutor.editprofile', compact('getuser','prgress'));
     }
 
 

@@ -372,30 +372,35 @@
 
 
                                             <div class="container">
-                                                @foreach($tutor_feedbacks as $tutor_feedback )
-                                                <div class="row">
 
-                                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                                        <div class="left-informations">
-                                                            <div class="info-left">
-                                                                {{$tutor_feedback->name}}
+                                                @if($tutor_feedbacks != '')
+
+                                                    @foreach($tutor_feedbacks as $tutor_feedback )
+                                                        <div class="row">
+
+                                                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                                                <div class="left-informations">
+                                                                    <div class="info-left">
+                                                                        {{$tutor_feedback->name}}
+                                                                    </div>
+                                                                   
+
+
+                                                                </div>
                                                             </div>
-                                                           
+                                                            <div class="col-lg-8 col-md-4 col-sm-12">
+                                                                <div class="right-information">
+                                                                    <div class="info-right">
+                                                                        {{$tutor_feedback->feedback_message}}
+                                                                    </div>
+                                                                   
 
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-md-4 col-sm-12">
-                                                        <div class="right-information">
-                                                            <div class="info-right">
-                                                                {{$tutor_feedback->feedback_message}}
+                                                                </div>
                                                             </div>
-                                                           
-
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                @endforeach
+                                                    @endforeach
+                                                @endif
+                                                
                                                 
                                             </div>
                                         </div>

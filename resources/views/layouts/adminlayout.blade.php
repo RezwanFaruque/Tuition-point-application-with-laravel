@@ -73,12 +73,12 @@
 
             {{-- All Mediums And Clases --}}
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm4"
                     aria-expanded="true" aria-controls="collapseForm">
                     <i class="fab fa-fw fa-wpforms"></i>
                     <span>Medium & Classes</span>
                 </a>
-                <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                <div id="collapseForm4" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Medium & Classes</h6>
                         <a class="collapse-item" href="{{route('admin.tutorservicedistrict')}}">All District</a>
@@ -138,12 +138,12 @@
 
             {{-- Premium Tutor List Pages --}}
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm4"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm5"
                     aria-expanded="true" aria-controls="collapseForm">
                     <i class="fab fa-fw fa-wpforms"></i>
                     <span>Premium TutorList</span>
                 </a>
-                <div id="collapseForm4" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                <div id="collapseForm5" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Forms</h6>
                         <a class="collapse-item" href="form_basics.html">Form Basics</a>
@@ -154,15 +154,31 @@
 
             {{-- Request Tutor List Pages --}}
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm5"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm6"
                     aria-expanded="true" aria-controls="collapseForm">
                     <i class="fab fa-fw fa-wpforms"></i>
                     <span>Request TutorList</span>
                 </a>
-                <div id="collapseForm5" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                <div id="collapseForm6" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         
                         <a class="collapse-item" href="{{route('admin.getrequesttutorlist')}}">Lists</a>
+                        
+                    </div>
+                </div>
+            </li>
+
+            {{-- All Mediums And Clases --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm13"
+                    aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fab fa-fw fa-wpforms"></i>
+                    <span>Create Tutor</span>
+                </a>
+                <div id="collapseForm13" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Create Tutor</h6>
+                        <a class="collapse-item" href="{{route('admin.viewcreatetutor')}}">Create Tutor</a>
                         
                     </div>
                 </div>

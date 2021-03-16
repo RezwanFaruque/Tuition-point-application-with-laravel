@@ -9,6 +9,7 @@ use App\Model\TutorInfo;
 use App\User;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceArea;
+use App\Model\TutorFeedback;
 use App\Model\ServiceMediumCategory;
 use App\Model\ServiceClassCategory;
 use App\Model\RequestTutor;
@@ -23,7 +24,9 @@ class GuestUserController extends Controller
         $districts = ServiceDistrict::all();
         $mediums  = ServiceMediumCategory::all();
 
-        $tutorusers = User::where('is_tutor', '1')->with('tutorinfo')->paginate(15);
+        $tutorusers = TutorInfo::orderBy('is_premium','desc')->with('getuser')->paginate(15);
+
+        // dd($tutorusers);
 
         return view('tutorlist', compact('tutorusers', 'districts', 'mediums'));
     }
@@ -201,9 +204,11 @@ class GuestUserController extends Controller
 
         $tutor = User::where('id',$id)->with('tutorinfo')->first();
 
+        $tutor_feedbacks = TutorFeedback::where('tutor_id',$id)->get();
+
         // dd($tutor);
 
-        return view('singletutorpublicview',compact('tutor'));
+        return view('singletutorpublicview',compact('tutor','tutor_feedbacks'));
 
     }
 
