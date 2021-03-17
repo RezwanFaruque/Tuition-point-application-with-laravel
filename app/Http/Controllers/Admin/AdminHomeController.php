@@ -116,12 +116,7 @@ class AdminHomeController extends Controller
     }
 
 
-    // all mediums list
-
-    // public function allMediums(){
-
-    // }
-
+  
 
     public function allTutions(){
 
@@ -263,12 +258,6 @@ class AdminHomeController extends Controller
     }
 
 
-
-
-    
-
-
-
     // view all request tutor
     public function getRequestTutorList(){
 
@@ -338,7 +327,7 @@ class AdminHomeController extends Controller
         $user_for_user_table->save();
 
         $tutor_for_tutor_table->user_id = $user_for_user_table->id;
-        
+
         $tutor_for_tutor_table->save();
 
         return redirect()->route('admin.viewcreatetutor')->with('message','Tutor Created Successfully');
