@@ -239,6 +239,7 @@ class TutorHomeController extends Controller
             $user->email = $request->email;
             $user->profile_image = $request->profile_image;
 
+            $tutoruser->name = $request->name;
             $tutoruser->parents_phone_number = $request->parents_phone_number;
             $tutoruser->university_or_collage = $request->university_name;
             $tutoruser->area = $request->area;
@@ -274,5 +275,13 @@ class TutorHomeController extends Controller
 
 
         }
+    }
+
+
+    // update profile picture
+
+    public function updateProfilePicture(Request $request){
+
+        dd($request->all());
     }
 }

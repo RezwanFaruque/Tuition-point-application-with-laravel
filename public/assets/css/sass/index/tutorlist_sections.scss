@@ -130,12 +130,20 @@ section{
                                                     }
                                                     .header{
                                                         text-align: right;
+                                                        
+                                                        img{
+                                                            width: auto;
+                                                            height: 30px;
+                                                        }
                                                         span{
+                                                            width: auto;
+                                                            height: 30px;
                                                             background-color: $button-color;
                                                         }
                                                     }
                                                     .body{
                                                         display:flex;
+                                                        height: 70px;
 
                                                         .left{
                                                             margin: auto;
@@ -184,6 +192,7 @@ section{
                                                         margin-right: 10px;
                                                         margin-top:10px;
                                                         margin-bottom:10px;
+                                                        height: 30px;
                                                         .tutorlist-profiile-details{
                                                             width:auto;
                                                             text-decoration:none;

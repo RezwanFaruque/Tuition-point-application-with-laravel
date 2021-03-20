@@ -18,5 +18,7 @@ Route::middleware('is_tutor')->namespace('Tutor')->group(function () {
 
     Route::post('tutor/update-profile','TutorHomeController@updateProfile')->name('tutor.updateprofile');
 
+    Route::post('/tutor/update-profile-picture','TutorHomeController@updateProfilePicture')->name('tutor.update-profile-picture');
+
     
 });

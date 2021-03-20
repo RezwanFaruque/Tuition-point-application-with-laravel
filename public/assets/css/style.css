@@ -516,11 +516,18 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header {
   text-align: right;
 }
+section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header img {
+  width: auto;
+  height: 30px;
+}
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .header span {
+  width: auto;
+  height: 30px;
   background-color: #4CAF50;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body {
   display: flex;
+  height: 70px;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .body .left {
   margin: auto;
@@ -556,6 +563,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  height: 30px;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .tutor-search-result .result-body .container .row .col-sm-12 .result-card .footer .tutorlist-profiile-details {
   width: auto;
@@ -1007,6 +1015,13 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .left-informations .section_education {
+  margin-bottom: 10px;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
   font-size: 15px;
   font-family: "Montserrat-Bold";
@@ -1015,6 +1030,13 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .section_education {
+  margin-bottom: 10px;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
   font-size: 15px;

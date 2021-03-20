@@ -1,85 +1,85 @@
 @extends('layouts.loginlayout')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-12 remove-margin">
-            <!-- Filter options in here -->
-            <div class="filter-tutors">
-                <div class="title">
-                    FILTER TUTORS
-                </div>
-                <form action="{{route('guest.searchTutor')}}" method="POST">
-                    {{ csrf_field() }}
-                    <div class="filter-options">
-                        <div class="form-group">
-                            <select class="form-control" name="district" id="district">
-                                @foreach ($districts as $district)
-                                    <option value="" selected hidden>District</option>
-                                    <option value="{{ $district->district_name }}">{{ $district->district_name }}
-                                    </option>
-                                @endforeach
+<div class="row">
+    <div class="col-lg-2 col-md-2 col-sm-12 remove-margin">
+        <!-- Filter options in here -->
+        <div class="filter-tutors">
+            <div class="title">
+                FILTER TUTORS
+            </div>
+            <form action="{{route('guest.searchTutor')}}" method="POST">
+                {{ csrf_field() }}
+                <div class="filter-options">
+                    <div class="form-group">
+                        <select class="form-control" name="district" id="district">
+                            @foreach ($districts as $district)
+                            <option value="" selected hidden>District</option>
+                            <option value="{{ $district->district_name }}">{{ $district->district_name }}
+                            </option>
+                            @endforeach
 
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="area" id="area">
-                                <option value="" selected hidden>Area</option>
-                                <option value="">Choose District First</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="area" id="area">
+                            <option value="" selected hidden>Area</option>
+                            <option value="">Choose District First</option>
 
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="medium" id="medium">
-                                <option value="" selected hidden>Mediums</option>
-                                @foreach ($mediums as $medium)
-                                    <option value="{{ $medium->medium_name }}">{{ $medium->medium_name }}</option>
-                                @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="medium" id="medium">
+                            <option value="" selected hidden>Mediums</option>
+                            @foreach ($mediums as $medium)
+                            <option value="{{ $medium->medium_name }}">{{ $medium->medium_name }}</option>
+                            @endforeach
 
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="subject" id="subject">
-                                <option value="" selected hidden>Subjects</option>
-                                <option value="english">English</option>
-                                <option value="bangla">Bangla</option>
-                                <option value="math">Math</option>
-                                <option value="physics">Physics</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="gender" id="gender">
-                                <option value="" selected hidden>Tutor Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="salary" id="salary">
-                                <option value="" selected hidden>Salary Range</option>
-                                <option value="1000-2000">1000-2000</option>
-                                <option value="2000-3000">2000-3000</option>
-                                <option value="3000-4000">3000-4000</option>
-                                <option value="4000-5000">4000-5000</option>
-                                <option value="5000-6000">5000-6000</option>
-                                <option value="6000-7000">6000-7000</option>
-                                <option value="7000-8000">7000-8000</option>
-                                <option value="9000-10000">8000-9000</option>
-                                <option value="10000-11000">9000-10000</option>
-                                <option value="11000-12000">10000-11000</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="days_per_week" id="days_per_week">
-                                <option value="" selected hidden>Days Per Week</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="request-tutor-tutorlist-page">Search Tutor <i class="fa fa-arrow-right"
-                                aria-hidden="true"></i></button>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="subject" id="subject">
+                            <option value="" selected hidden>Subjects</option>
+                            <option value="english">English</option>
+                            <option value="bangla">Bangla</option>
+                            <option value="math">Math</option>
+                            <option value="physics">Physics</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="gender" id="gender">
+                            <option value="" selected hidden>Tutor Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="salary" id="salary">
+                            <option value="" selected hidden>Salary Range</option>
+                            <option value="1000-2000">1000-2000</option>
+                            <option value="2000-3000">2000-3000</option>
+                            <option value="3000-4000">3000-4000</option>
+                            <option value="4000-5000">4000-5000</option>
+                            <option value="5000-6000">5000-6000</option>
+                            <option value="6000-7000">6000-7000</option>
+                            <option value="7000-8000">7000-8000</option>
+                            <option value="9000-10000">8000-9000</option>
+                            <option value="10000-11000">9000-10000</option>
+                            <option value="11000-12000">10000-11000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" name="days_per_week" id="days_per_week">
+                            <option value="" selected hidden>Days Per Week</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="request-tutor-tutorlist-page">Search Tutor <i class="fa fa-arrow-right"
+                        aria-hidden="true"></i></button>
                     </div>
                 </form>
             </div>
@@ -96,51 +96,46 @@
                         <div class="container">
                             <div class="row">
                                 @foreach ($tutorusers as $tutoruser)
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="result-card">
-                                            <div class="header">
-                                                <div class="premium-tutor-logo">
-                                                    @if($tutoruser->is_premium == '1')
-                                                        <span class="badge badge-danger">Premium Tutor</span>
-                                                    @else
-                                                        <span class="badge badge-secondary">New Tutor</span>
-                                                    @endif
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="result-card">
+                                        <div class="header">
+
+                                            @if($tutoruser->is_premium == '1')
+                                            <img class="img-fluid" src="{{ asset('assets/vendor/images/index/premium.png') }}"
+                                            alt="" srcset="">
+                                            @else
+                                            <span class="badge badge-secondary">New Tutor</span>
+                                            @endif
+
+
+                                        </div>
+                                        <div class="body">
+                                            <div class="left">
+                                                <div class="profile-image">
+                                                    <img src="{{ asset($tutoruser->getuser->profile_image) }}" alt=""
+                                                    srcset="">
+                                                </div>
+
+                                            </div>
+                                            <div class="right">
+                                                <div class="name">
+                                                    {{ $tutoruser->name }}
+                                                </div>
+                                                <div class="subject">
+                                                    {{ $tutoruser->subject }}
+                                                </div>
+                                                <div class="university">
+                                                    {{ $tutoruser->university_or_collage }}
                                                 </div>
                                                 
                                             </div>
-                                            <div class="body">
-                                                <div class="left">
-                                                    <div class="profile-image">
-                                                        <img src="{{ asset($tutoruser->getuser->profile_image) }}" alt=""
-                                                            srcset="">
-                                                    </div>
-
-                                                </div>
-                                                <div class="right">
-                                                    <div class="name">
-                                                        {{ $tutoruser->name }}
-                                                    </div>
-                                                    <div class="subject">
-                                                        {{ $tutoruser->subject }}
-                                                    </div>
-                                                    <div class="university">
-                                                        {{ $tutoruser->university_or_collage }}
-                                                    </div>
-                                                    <div class="rating">
-                                                        <span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star"></span>
-                                                        <span class="fa fa-star"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <a class="tutorlist-profiile-details" href="{{route('guest.tutorprofilepublicview',$tutoruser->user_id)}}">View
-                                                    Details</a>
-                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <a class="tutorlist-profiile-details" href="{{route('guest.tutorprofilepublicview',$tutoruser->user_id)}}">View
+                                            Details</a>
                                         </div>
                                     </div>
+                                </div>
 
 
                                 @endforeach
@@ -214,9 +209,9 @@
             </div>
         </div>
     </div>
-@endsection
+    @endsection
 
-@section('script')
+    @section('script')
     <script type="text/javascript">
         $(document).ready(function() {
 
@@ -251,4 +246,4 @@
         })
 
     </script>
-@endsection
+    @endsection

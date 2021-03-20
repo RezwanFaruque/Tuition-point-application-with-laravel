@@ -44,7 +44,7 @@ class LoginController extends Controller
     public function login(Request $request){
         
         $request->validate([
-            'email' => 'required|email',
+            'email' => 'required|email|exists:users,email',
             'password' => 'required|min:6',
         ]);
 
@@ -79,7 +79,7 @@ class LoginController extends Controller
             
 
         }else{
-            return redirect()->route('login')->with('error','Email-Address And Password Are Wrong.');
+            return redirect()->route('login')->with('message','Your Password is Wrong');
         }
     }
 }
