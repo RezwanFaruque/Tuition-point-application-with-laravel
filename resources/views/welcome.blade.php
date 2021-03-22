@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="align-center">
-                        <a class="view-all-tutors-button-index" href="tutorlist.html">View All Tutor
+                        <a class="view-all-tutors-button-index" href="{{ route('guest.fetchalltutors') }}">View All Tutor
                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
                     </div>
