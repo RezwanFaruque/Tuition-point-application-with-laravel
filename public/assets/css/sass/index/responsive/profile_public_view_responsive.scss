@@ -1,87 +1,66 @@
-section{
-    &.body{
-        .tutor-profile-section{
-            margin-top: 50px;
-            background-color: #E9ECEF;
-            box-shadow: 0px 0px 77px #0000000F;
-            margin-left: 100px;
-            margin-right: 100px;
-            .basic-information{
-                padding-top: 30px;
-                padding-bottom: 30px;
-                .container{
-                    .row{
-                        .col-sm-12{
-                            .bs-info{
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){ 
 
-                                .bs-info-name{
-                                 display: flex;
-                                 align-items: center;
-                                 .left{
-                                    margin-right: 30px;
-                                    img{
-                                        width: 100px;
-                                        height: 100px;
-                                        border-radius: 50%;
-                                    }
-                                }
-                                .right{
-                                    .info{
-                                        color: #37474F;
-                                        &.name{
-                                            font-size: 22px;
-                                            font-family: 'Montserrat-SemiBold';
+        section{
+            &.body{
+                .tutor-profile-section{
+                    @if($width <= 450){
+                     margin-left: 5px;
+                     margin-right: 5px;
+                     margin-top: 10px;
+                 }
+                 
+                 
+                 
+                 .basic-information{
+                    
+                    .container{
+                        .row{
+                            .col-sm-12{
+                                .bs-info{
 
-                                        }
-
-                                        &.mobile{
-                                            font-size: 15px;
-                                            font-family: 'Montserrat-Regular';
-                                        }
-
-                                        &.gmail{
-                                            font-size: 12px;
-                                            font-family: 'Montserrat-Regular';
+                                    .bs-info-name{
+                                      
+                                     .left{
+                                        
+                                        img{
+                                            
                                         }
                                     }
+                                    .right{
+                                        .info{
+                                            
+                                            &.name{
+                                                
+                                            }
 
+                                            &.mobile{
+                                             
+                                            }
+
+                                            &.gmail{
+                                                
+                                            }
+                                        }
+
+                                    }
                                 }
+
+
                             }
 
+                            .bs-info-edt-sgnout{
 
-                        }
-
-                        .bs-info-edt-sgnout{
-                            height: 100%;
-                            text-align: right;
-                            padding-right: 50px;
-                            /* margin: auto; */
-                            display: flex;
-                            flex-direction: column;
-                            /* align-items: center; */
-                            justify-content: center;
-                            .btn-edit-profile{
-
-                                a{
-                                    width: auto;
-                                    height: auto;
-                                    background: $button-color;
-                                    padding-left: 15px;
-                                    padding-right: 15px;
-                                    padding-top: 10px;
-                                    padding-bottom: 10px;
-                                    text-decoration: none;
-                                    color: white;
-
-                                    font-size: 12px;
-                                    font-family: 'Montserrat-SemiBold';
+                                @if($width <= 450){
+                                    justify-content: flex-start;
+                                    text-align: left;
+                                    margin-top: 30px;
                                 }
-                            }
-                            .btn-signout{
-                                margin-top: 20px;
-                                form{
-                                    .logout-frm-tutor-profile{
-                                        border: none;
+                                
+                                
+                                .btn-edit-profile{
+
+                                    a{
                                         width: auto;
                                         height: auto;
                                         background: $button-color;
@@ -96,52 +75,65 @@ section{
                                         font-family: 'Montserrat-SemiBold';
                                     }
                                 }
+                                .btn-signout{
+                                    margin-top: 20px;
+                                    form{
+                                        .logout-frm-tutor-profile{
+                                            border: none;
+                                            width: auto;
+                                            height: auto;
+                                            background: $button-color;
+                                            padding-left: 15px;
+                                            padding-right: 15px;
+                                            padding-top: 10px;
+                                            padding-bottom: 10px;
+                                            text-decoration: none;
+                                            color: white;
+
+                                            font-size: 12px;
+                                            font-family: 'Montserrat-SemiBold';
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-        }
 
-        .details-information{
-            .container{
-                .row{
-                    .col-sm-12{
-                        .profile-details-information{
-                            ul{
-                                li{
-                                    width: 300px;
-                                    background-color: $button-color;
-                                    margin-right: 20px;
-                                    border-radius: 5%;
-                                    &.active{
+            .details-information{
+                .container{
+                    .row{
+                        .col-sm-12{
+                            .profile-details-information{
+                                ul{
+                                    li{
+                                        width: 300px;
+                                        background-color: $button-color;
+                                        margin-right: 20px;
                                         border-radius: 5%;
-                                        background-color: #616161;
-                                    }
-
-                                    a{
-                                        color: white;
-                                        font-family: 'Montserrat-SemiBold';
-                                        font-size: 15px;
                                         &.active{
-                                            background-color: #707070;
+                                            border-radius: 5%;
+                                            background-color: #616161;
+                                        }
+
+                                        a{
                                             color: white;
+                                            font-family: 'Montserrat-SemiBold';
+                                            font-size: 15px;
+                                            &.active{
+                                                background-color: #707070;
+                                                color: white;
+                                            }
                                         }
                                     }
                                 }
-                            }
-                            .tab-content{
-                                background: #E9ECEF 0% 0% no-repeat padding-box;
-                                box-shadow: 0px 3px 6px #0000008A;
-                                border-radius: 20px;
-                                margin-right: 100px;
-                                margin-bottom: 50px;
-                                margin-top: 10px;
-                                padding-top: 20px;
-                                padding-bottom: 20px;
-                                padding-left: 20px;
-                                padding-right: 20px;
-                                .tab-pane{
+                                .tab-content{
+                                    @if($width <= 450){
+                                      margin-right: 10px;  
+                                  }
+                                  
+                                  .tab-pane{
                                     .container{
                                         .row{
                                             .col-sm-12{
@@ -151,14 +143,25 @@ section{
                                                         font-family: 'Montserrat-Regular';
                                                         color: #37474FB8;
                                                         padding-bottom: 20px;
+
                                                     }
                                                 }
                                                 .right-information{
                                                     .info-right{
+                                                        display: flex;
                                                         font-size: 15px;
                                                         font-family: 'Montserrat-Regular';
                                                         color: #37474FB8;
                                                         padding-bottom: 20px;
+
+                                                        label{
+                                                            width: 50%;
+                                                        }
+
+                                                        .info{
+                                                            width: 50%;
+                                                            text-align: left;
+                                                        }
                                                     }
 
 
@@ -290,5 +293,7 @@ section{
         }
     }
 
+}
+}
 }
 }

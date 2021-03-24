@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Model\TutorInfo;
+use App\Model\GurdianInfo;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -40,5 +41,10 @@ class User extends Authenticatable
 
     public function tutorinfo(){
         return $this->hasOne(TutorInfo::class,'user_id','id');
+    }
+
+
+    public function gurdianinfo(){
+        return $this->hasOne(GurdianInfo::class,'user_id','id');
     }
 }

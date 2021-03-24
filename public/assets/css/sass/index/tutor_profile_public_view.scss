@@ -11,6 +11,7 @@ section{
                                     .public-view-tabs-options{
                                         .nav{
                                             a{
+                                                font-size: 13px;
                                                 &.active{
                                                     background-color: #CED4DA;
                                                     color: black;
@@ -47,13 +48,13 @@ section{
                                                                     }
                                                                 }
                                                                 .info-left{
-                                                                    font-size: 15px;
-                                                                    font-family: 'Montserrat-Bold';
+                                                                    font-size: 12px;
+                                                                    // font-family: 'Montserrat-Bold';
                                                                     color: #37474FB8;
                                                                     padding-bottom: 10px;
-                                                                    font-weight: bold;
-                                                                    margin-top: 10px;
-                                                                    margin-bottom: 10px;
+                                                                    // font-weight: bold;
+                                                                    // margin-top: 10px;
+                                                                    // margin-bottom: 10px;
                                                                     
                                                                 }
 
@@ -70,13 +71,23 @@ section{
                                                                     }
                                                                 }
                                                                 .info-right{
-                                                                    font-size: 15px;
-                                                                    font-family: 'Montserrat-Bold';
+                                                                    font-size: 12px;
+                                                                    // font-family: 'Montserrat-Bold';
                                                                     color: #37474FB8;
                                                                     padding-bottom: 10px;
-                                                                    font-weight: bold;
-                                                                    margin-top: 10px;
-                                                                    margin-bottom: 10px;
+                                                                    // font-weight: bold;
+                                                                    // margin-top: 10px;
+                                                                    // margin-bottom: 10px;
+
+                                                                    .form-group{
+                                                                        label{
+                                                                            font-size: 13px;
+                                                                            font-family: 'Montserrat-SemiBold';
+                                                                        }
+
+                                                                    }
+
+                                                                    
                                                                 }
                                                             }
                                                         }

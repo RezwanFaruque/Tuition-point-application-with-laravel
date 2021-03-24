@@ -8,18 +8,18 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="bs-info">
                             <div class="bs-info-name">
-                                <div class="left">
-                                    <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
-                                </div>
+                                {{-- <div class="left">
+                                    <img src="{{assets('')}}" alt="" srcset="">
+                                </div> --}}
                                 <div class="right">
                                     <div class="info name">
-                                        Rayhan Ahmed
+                                        {{$gurdian->name}}
                                     </div>
                                     <div class="info mobile">
-                                        (+880) 1737226676
+                                        {{$gurdian->phone_number}}
                                     </div>
                                     <div class="info gmail">
-                                        example@gmail.com
+                                        {{$gurdian->email}}
                                     </div>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="bs-info-edt-sgnout">
                             <div class="btn-edit-profile">
-                                <a href=""> <i class="fa fa-user" aria-hidden="true"></i>
+                                <a href="{{route('gurdian.editprofile',$gurdian->user_id)}}"> <i class="fa fa-user" aria-hidden="true"></i>
                                     Edit Profile</a>
 
                             </div>
@@ -57,11 +57,11 @@
                                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
                                         role="tab" aria-controls="pills-home" aria-selected="true">Profile</a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
                                         role="tab" aria-controls="pills-profile" aria-selected="false">Tution Request &
                                         History</a>
-                                </li>
+                                </li> --}}
 
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
@@ -72,56 +72,46 @@
                                     <div class="container">
                                         <div class="row">
 
-                                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                                <div class="left-informations">
-                                                    <div class="info-left">
-                                                        Name
-                                                    </div>
-                                                    <div class="info-left">
-                                                        School/Collage
-                                                    </div>
-                                                    <div class="info-left">
-                                                        Area
-                                                    </div>
-                                                    <div class="info-left">
-                                                        Subject
-                                                    </div>
-                                                    <div class="info-left">
-                                                        Medium
-                                                    </div>
-                                                    <div class="info-left">
-                                                        Day per week
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-4 col-sm-12">
+                                            
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
                                                 <div class="right-information">
-                                                    <div class="info-right">
-                                                        Rezwanul Ehsan
+                                                    <div class="info-right" style="display: flex;">
+                                                        <label style="width: 50%">Name</label>
+                                                        <div style="text-align: left; width: 50%;">
+                                                            {{$gurdian->name}}
+                                                        </div>
+                                                        
                                                     </div>
-                                                    <div class="info-right">
-                                                        University of Information Technology & Sciences
+                                                    <div class="info-right" style="display: flex;">
+                                                        <label style="width: 50%">Area</label>
+                                                        <div style="width: 50%; text-align: left;">
+                                                             {{$gurdian->area}}
+                                                        </div>
+                                                       
                                                     </div>
-                                                    <div class="info-right">
-                                                        Gulshan Badda
+                                                    
+                                                    <div class="info-right" style="display: flex;">
+                                                        <label style="width: 50%">Gender</label>
+                                                        <div style="width: 50%;text-align: left;">
+                                                            {{$gurdian->gender}}
+                                                        </div>
+                                                        
                                                     </div>
-                                                    <div class="info-right">
-                                                        Informaiton Technology
+                                                    <div class="info-right" style="display: flex;">
+                                                        <label style="width: 50%">Salary Range</label>
+                                                        <div style="width: 50%;text-align: left;">
+                                                            {{$gurdian->salary_range}}
+                                                        </div>
+                                                        
                                                     </div>
-                                                    <div class="info-right">
-                                                        Bangla
-                                                    </div>
-                                                    <div class="info-right">
-                                                        6
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                               {{--  <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                     aria-labelledby="pills-profile-tab">
 
                                     <!-- Tutor request and history goes here -->
@@ -434,7 +424,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>

@@ -10,6 +10,7 @@ use App\User;
 use App\Model\ActiveTution;
 use App\Model\AppliedTutorForTution;
 use Illuminate\Support\Facades\Auth;
+use Image;
 
 class TutorHomeController extends Controller
 {
@@ -174,7 +175,7 @@ class TutorHomeController extends Controller
         // dd($request->tution_post_id);
 
         $request->validate([
-            
+
             'user_id'  => 'unique:applied_tutor_for_tutions,tutor_id,NULL,id,active_tution_post_id,'.$request->tution_post_id,
             
         ]);
@@ -199,89 +200,127 @@ class TutorHomeController extends Controller
                "status" => 'success',
                "message" => 'You applied for this tution wait untill our team contact with you'
            ];
-           
+
            return response()->json($data);
-           
-            
-            
-        }else{
-            $data = [
-                "status" => 'error',
-                "message" => 'You Already Applied For This Tution'
-            ];
-            
-            return response()->json($data);
-        }
 
 
 
+       }else{
+        $data = [
+            "status" => 'error',
+            "message" => 'You Already Applied For This Tution'
+        ];
+
+        return response()->json($data);
     }
+
+
+
+}
 
 
     // update personal profile
-    public function updateProfile(Request $request){
-        
-
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-        ]);
+public function updateProfile(Request $request){
 
 
-        $user = User::find($request->profile_id);
-        if($user && $user->is_tutor == '1'){
-            $tutoruser = TutorInfo::where('user_id',$request->profile_id)->first();
-
-            $user->name = $request->name;
-            $user->profile_image = $request->profile_image;
-            $user->phone_number = $request->phone_number;
-            $user->gender = $request->gender;
-            $user->email = $request->email;
-            $user->profile_image = $request->profile_image;
-
-            $tutoruser->name = $request->name;
-            $tutoruser->parents_phone_number = $request->parents_phone_number;
-            $tutoruser->university_or_collage = $request->university_name;
-            $tutoruser->area = $request->area;
-            $tutoruser->subject = $request->subject;
-            $tutoruser->district_name = $request->district_name;
-            $tutoruser->medium = $request->medium;
-            $tutoruser->h_school_name = $request->h_school_name;
-            $tutoruser->h_school_section = $request->h_school_section;
-            $tutoruser->h_school_result = $request->h_school_result;
-            $tutoruser->collage_name = $request->collage_name;
-            $tutoruser->collage_section = $request->collage_section;
-            $tutoruser->collage_result = $request->collage_result;
-            $tutoruser->university_name = $request->university_name;
-            $tutoruser->subject = $request->subject;
-            $tutoruser->university_result = $request->university_result;
-            $tutoruser->university_passing_year = $request->university_passing_year;
-            $tutoruser->prefered_class = $request->prefered_class;
-            $tutoruser->prefered_subject = $request->prefered_subject;
-            $tutoruser->prefared_area = $request->prefared_area;
-            $tutoruser->prefered_medium = $request->prefered_medium;
-
-            $tutoruser->experience_years = $request->experience_years;
-            $tutoruser->experience_subjects = $request->experience_subjects;
-
-            $tutoruser->salar_range_from = $request->salar_range_from;
-            $tutoruser->salary_range_to = $request->salary_range_to;
-
-            $user->update();
-
-            $tutoruser->update();
-
-            return redirect()->route('tutor.editprofile',$request->profile_id)->with('message','Your Profile Updated');
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required',
+    ]);
 
 
-        }
+    $user = User::find($request->profile_id);
+    if($user && $user->is_tutor == '1'){
+        $tutoruser = TutorInfo::where('user_id',$request->profile_id)->first();
+
+        $user->name = $request->name;
+        $user->profile_image = $request->profile_image;
+        $user->phone_number = $request->phone_number;
+        $user->gender = $request->gender;
+        $user->email = $request->email;
+        $user->profile_image = $request->profile_image;
+
+        $tutoruser->name = $request->name;
+        $tutoruser->parents_phone_number = $request->parents_phone_number;
+        $tutoruser->university_or_collage = $request->university_name;
+        $tutoruser->area = $request->area;
+        $tutoruser->subject = $request->subject;
+        $tutoruser->district_name = $request->district_name;
+        $tutoruser->medium = $request->medium;
+        $tutoruser->h_school_name = $request->h_school_name;
+        $tutoruser->h_school_section = $request->h_school_section;
+        $tutoruser->h_school_result = $request->h_school_result;
+        $tutoruser->collage_name = $request->collage_name;
+        $tutoruser->collage_section = $request->collage_section;
+        $tutoruser->collage_result = $request->collage_result;
+        $tutoruser->university_name = $request->university_name;
+        $tutoruser->subject = $request->subject;
+        $tutoruser->university_result = $request->university_result;
+        $tutoruser->university_passing_year = $request->university_passing_year;
+        $tutoruser->prefered_class = $request->prefered_class;
+        $tutoruser->prefered_subject = $request->prefered_subject;
+        $tutoruser->prefared_area = $request->prefared_area;
+        $tutoruser->prefered_medium = $request->prefered_medium;
+
+        $tutoruser->experience_years = $request->experience_years;
+        $tutoruser->experience_subjects = $request->experience_subjects;
+
+        $tutoruser->salar_range_from = $request->salar_range_from;
+        $tutoruser->salary_range_to = $request->salary_range_to;
+
+        $user->update();
+
+        $tutoruser->update();
+
+        return redirect()->route('tutor.editprofile',$request->profile_id)->with('message','Your Profile Updated');
+
+
     }
+}
 
 
     // update profile picture
 
-    public function updateProfilePicture(Request $request){
+public function updateProfilePicture(Request $request){
 
-        dd($request->all());
+        // dd($request->all());
+
+    $user = User::find($request->user_id)->first();
+
+    
+
+
+    if ($request->hasFile('profile_image')) {
+
+        $image = $request->file('profile_image');
+
+        $image_name = time() . '.' . $image->getClientOriginalExtension();
+
+        $destinationPath = public_path('assets/vendor/images/registerpage');
+
+        $resize_image = Image::make($image->path());
+
+        // dd($resize_image);
+
+        $resize_image->resize(100, 100, function($constraint){
+          $constraint->aspectRatio();
+      })->save($destinationPath . '/' . $image_name);
+
+        $destinationPath = public_path('assets/vendor/images/registerpage');
+
+        $image->move($destinationPath, $image_name);
+
+        $user->profile_image = 'assets/vendor/images/registerpage/' . $image_name;
+
+        // dd($user->profile_image);
     }
+
+    $user->update();
+
+    
+
+    return redirect()->route('tutor.home');
+
+        // dd($user);
+}
 }

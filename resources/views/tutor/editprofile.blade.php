@@ -22,6 +22,14 @@
                                 </form>
                                 @else
 
+                                <form action="{{route('tutor.update-profile-picture')}}" method="POST" enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="hidden" name="user_id" value="{{$getuser->id}}">
+                                    <input type="file" style="width: 100px;" id="profile_image_upload" name="profile_image">
+                                    <button class="" style="border: none; background-color: green; margin-top: 5px; color: white; width: 100px;height: 30px; text-align: center; font-size: 12px;font-family:'Montserrat-Regular';" type="submit">Update</button>
+
+                                </form>
+
                                 @endif
                             </div>
 
@@ -121,9 +129,9 @@
                                             <div class="right-information">
 
 
-                                             <input type="hidden" name="profile_id" value="{{$getuser->id}}">
-                                             <input type="hidden" name="profile_image" value="{{$getuser->profile_image}}">
-                                             <div class="info-right">
+                                               <input type="hidden" name="profile_id" value="{{$getuser->id}}">
+                                               <input type="hidden" name="profile_image" value="{{$getuser->profile_image}}">
+                                               <div class="info-right">
                                                 <div class="form-group">
                                                     <label for="">Name</label>
                                                     <input id="my-input" class="form-control"

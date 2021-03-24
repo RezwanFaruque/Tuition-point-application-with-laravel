@@ -1,0 +1,101 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){ 
+
+        section{
+            &.body{
+                .header-middle{
+                    .container{
+                        .row{
+                            .col-sm-12{
+                                .right-side{
+                                    .login-form{
+                                        @if($width <= 600){
+                                            width: 100%;
+
+                                        }
+                                       
+                                        .header{
+                                            background: #4CAF50;
+                                            height: 40px;
+                                            display: flex;
+                                            align-items: center;
+                                            font-size: 15px;
+                                            font-family: 'Montserrat-SemiBold';
+                                            color: white;
+                                            padding-left: 30px;
+
+                                        }
+                                        .form-body{
+                                            background-color: #F1F3F5;
+                                            padding-left: 30px;
+                                            padding-right: 30px;
+                                            padding-top: 30px;
+                                            padding-bottom: 30px;
+                                            form{
+                                                .form-group{
+                                                    label{
+                                                        font-size: 14px;
+                                                        font-family: 'Montserrat-Medium';
+                                                        color: black;
+                                                        line-height: 12px;
+                                                    }
+                                                    input{
+
+                                                    }
+                                                }
+                                                .login-button-submit{
+                                                    border: none;
+                                                    background-color: $button-color;
+                                                    width: 100px;
+                                                    padding-top: 5px;
+                                                    padding-bottom: 5px;
+                                                    font-size: 13px;
+                                                    font-family: 'Montserrat-SemiBold';
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                        .footer{
+                                            background: #4CAF50;
+                                            height: auto;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            padding-right: 30px;
+                                            padding-left: 30px;
+                                            height: 60px;
+                                            .title{
+                                                font-family: 'Montserrat-SemiBold';
+                                                font-size: 15px;
+                                                color: white;
+                                                padding-top: 0px;
+                                                margin-top: 0px;
+                                            }
+                                            .register-page{
+                                        // padding-right: 30px;
+                                        .register-page-link{
+                                            border: 1px solid white;
+                                            text-decoration: none;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            padding-top: 7px;
+                                            padding-bottom: 7px;
+                                            font-family: 'Montserrat-Medium';
+                                            font-size: 13px;
+                                            color: white;
+                                            
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
+}

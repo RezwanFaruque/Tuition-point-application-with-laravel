@@ -844,6 +844,19 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   color: #37474FB8;
   padding-bottom: 20px;
 }
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+  border: none;
+  background: #4CAF50;
+  color: white;
+  width: 100px;
+  height: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 12px;
+  font-family: "Montserrat-Regular";
+}
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
   background: #E9ECEF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #0000008A;
@@ -998,6 +1011,7 @@ section.body .tutor-profile-section .details-information {
   padding-top: 30px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tabs-options .nav a {
+  font-size: 13px;
   background-color: #4CAF50;
   margin-bottom: 10px;
   color: #ffffff;
@@ -1023,13 +1037,9 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   padding-bottom: 15px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
-  font-size: 15px;
-  font-family: "Montserrat-Bold";
+  font-size: 12px;
   color: #37474FB8;
   padding-bottom: 10px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .section_education {
   margin-bottom: 10px;
@@ -1039,19 +1049,19 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   padding-bottom: 15px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
-  font-size: 15px;
-  font-family: "Montserrat-Bold";
+  font-size: 12px;
   color: #37474FB8;
   padding-bottom: 10px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .form-group label {
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
 }
 
 section.body .container .row .col-sm-12 .req-tutor-left-side {
   margin-top: 50px;
   background-color: #F1F3F5;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1062,7 +1072,7 @@ section.body .container .row .col-sm-12 .req-tutor-left-side .title {
   font-family: "Montserrat-SemiBold" !important;
   color: black !important;
   text-align: center !important;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background: none !important;
 }
 section.body .container .row .col-sm-12 .req-tutor-left-side .form-section .container form .row .col-sm-12 .form-group .form-control {
@@ -1327,293 +1337,198 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
 }
 
 @media screen and (max-width: 1280px) {
-  section.header .navbar .navbar-collapse.show {
+  section.header .navbar .navbar-collapse {
+    background-color: #eaea22;
+    opacity: 1;
     position: absolute;
     height: 100vh;
     width: 100%;
     z-index: 9;
     top: 75px;
     left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
   }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  section.header .navbar .navbar-collapse ul li a {
-    color: black !important;
-    font-family: "Montserrat-SemiBold";
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  section.header .navbar .navbar-collapse ul li a.login-button {
-    padding-left: 7px;
-    padding-right: 7px;
   }
 }
 @media screen and (max-width: 1200px) {
-  section.header .navbar .navbar-collapse.show {
+  section.header .navbar .navbar-collapse {
+    background-color: #eaea22;
+    opacity: 1;
     position: absolute;
     height: 100vh;
     width: 100%;
     z-index: 9;
     top: 75px;
     left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
   }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  section.header .navbar .navbar-collapse ul li a {
-    color: black !important;
-    font-family: "Montserrat-SemiBold";
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  section.header .navbar .navbar-collapse ul li a.login-button {
-    padding-left: 7px;
-    padding-right: 7px;
   }
 }
 @media screen and (max-width: 1080px) {
-  section.header .navbar .navbar-collapse.show {
+  section.header .navbar .navbar-collapse {
+    background-color: #eaea22;
+    opacity: 1;
     position: absolute;
     height: 100vh;
     width: 100%;
     z-index: 9;
     top: 75px;
     left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
   }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  section.header .navbar .navbar-collapse ul li a {
-    color: black !important;
-    font-family: "Montserrat-SemiBold";
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  section.header .navbar .navbar-collapse ul li a.login-button {
-    padding-left: 7px;
-    padding-right: 7px;
   }
 }
 @media screen and (max-width: 1024px) {
-  section.header .navbar .navbar-collapse.show {
+  section.header .navbar .navbar-collapse {
+    background-color: #eaea22;
+    opacity: 1;
     position: absolute;
     height: 100vh;
     width: 100%;
     z-index: 9;
     top: 75px;
     left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
   }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  section.header .navbar .navbar-collapse ul li a {
-    color: black !important;
-    font-family: "Montserrat-SemiBold";
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  section.header .navbar .navbar-collapse ul li a.login-button {
-    padding-left: 7px;
-    padding-right: 7px;
   }
 }
 @media screen and (max-width: 991px) {
-  section.header .navbar .navbar-collapse.show {
+  section.header .navbar .navbar-collapse {
+    background-color: #eaea22;
+    opacity: 1;
     position: absolute;
     height: 100vh;
     width: 100%;
     z-index: 9;
     top: 75px;
     left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
   }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  }
-  section.header .navbar .navbar-collapse ul li a {
-    color: black !important;
-    font-family: "Montserrat-SemiBold";
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  section.header .navbar .navbar-collapse ul li a.login-button {
-    padding-left: 7px;
-    padding-right: 7px;
   }
 }
 @media screen and (max-width: 767px) {
-  section.header .navbar .navbar-collapse.show {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 9;
-    top: 75px;
-    left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
-  }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  section.header .navbar .navbar-collapse ul li a {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: black !important;
     font-family: "Montserrat-SemiBold";
     font-size: 15px;
     font-weight: bolder;
   }
-  section.header .navbar .navbar-collapse ul li a.login-button {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
     padding-left: 7px;
     padding-right: 7px;
+    border: 1px solid black;
   }
 }
 @media screen and (max-width: 575px) {
-  section.header .navbar .navbar-collapse.show {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 9;
-    top: 75px;
-    left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
-  }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  section.header .navbar .navbar-collapse ul li a {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: black !important;
     font-family: "Montserrat-SemiBold";
     font-size: 15px;
     font-weight: bolder;
   }
-  section.header .navbar .navbar-collapse ul li a.login-button {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
     padding-left: 7px;
     padding-right: 7px;
+    border: 1px solid black;
   }
 }
 @media screen and (max-width: 414px) {
-  section.header .navbar .navbar-collapse.show {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 9;
-    top: 75px;
-    left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
-  }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  section.header .navbar .navbar-collapse ul li a {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: black !important;
     font-family: "Montserrat-SemiBold";
     font-size: 15px;
     font-weight: bolder;
   }
-  section.header .navbar .navbar-collapse ul li a.login-button {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
     padding-left: 7px;
     padding-right: 7px;
+    border: 1px solid black;
   }
 }
 @media screen and (max-width: 375px) {
-  section.header .navbar .navbar-collapse.show {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 9;
-    top: 75px;
-    left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
-  }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  section.header .navbar .navbar-collapse ul li a {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: black !important;
     font-family: "Montserrat-SemiBold";
     font-size: 15px;
     font-weight: bolder;
   }
-  section.header .navbar .navbar-collapse ul li a.login-button {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
     padding-left: 7px;
     padding-right: 7px;
+    border: 1px solid black;
   }
 }
 @media screen and (max-width: 320px) {
-  section.header .navbar .navbar-collapse.show {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 9;
-    top: 75px;
-    left: 0;
-    background-color: #87ef8b;
-    opacity: 0.9;
-  }
-  section.header .navbar .navbar-collapse ul {
+  section.header .navbar .navbar-collapse .navbar-nav {
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  section.header .navbar .navbar-collapse ul li a {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: black !important;
     font-family: "Montserrat-SemiBold";
     font-size: 15px;
     font-weight: bolder;
   }
-  section.header .navbar .navbar-collapse ul li a.login-button {
+  section.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.login-button {
     padding-left: 7px;
     padding-right: 7px;
+    border: 1px solid black;
   }
 }
 .body-overflow-hidden {
@@ -2706,6 +2621,2287 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.body .header-middle .container .row .col-sm-12 .register-as-tutor .container .row .col-sm-12 .right-side-form .registration-form form .form-group {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form {
+    width: 100%;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form {
+    width: 100%;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form {
+    width: 100%;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form {
+    width: 100%;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .header {
+    background: #4CAF50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    padding-left: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body {
+    background-color: #F1F3F5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .form-group label {
+    font-size: 14px;
+    font-family: "Montserrat-Medium";
+    color: black;
+    line-height: 12px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .form-body form .login-button-submit {
+    border: none;
+    background-color: #4CAF50;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+    color: white;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer {
+    background: #4CAF50;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 60px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  section.body .header-middle .container .row .col-sm-12 .right-side .login-form .footer .register-page .register-page-link {
+    border: 1px solid white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: "Montserrat-Medium";
+    font-size: 13px;
+    color: white;
+  }
+}
+@media screen and (max-width: 1280px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 1080px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.body .tutor-profile-section {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout {
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 30px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content {
+    margin-right: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.body .tutor-profile-section {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout {
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 30px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content {
+    margin-right: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.body .tutor-profile-section {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout {
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 30px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-edit-profile a {
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
+    margin-top: 20px;
+  }
+  section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
+    border: none;
+    width: auto;
+    height: auto;
+    background: #4CAF50;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li {
+    width: 300px;
+    background-color: #4CAF50;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li.active {
+    border-radius: 5%;
+    background-color: #616161;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a {
+    color: white;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information ul li a.active {
+    background-color: #707070;
+    color: white;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content {
+    margin-right: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .left-informations .info-left {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right {
+    display: flex;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    color: #37474FB8;
+    padding-bottom: 20px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+    width: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+    width: 50%;
+    text-align: left;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
+    border: none;
+    background: #4CAF50;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions {
+    background: #E9ECEF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000008A;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .title-button {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left {
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image {
+    padding-right: 15px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf {
+    font-family: "Montserrat-Medium";
+    color: #37474F;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.name {
+    font-size: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.medium {
+    font-size: 8px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .left .info .info-inf.location {
+    font-size: 7px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details {
+    margin-bottom: 10px;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a {
+    text-decoration: none;
+    background: #7D7D7E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    font-family: "Montserrat-SemiBold";
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.accept {
+    background-color: #00A99D;
+  }
+  section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
+    background-color: #F32B2B;
   }
 }
 

@@ -7,9 +7,11 @@ use App\Model\ServiceArea;
 use App\Model\ServiceClassCategory;
 use Illuminate\Http\Request;
 use App\User;
+use App\Model\GurdianInfo;
 use App\Model\ServiceDistrict;
 use App\Model\ServiceMediumCategory;
 use App\Model\TutorInfo;
+use Illuminate\Support\Facades\Auth;
 use App\Model\TutorFeedback;
 use App\Model\RequestTutor;
 use Illuminate\Http\JsonResponse;
@@ -23,9 +25,21 @@ class GurdianHomeController extends Controller
 
     public function index()
     {
-        return view('gurdianprofilehome');
+        $gurdian = GurdianInfo::where('user_id',Auth::user()->id)->with('getgurdian')->first();
+
+        // dd($gurdian);
+        return view('gurdianprofilehome',compact('gurdian'));
     }
 
+
+
+    // Gurdian Edit Profile
+    public function editProfile($id){
+
+        $gurdian = GurdianInfo::where('user_id',$id)->with('getgurdian')->first();
+
+        return view('gurdian.editprofile',compact('gurdian'));
+    }
 
         /**
      * Show All TutorProfiles for Authenticated gurdian.

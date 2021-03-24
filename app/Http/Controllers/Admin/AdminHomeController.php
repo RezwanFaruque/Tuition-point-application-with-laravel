@@ -150,7 +150,7 @@ class AdminHomeController extends Controller
             'location' => 'required',
             'desire_tutor_gender' => 'required',
             'salary_range' => 'required',
-            'email' => 'required',
+            // 'email' => 'required',
         ]);
 
 
