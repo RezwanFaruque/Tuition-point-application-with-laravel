@@ -6,6 +6,8 @@ Route::middleware('is_gurdian')->namespace('Gurdian')->group(function () {
 
     Route::get('gurdian/home/{id}','GurdianHomeController@editProfile')->name('gurdian.editprofile');
 
+    Route::post('gurdian/profile/update/{id}','GurdianHomeController@updateProfile')->name('gurdian.updateprofile');
+
     Route::get('gurdian/gettutors','GurdianHomeController@fetchAllTutors')->name('gurdian.fetchtutors');
 
     Route::get('gurdian/request-for-tutor','GurdianHomeController@requestTutor')->name('gurdian.requestfortutor');

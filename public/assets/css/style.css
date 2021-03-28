@@ -843,6 +843,14 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   font-family: "Montserrat-Regular";
   color: #37474FB8;
   padding-bottom: 20px;
+  display: flex;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+  width: 50%;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+  width: 50%;
+  text-align: left;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .container .row .col-sm-12 .update-gurdian {
   border: none;

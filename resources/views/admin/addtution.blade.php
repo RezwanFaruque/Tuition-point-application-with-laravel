@@ -230,17 +230,17 @@
 @endsection
 
 @section('script')
-<script type="text/javascript">
-    $('.select2-single').select2();
+    <script type="text/javascript">
+        $('.select2-single').select2();
 
-        // Select2 Single  with Placeholder
-        $('.select2-single-placeholder').select2({
-            placeholder: "Select a Province",
-            allowClear: true
-        });
+            // Select2 Single  with Placeholder
+            $('.select2-single-placeholder').select2({
+                placeholder: "Select a Province",
+                allowClear: true
+            });
 
         // Select2 Multiple
         $('.select2-multiple').select2();
 
     </script>
-    @endsection
+@endsection

@@ -18,6 +18,8 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/css/animate.css') }}">
 
+    <link href="{{asset('assets/vendor/css/select2.min.css')}}" rel="stylesheet" type="text/css">
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -160,6 +162,7 @@
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/wow.min.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{asset('asserts/vendor/js/select2.min.js')}}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>

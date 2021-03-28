@@ -159,6 +159,19 @@ section{
                                                         font-family: 'Montserrat-Regular';
                                                         color: #37474FB8;
                                                         padding-bottom: 20px;
+
+                                                        display: flex;
+
+                                                        label{
+                                                            width: 50%;
+
+                                                        }
+                                                        .info{
+
+                                                            width: 50%;
+                                                            text-align: left;
+
+                                                        }
                                                     }
 
 

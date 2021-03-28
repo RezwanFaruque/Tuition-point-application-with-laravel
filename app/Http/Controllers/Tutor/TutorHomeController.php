@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use App\Model\TutorInfo;
 use Illuminate\Support\Facades\DB;
 use App\User;
+use App\Model\ServiceDistrict;
+use App\Model\ServiceArea;
+use App\Model\ServiceMediumCategory;
+use App\Model\ServiceClassCategory;
 use App\Model\ActiveTution;
 use App\Model\AppliedTutorForTution;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +38,14 @@ class TutorHomeController extends Controller
      */
     public function editProfile($id)
     {
+
+        $districts = ServiceDistrict::all();
+
+        $areas = ServiceArea::all();
+
+        $mediums = ServiceMediumCategory::all();
+
+        $classes = ServiceClassCategory::all();
 
         $getuser = User::where('id', Auth::user()->id)->with('tutorinfo')->first();
 
@@ -131,7 +143,7 @@ class TutorHomeController extends Controller
         }
 
 
-        return view('tutor.editprofile', compact('getuser','prgress'));
+        return view('tutor.editprofile', compact('getuser','prgress','districts','areas','mediums','classes'));
     }
 
 
@@ -257,9 +269,9 @@ public function updateProfile(Request $request){
         $tutoruser->subject = $request->subject;
         $tutoruser->university_result = $request->university_result;
         $tutoruser->university_passing_year = $request->university_passing_year;
-        $tutoruser->prefered_class = $request->prefered_class;
-        $tutoruser->prefered_subject = $request->prefered_subject;
-        $tutoruser->prefared_area = $request->prefared_area;
+        $tutoruser->prefered_class = implode(",", $request->prefered_class);
+        $tutoruser->prefered_subject = implode(",", $request->prefered_subject);
+        $tutoruser->prefared_area =  implode(",", $request->prefared_area);
         $tutoruser->prefered_medium = $request->prefered_medium;
 
         $tutoruser->experience_years = $request->experience_years;

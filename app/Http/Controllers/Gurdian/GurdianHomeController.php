@@ -23,38 +23,97 @@ class GurdianHomeController extends Controller
      * Show the TutorProfile dashboard.
      */
 
-    public function index()
-    {
-        $gurdian = GurdianInfo::where('user_id',Auth::user()->id)->with('getgurdian')->first();
+        public function index()
+        {
+            $gurdian = GurdianInfo::where('user_id',Auth::user()->id)->with('getgurdian')->first();
 
         // dd($gurdian);
-        return view('gurdianprofilehome',compact('gurdian'));
-    }
+            return view('gurdianprofilehome',compact('gurdian'));
+        }
 
 
 
     // Gurdian Edit Profile
-    public function editProfile($id){
+        public function editProfile($id){
 
-        $gurdian = GurdianInfo::where('user_id',$id)->with('getgurdian')->first();
+            $areas = ServiceArea::all();
 
-        return view('gurdian.editprofile',compact('gurdian'));
-    }
+            $gurdian = GurdianInfo::where('user_id',$id)->with('getgurdian')->first();
+
+            return view('gurdian.editprofile',compact('gurdian','areas'));
+        }
+
+
+
+    // update gurdian profile information
+        public function updateProfile(Request $request,$id){
+
+            // dd($request->all());
+
+            $request->validate([
+
+                'name' => 'required',
+                'phone_number' => 'required',
+                'gender' => 'required',
+                'email' => 'required',
+
+            ]);
+
+
+            $user = User::find($id);
+
+            $gurdian = GurdianInfo::where('user_id',$id)->first();
+
+            if($user){
+
+               $user->name = $request->name;
+
+               $user->email = $request->email;
+
+               $user->phone_number = $request->phone_number;
+
+               $user->gender = $request->gender;
+
+
+               $gurdian->name = $request->name;
+
+               $gurdian->area = $request->area;
+
+               $gurdian->phone_number = $request->phone_number;
+
+               $gurdian->email = $request->email;
+
+               $gurdian->gender = $request->gender;
+
+               $gurdian->salary_range = $request->salary_range;
+
+
+               $user->update();
+
+               $gurdian->update();
+
+           }
+
+
+           return redirect()->route('gurdian.editprofile',$id)->with('message','Your Information Updated Successfully');
+
+
+       }
 
         /**
      * Show All TutorProfiles for Authenticated gurdian.
      */
 
-    public function fetchAllTutors(){
+        public function fetchAllTutors(){
 
-        $districts = ServiceDistrict::all();
-        $mediums = ServiceMediumCategory::all();
+            $districts = ServiceDistrict::all();
+            $mediums = ServiceMediumCategory::all();
 
 
-        $tutorusers = User::where('is_tutor','1')->with('tutorinfo')->paginate(15);
+            $tutorusers = User::where('is_tutor','1')->with('tutorinfo')->paginate(15);
 
-        return view('gurdian.tutorlistforgurdian',compact('tutorusers','districts','mediums'));
-    }
+            return view('gurdian.tutorlistforgurdian',compact('tutorusers','districts','mediums'));
+        }
 
 
         /**
@@ -63,120 +122,120 @@ class GurdianHomeController extends Controller
      */
 
 
-     public function requestTutor(){
+        public function requestTutor(){
 
-        $districts = ServiceDistrict::all();
-        $mediums = ServiceMediumCategory::all();
+            $districts = ServiceDistrict::all();
+            $mediums = ServiceMediumCategory::all();
 
-         return view('gurdian.requestfortutor',compact('districts','mediums'));
-     }
+            return view('gurdian.requestfortutor',compact('districts','mediums'));
+        }
 
     //  fetch area acording to district
-     public function fetchArea(Request $request){
+        public function fetchArea(Request $request){
 
         // dd($request->all());
 
-        $district = ServiceDistrict::where('district_name',$request->district_name)->first();
+            $district = ServiceDistrict::where('district_name',$request->district_name)->first();
 
-        $area = ServiceArea::where('district_id',$district->id)->get();
+            $area = ServiceArea::where('district_id',$district->id)->get();
 
-        return response()->json($area);
+            return response()->json($area);
 
-     }
+        }
 
     //  fetch classes acording to medium
-     public function fetchClass(Request $request){
+        public function fetchClass(Request $request){
 
-        $medium = ServiceMediumCategory::where('medium_name',$request->medium_name)->first();
+            $medium = ServiceMediumCategory::where('medium_name',$request->medium_name)->first();
 
-        $class = ServiceClassCategory::where('medium_id',$medium->id)->get();
+            $class = ServiceClassCategory::where('medium_id',$medium->id)->get();
 
-        return response()->json($class);
+            return response()->json($class);
 
-     }
+        }
 
 
     //  search Tutor
 
-    public function searchTutor(Request $request){
+        public function searchTutor(Request $request){
 
         // dd($request->all());
 
-        $searchtutors = TutorInfo::with('getuser');
+            $searchtutors = TutorInfo::with('getuser');
 
 
-        if($request->has('district') && $request->district != ''){
-            $district = $request->district;
+            if($request->has('district') && $request->district != ''){
+                $district = $request->district;
 
-            $searchtutors->where('district_name','LIKE','%'.$district.'%');
-        } 
+                $searchtutors->where('district_name','LIKE','%'.$district.'%');
+            } 
 
-        if($request->has('area') && $request->area != ''){
-            $area = $request->area;
+            if($request->has('area') && $request->area != ''){
+                $area = $request->area;
 
-            $searchtutors->where('area','LIKE','%'.$area.'%');
-        }
+                $searchtutors->where('area','LIKE','%'.$area.'%');
+            }
 
         // dd($searchtutors->get());
 
 
-        if($request->has('medium') && $request->medium != ''){
-            $medium = $request->medium;
+            if($request->has('medium') && $request->medium != ''){
+                $medium = $request->medium;
 
-            $searchtutors->where('medium','LIKE','%'.$medium.'%');
-        }
+                $searchtutors->where('medium','LIKE','%'.$medium.'%');
+            }
 
-        if($request->has('classes') && $request->classes != ''){
-            $class = $request->classes;
+            if($request->has('classes') && $request->classes != ''){
+                $class = $request->classes;
 
-            $searchtutors->where('prefered_class','LIKE','%'.$class.'%');
-        }
+                $searchtutors->where('prefered_class','LIKE','%'.$class.'%');
+            }
 
-        if($request->has('subject') && $request->subject != ''){
-            $subject = $request->subject;
+            if($request->has('subject') && $request->subject != ''){
+                $subject = $request->subject;
 
-            $searchtutors->where('prefered_subject','LIKE','%'.$subject.'%');
-        }
+                $searchtutors->where('prefered_subject','LIKE','%'.$subject.'%');
+            }
 
 
-        if($request->has('gender') && $request->gender != ''){
-            $gender = $request->gender;
+            if($request->has('gender') && $request->gender != ''){
+                $gender = $request->gender;
 
-            $searchtutors->where('gender','=', $gender);
-        }
+                $searchtutors->where('gender','=', $gender);
+            }
 
-        if($request->has('salary') && $request->salary != ''){
-            $salary_range = $request->salary;
+            if($request->has('salary') && $request->salary != ''){
+                $salary_range = $request->salary;
 
-            $salary_range_array = explode("-",$salary_range);
+                $salary_range_array = explode("-",$salary_range);
 
-            $searchtutors->where('salar_range_from','LIKE','%'.$salary_range_array[0].'%');
+                $searchtutors->where('salar_range_from','LIKE','%'.$salary_range_array[0].'%');
 
-        }
+            }
 
-        if($request->has('days_per_week') && $request->days_per_week != ''){
-            $days_per_week = $request->days_per_week;
+            if($request->has('days_per_week') && $request->days_per_week != ''){
+                $days_per_week = $request->days_per_week;
 
-            $searchtutors->where('days_per_week','LIKE','%'.$days_per_week.'%');
+                $searchtutors->where('days_per_week','LIKE','%'.$days_per_week.'%');
 
-        }
+            }
 
-        if($searchtutors != ''){
-           $searchtutorresult = $searchtutors->paginate(15);
-        }
+            if($searchtutors != ''){
+             $searchtutorresult = $searchtutors->paginate(15);
+         }
 
         // dd($searchtutorresult);
 
-        $districts = ServiceDistrict::all();
-        $mediums = ServiceMediumCategory::all();
+         $districts = ServiceDistrict::all();
+         $mediums = ServiceMediumCategory::all();
 
 
-        return view('gurdian.searchtutorresult',compact('searchtutorresult','districts','mediums'));
-    }
+         return view('gurdian.searchtutorresult',compact('searchtutorresult','districts','mediums'));
+     }
 
 
     // save request for tutor
-    public function saveRequestTutor(Request $request){
+     public function saveRequestTutor(Request $request){
 
         $request->validate([
             'full_name' => 'required',
@@ -228,53 +287,53 @@ class GurdianHomeController extends Controller
 
 
     // public view
-     public function singleTutorPublic($id){
+    public function singleTutorPublic($id){
 
-         $tutor = User::where('id',$id)->with('tutorinfo')->first();
-         $tutor_feedbacks = TutorFeedback::where('tutor_id',$id)->get();
+       $tutor = User::where('id',$id)->with('tutorinfo')->first();
+       $tutor_feedbacks = TutorFeedback::where('tutor_id',$id)->get();
 
-        return view('singletutorpublicview',compact('tutor','tutor_feedbacks'));
-        
-    }
+       return view('singletutorpublicview',compact('tutor','tutor_feedbacks'));
+
+   }
 
 
     // premium tutors
-    public function getPremiumTutor(){
-        $premium_tutors  = TutorInfo::where('is_premium','1')->with('getuser')->paginate(15);
+   public function getPremiumTutor(){
+    $premium_tutors  = TutorInfo::where('is_premium','1')->with('getuser')->paginate(15);
 
-        $districts = ServiceDistrict::all();
+    $districts = ServiceDistrict::all();
 
-        $mediums = ServiceMediumCategory::all();
+    $mediums = ServiceMediumCategory::all();
 
 
-        return view('premiumtutorlist',compact('premium_tutors','districts','mediums'));
+    return view('premiumtutorlist',compact('premium_tutors','districts','mediums'));
 
-        
-    }
+
+}
 
     // Give Feedbak to a tutor
-    public function giveFeedback(Request $request){
-        
-        $request->validate([
-            'name' => 'required',
-            'feedback_message' => 'required',
-            'mobile_number' => 'required',
-        ]);
+public function giveFeedback(Request $request){
+
+    $request->validate([
+        'name' => 'required',
+        'feedback_message' => 'required',
+        'mobile_number' => 'required',
+    ]);
 
 
-        
-        $feedback = new TutorFeedback();
 
-        $feedback->tutor_id = $request->tutor_id;
-        $feedback->name = $request->name;
-        $feedback->phone_number = $request->mobile_number;
-        $feedback->feedback_message = $request->feedback_message;
+    $feedback = new TutorFeedback();
 
-        $feedback->save();
+    $feedback->tutor_id = $request->tutor_id;
+    $feedback->name = $request->name;
+    $feedback->phone_number = $request->mobile_number;
+    $feedback->feedback_message = $request->feedback_message;
 
-        return redirect()->route('gurdian.singletutor',$request->tutor_id)->with('message','Thank you for your Feedback');
+    $feedback->save();
+
+    return redirect()->route('gurdian.singletutor',$request->tutor_id)->with('message','Thank you for your Feedback');
 
 
-    }
+}
 
 }

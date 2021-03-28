@@ -149,46 +149,338 @@
                                             <div class="info-right">
                                                 <div class="form-group">
                                                     <label for="">Gender</label>
-                                                    <input id="my-input" class="form-control"
-                                                    value="{{$getuser->gender}}"
-                                                    type="text" name="gender">
+                                                    @php
+                                                    $genders = ['male','female'];
+                                                    @endphp
+
+                                                    <select class="form-control" name="gender">
+
+                                                        @foreach($genders as $gender)
+                                                        <option value="{{$gender}}" @if($gender == $getuser->gender)
+                                                            selected @endif>{{$gender}}</option>
+                                                            @endforeach
+
+                                                        </select>
+
+                                                    </div>
+
                                                 </div>
 
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="">District</label>
+                                                        <select class="form-control" name="district_name">
+
+                                                            @foreach($districts as $district)
+                                                            <option value="{{$district->district_name}}" @if($district->district_name == $getuser->tutorinfo->district_name)
+                                                                selected @endif>{{$district->district_name}}
+                                                            </option>
+                                                            @endforeach
+
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="">Address</label>
+
+                                                        <select class="form-control" name="area">
+                                                            @foreach($areas as $area)
+                                                            <option @if($area->area_name == $getuser->tutorinfo->area)
+                                                                selected @endif value="{{$area->area_name}}">{{$area->area_name}}</option>
+                                                                @endforeach
+                                                            </select>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="info-right">
+                                                        <div class="form-group">
+                                                            <label for="">Cell</label>
+                                                            <input id="my-input" class="form-control"
+                                                            value="{{$getuser->tutorinfo->mobile_number}}" type="text"
+                                                            name="phone_number">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="info-right">
+                                                        <div class="form-group">
+                                                            <label for="">Parents Phone Number</label>
+                                                            <input id="my-input" class="form-control"
+                                                            value="{{$getuser->tutorinfo->parents_phone_number}}" type="text" name="parents_phone_number">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <button
+                                                    style="border: none; padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;background: #4CAF50; color: white;"
+                                                    type="submit">Update Profile</button>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-4 col-sm-12">
+                                            <div class="right-information">
+
+
+
+
+                                                <input type="hidden" name="profile_id" value="{{$getuser->id}}">
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">Your Medium</label>
+
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->medium}}" name="medium">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">HighSchool/O'Level</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->h_school_name}}" name="h_school_name">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">Section</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->h_school_section}}" name="h_school_section">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label
+                                                        for="my-input">Result</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->h_school_result}}" name="h_school_result">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">Collage</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->collage_name}}" name="collage_name">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">Section</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->collage_section}}" name="collage_section">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label
+                                                        for="my-input">Result</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->collage_result}}" name="collage_result">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">University</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->university_name}}" name="university_name">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">Subject</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->subject}}" name="subject">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label for="my-input">Result</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->university_result}}" name="university_result">
+                                                    </div>
+                                                </div>
+
+                                                <div class="info-right">
+                                                    <div class="form-group">
+                                                        <label
+                                                        for="my-input">Passing Year</label>
+                                                        <input id="my-input" class="form-control"
+                                                        type="text" value="{{$getuser->tutorinfo->university_passing_year}}" name="university_passing_year">
+                                                    </div>
+                                                </div>
+
+                                                <button
+                                                style="border: none; padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;background: #4CAF50; color: white;"
+                                                type="submit">Update Profile</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-4 col-sm-12">
+                                        <div class="right-information">
+
+
+                                            <input type="hidden" name="profile_id" value="{{$getuser->id}}">
+                                            <div class="info-right">
+
+
+                                                <div class="form-group">
+                                                    <label for="my-input">Prefered Class</label>
+                                                    <select class="js-example-basic-multiple form-control" style="width: 100%" name="prefered_class[]" multiple="multiple">
+                                                        @php
+                                                        $s_classes = explode(",", $getuser->tutorinfo->prefered_class);
+
+                                                        
+                                                        @endphp
+
+                                                        @foreach($s_classes as $s_class)
+                                                        <option selected value="{{$s_class}}">{{$s_class}}</option>
+                                                        @endforeach
+
+                                                        @foreach($classes as $class)
+                                                        <option
+
+                                                           {{--  @foreach($s_classes as $s_class)
+                                                                @if($s_class == $class->classes_name) selected @endif
+                                                            @endforeach --}}
+                                                         value="{{$class->classes_name}}">{{$class->classes_name}}</option>
+                                                        @endforeach
+                                                        
+                                                    </select>
+                                                   
+                                                </div>
                                             </div>
 
                                             <div class="info-right">
                                                 <div class="form-group">
-                                                    <label for="">District</label>
-                                                    <input id="my-input" class="form-control"
-                                                    value="{{$getuser->tutorinfo->district_name}}" type="text" name="district_name">
-                                                </div>
+                                                    <label for="my-input">Prefered Subject</label>
+                                                    <select class="js-example-basic-multiple form-control" style="width: 100%" name="prefered_subject[]" multiple="multiple">
 
+                                                        @php
+                                                            $s_p_subjects = explode(",", $getuser->tutorinfo->prefered_subject);
+                                                        @endphp
+
+                                                        @foreach($s_p_subjects as $s_p_subject)
+                                                            <option selected value="{{$s_p_subject}}">{{$s_p_subject}}</option>
+                                                        @endforeach
+                                                        <option value="Bangla">Bangla</option>
+                                                        <option value="English">English</option>
+                                                        <option value="Math">Math</option>
+                                                        <option value="Higher Math">Higher Math</option>
+                                                        <option value="General Math">General Math</option>
+                                                        <option value="Physics">Physics</option>
+                                                        <option value="Chemistry">Chemistry</option>
+                                                        <option value="Biology">Biology</option>
+                                                        <option value="Statistics">Statistics</option>
+                                                        <option value="Agriculture">Agriculture</option>
+                                                        <option value="Social Sciences">Social Sciences</option>
+                                                        <option value="Sciences">Sciences</option>
+                                                    </select>
+                                                    
+                                                </div>
                                             </div>
 
                                             <div class="info-right">
                                                 <div class="form-group">
-                                                    <label for="">Address</label>
-                                                    <input id="my-input" class="form-control"
-                                                    value="{{$getuser->tutorinfo->area}}" type="text" name="area">
-                                                </div>
+                                                    <label for="my-input">Prefered Area</label>
 
+                                                    <select class="js-example-basic-multiple form-control" style="width: 100%" name="prefared_area[]" multiple="multiple">
+                                                        @php
+                                                            $s_areas = explode(",", $getuser->tutorinfo->prefared_area);
+                                                        @endphp
+
+                                                        @foreach($s_areas as $s_area)
+                                                            <option selected value="{{$s_area}}">{{$s_area}}</option>
+                                                        @endforeach
+                                                        @foreach($areas as $area)
+                                                            <option value="{{$area->area_name}}">{{$area->area_name}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                   
+                                                </div>
                                             </div>
+
                                             <div class="info-right">
                                                 <div class="form-group">
-                                                    <label for="">Cell</label>
-                                                    <input id="my-input" class="form-control"
-                                                    value="{{$getuser->tutorinfo->mobile_number}}" type="text"
-                                                    name="phone_number">
-                                                </div>
+                                                    <label for="my-input">Prefered Medium</label>
+                                                    @php
 
+                                                        $p_mediums = ['English','Bangla'];
+                                                    @endphp
+                                                    <select class="form-control" name="prefered_medium">
+                                                        @foreach($p_mediums as $p_medium)
+                                                        <option @if($p_medium == $getuser->tutorinfo->prefered_medium) selected @endif value="{{$p_medium}}">{{$p_medium}}</option>
+
+                                                        @endforeach
+                                                    </select>
+                                                   
+                                                </div>
                                             </div>
+
                                             <div class="info-right">
                                                 <div class="form-group">
-                                                    <label for="">Parents Phone Number</label>
-                                                    <input id="my-input" class="form-control"
-                                                    value="{{$getuser->tutorinfo->parents_phone_number}}" type="text" name="parents_phone_number">
-                                                </div>
+                                                    <label for="my-input">Experiences (Years)</label>
 
+                                                    
+                                                    <input id="my-input" class="form-control"
+                                                    value="{{$getuser->tutorinfo->experience_years}}" type="text" name="experience_years">
+                                                </div>
+                                            </div>
+
+                                            <div class="info-right">
+                                                <div class="form-group">
+                                                    <label for="my-input">Subject Experiences</label>
+                                                    <input id="my-input" class="form-control"
+                                                    value="{{$getuser->tutorinfo->experience_subjects}}" type="text" name="experience_subjects">
+                                                </div>
+                                            </div>
+
+                                            {{-- <div class="info-right">
+                                                <div class="form-group">
+                                                    <label for="my-input">Salary Range From</label>
+                                                    <input id="my-input" class="form-control"
+                                                    value="{{$getuser->tutorinfo->salar_range_from}}" type="text" name="salar_range_from">
+                                                </div>
+                                            </div> --}}
+
+                                            <div class="info-right">
+                                                <div class="form-group">
+                                                    <label for="my-input">Salary Range</label>
+                                                    <input id="my-input" class="form-control"
+                                                    value="{{$getuser->tutorinfo->salary_range_to}}" type="text" name="salary_range_to">
+                                                </div>
                                             </div>
 
                                             <button
@@ -200,215 +492,14 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 col-md-4 col-sm-12">
-                                    <div class="right-information">
-
-
-
-
-                                        <input type="hidden" name="profile_id" value="{{$getuser->id}}">
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">Your Medium</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->medium}}" name="medium">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">HighSchool/O'Level</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->h_school_name}}" name="h_school_name">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">Section</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->h_school_section}}" name="h_school_section">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label
-                                                for="my-input">Result</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->h_school_result}}" name="h_school_result">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">Collage</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->collage_name}}" name="collage_name">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">Section</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->collage_section}}" name="collage_section">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label
-                                                for="my-input">Result</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->collage_result}}" name="collage_result">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">University</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->university_name}}" name="university_name">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">Subject</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->subject}}" name="subject">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label for="my-input">Result</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->university_result}}" name="university_result">
-                                            </div>
-                                        </div>
-
-                                        <div class="info-right">
-                                            <div class="form-group">
-                                                <label
-                                                for="my-input">Passing Year</label>
-                                                <input id="my-input" class="form-control"
-                                                type="text" value="{{$getuser->tutorinfo->university_passing_year}}" name="university_passing_year">
-                                            </div>
-                                        </div>
-
-                                        <button
-                                        style="border: none; padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;background: #4CAF50; color: white;"
-                                        type="submit">Update Profile</button>
-
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                    aria-labelledby="v-pills-messages-tab">
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-4 col-sm-12">
-                                <div class="right-information">
-
-
-                                    <input type="hidden" name="profile_id" value="{{$getuser->id}}">
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Prefered Class</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->prefered_class}}" type="text" name="prefered_class">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Prefered Subject</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->prefered_subject}}" type="text" name="prefered_subject">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Prefered Area</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->prefared_area}}" type="text" name="prefared_area">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Prefered Medium</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->prefered_medium}}" type="text" name="prefered_medium">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Experiences (Years)</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->experience_years}}" type="text" name="experience_years">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Prefered Medium</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->experience_subjects}}" type="text" name="experience_subjects">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Salary Range From</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->salar_range_from}}" type="text" name="salar_range_from">
-                                        </div>
-                                    </div>
-
-                                    <div class="info-right">
-                                        <div class="form-group">
-                                            <label for="my-input">Salary Range To</label>
-                                            <input id="my-input" class="form-control"
-                                            value="{{$getuser->tutorinfo->salary_range_to}}" type="text" name="salary_range_to">
-                                        </div>
-                                    </div>
-
-                                    <button
-                                    style="border: none; padding-left: 15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;background: #4CAF50; color: white;"
-                                    type="submit">Update Profile</button>
-
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-            </div>
+            </form>
         </div>
-    </form>
-</div>
 
-</div>
+    </div>
 
 </div>
 </div>
@@ -434,8 +525,14 @@
                 $('#profile_image').fadeIn("fast").attr('src', tmppath);
             }
 
-        })
+        });
+
+        $('.js-example-basic-multiple').select2();
+
+
     })
+
+    
 
 </script>
 @endsection
