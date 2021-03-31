@@ -33,7 +33,10 @@
 
                         </div>
                         <div class="col-lg-9">
-                            <input class="form-control" name="full_name" placeholder="Full Name" type="text">
+                            <input class="form-control @error('full_name') is-invalid @enderror" name="full_name" placeholder="Full Name" type="text">
+                            @error('full_name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>

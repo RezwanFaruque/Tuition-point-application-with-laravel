@@ -25,6 +25,11 @@
                                 <div class="info gmail">
                                     {{$user->email}}
                                 </div>
+                                @if (session('message'))
+                                <div class="alert alert-success">
+                                    {!! session('message') !!}
+                                </div>
+                                @endif
                             </div>
                         </div>
 
@@ -86,11 +91,11 @@
                                         <div class="info-right">
                                             <label>Name</label>
                                             <div class="info">
-                                               {{ $user->tutorinfo->name }}
-                                           </div>
+                                             {{ $user->tutorinfo->name }}
+                                         </div>
 
-                                       </div>
-                                       <div class="info-right">
+                                     </div>
+                                     <div class="info-right">
                                         <label>University/Collage</label>
                                         <div class="info">
                                             {{$user->tutorinfo->university_or_collage}}

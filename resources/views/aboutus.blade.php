@@ -74,7 +74,7 @@
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="meet-the-team-section">
+            <div class="meet-the-team-section" style="margin-bottom: 20px">
                 <div class="title">
                     Meet The Team
                 </div>
@@ -84,11 +84,11 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="team-member-card">
                                     <div class="left-image">
-                                        <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
+                                        <img src="{{asset('')}}" alt="" srcset="">
                                     </div>
                                     <div class="right-text">
                                         <div class="name">
-                                            Rayhan Ahmed
+                                            MD Mehadi Hasan Razu
                                         </div>
                                         <div class="designation">
                                             CEO, Tuition Ponit
@@ -100,11 +100,11 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="team-member-card">
                                     <div class="left-image">
-                                        <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
+                                        <img src="{{asset('')}}" alt="" srcset="">
                                     </div>
                                     <div class="right-text">
                                         <div class="name">
-                                            Rayhan Ahmed
+                                            Mahbub Rezvi
                                         </div>
                                         <div class="designation">
                                             CEO, Tuition Ponit
@@ -113,68 +113,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="team-member-card">
-                                    <div class="left-image">
-                                        <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
-                                    </div>
-                                    <div class="right-text">
-                                        <div class="name">
-                                            Rayhan Ahmed
-                                        </div>
-                                        <div class="designation">
-                                            CEO, Tuition Ponit
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="team-member-card">
-                                    <div class="left-image">
-                                        <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
-                                    </div>
-                                    <div class="right-text">
-                                        <div class="name">
-                                            Rayhan Ahmed
-                                        </div>
-                                        <div class="designation">
-                                            CEO, Tuition Ponit
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="team-member-card">
-                                    <div class="left-image">
-                                        <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
-                                    </div>
-                                    <div class="right-text">
-                                        <div class="name">
-                                            Rayhan Ahmed
-                                        </div>
-                                        <div class="designation">
-                                            CEO, Tuition Ponit
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="team-member-card">
-                                    <div class="left-image">
-                                        <img src="assets/vendor/images/tutorlist/me.jpg" alt="" srcset="">
-                                    </div>
-                                    <div class="right-text">
-                                        <div class="name">
-                                            Rayhan Ahmed
-                                        </div>
-                                        <div class="designation">
-                                            CEO, Tuition Ponit
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

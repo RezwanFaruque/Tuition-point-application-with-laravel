@@ -92,7 +92,7 @@ section.header nav .navbar-brand {
 }
 section.header nav .navbar-brand img {
   height: 50px;
-  width: auto;
+  width: 70px;
 }
 section.header nav .navbar-collapse .navbar-nav .nav-item {
   padding-left: 10px;
@@ -1130,6 +1130,9 @@ section.body .container .row .col-sm-12 .image-section {
   font-family: "Montserrat-Regular";
   color: black;
   text-align: center;
+  background: none !important;
+  width: 100% !important;
+  display: block;
 }
 .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section {
   margin-top: 30px;
@@ -1138,12 +1141,16 @@ section.body .container .row .col-sm-12 .image-section {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit .title {
   font-size: 15px;
   font-family: "Montserrat-Regular";
   color: black;
   padding-right: 20px;
+  width: auto !important;
 }
 .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .digit-submit .digit-input .bkash-digit-input {
   width: 50px;
@@ -1152,12 +1159,15 @@ section.body .container .row .col-sm-12 .image-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .screenshot-submit .title {
   font-size: 15px;
   font-family: "Montserrat-Regular";
   color: black;
   padding-right: 20px;
+  width: auto !important;
 }
 .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section .form-section form .submit-button {
   width: 100%;

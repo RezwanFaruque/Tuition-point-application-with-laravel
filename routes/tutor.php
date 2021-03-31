@@ -20,5 +20,11 @@ Route::middleware('is_tutor')->namespace('Tutor')->group(function () {
 
     Route::post('/tutor/update-profile-picture','TutorHomeController@updateProfilePicture')->name('tutor.update-profile-picture');
 
+
+    Route::get('/tutor/become-premium-tutor','TutorHomeController@becomePremiumView')->name('tutor.becomepremiumtutorview');
+
+
+    Route::post('/tutor/save-paymentinfo','TutorHomeController@savePaymentInfo')->name('tutor.savepaymentinfo');
+
     
 });

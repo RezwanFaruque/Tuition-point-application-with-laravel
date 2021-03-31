@@ -13,6 +13,7 @@ use App\Model\ServiceMediumCategory;
 use App\Model\ServiceClassCategory;
 use App\Model\ActiveTution;
 use App\Model\AppliedTutorForTution;
+use App\Model\PaymentInfoForPremiumTutor;
 use Illuminate\Support\Facades\Auth;
 use Image;
 
@@ -123,12 +124,10 @@ class TutorHomeController extends Controller
             $prgress = $prgress+4;
         }
 
-        if($tutorinfo->salar_range_from != ''){
-            $prgress = $prgress+4;
-        }
+        
 
         if($tutorinfo->salary_range_to != ''){
-            $prgress = $prgress+4;
+            $prgress = $prgress+8;
         }
 
         if($tutorinfo->district_name != ''){
@@ -208,16 +207,16 @@ class TutorHomeController extends Controller
 
         if($appliedtutor->save()){
 
-           $data = [
-               "status" => 'success',
-               "message" => 'You applied for this tution wait untill our team contact with you'
-           ];
+         $data = [
+             "status" => 'success',
+             "message" => 'You applied for this tution wait untill our team contact with you'
+         ];
 
-           return response()->json($data);
+         return response()->json($data);
 
 
 
-       }else{
+     }else{
         $data = [
             "status" => 'error',
             "message" => 'You Already Applied For This Tution'
@@ -297,34 +296,17 @@ public function updateProfilePicture(Request $request){
 
         // dd($request->all());
 
-    $user = User::find($request->user_id)->first();
+    $user = User::find($request->user_id);
 
     
 
 
     if ($request->hasFile('profile_image')) {
-
-        $image = $request->file('profile_image');
-
-        $image_name = time() . '.' . $image->getClientOriginalExtension();
-
-        $destinationPath = public_path('assets/vendor/images/registerpage');
-
-        $resize_image = Image::make($image->path());
-
-        // dd($resize_image);
-
-        $resize_image->resize(100, 100, function($constraint){
-          $constraint->aspectRatio();
-      })->save($destinationPath . '/' . $image_name);
-
-        $destinationPath = public_path('assets/vendor/images/registerpage');
-
-        $image->move($destinationPath, $image_name);
-
-        $user->profile_image = 'assets/vendor/images/registerpage/' . $image_name;
-
-        // dd($user->profile_image);
+        $file = $request->file('profile_image');
+        $filename = time() . '.' . $file->getClientOriginalExtension();
+        $path = public_path('assets/vendor/images/registerpage');
+        $file->move($path, $filename);
+        $user->profile_image = 'assets/vendor/images/registerpage/' . $filename;
     }
 
     $user->update();
@@ -335,4 +317,38 @@ public function updateProfilePicture(Request $request){
 
         // dd($user);
 }
+
+    public function becomePremiumView(){
+        return view('tutor.premiumtutor');
+    }
+
+
+    public function savePaymentInfo(Request $request){
+
+
+        $last_digits = array($request->degit1,$request->degit2,$request->degit3,$request->degit4);
+
+        // dd(implode("", $last_digits));
+        
+        $paymentinfo = new PaymentInfoForPremiumTutor();
+
+        $paymentinfo->user_id = Auth::user()->id;
+
+        $paymentinfo->last_four_digit_bkash_number =  implode("", $last_digits);
+
+        if ($request->hasFile('payment_screen_shoot')) {
+            $file = $request->file('payment_screen_shoot');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $path = public_path('assets/vendor/images/registerpage');
+            $file->move($path, $filename);
+            $paymentinfo->payment_success_image_url = 'assets/vendor/images/registerpage/' . $filename;
+        }
+
+        
+
+        $paymentinfo->save();
+
+        return redirect()->route('tutor.home')->with('message','Wait Untile Admin Confirm Your Payment And Approve');
+    }
+
 }

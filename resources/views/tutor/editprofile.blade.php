@@ -461,9 +461,17 @@
 
                                             <div class="info-right">
                                                 <div class="form-group">
-                                                    <label for="my-input">Subject Experiences</label>
-                                                    <input id="my-input" class="form-control"
-                                                    value="{{$getuser->tutorinfo->experience_subjects}}" type="text" name="experience_subjects">
+                                                    <label for="my-input">IELTS/Admission</label>
+                                                    @php
+                                                        $subexps = ['IELTS','Admission','None'];
+                                                    @endphp
+
+                                                    <select name="experience_subjects" class="form-control">
+                                                        @foreach($subexps as $subexp)
+                                                            <option @if($subexp == $getuser->tutorinfo->experience_subjects) selected @endif value="{{$subexp}}">{{$subexp}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                    
                                                 </div>
                                             </div>
 
