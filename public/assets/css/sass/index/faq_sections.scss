@@ -5,17 +5,21 @@ section {
                 .row {
                     .col-sm-12 {
                         .right-side {
+                            .title-faq{
+                                margin-top: 30px;
+                                margin-bottom: 30px;
+                                text-align: center;
+                                font-family: "Montserrat-Bold" i !important;
+                                font-size: 22px;
+                                color: #37474fb8 !important;
+                                width: auto !important;
+                                background: none !important;
+                            }
                             .row {
                                 .col-sm-12 {
                                     .faq-section {
                                         .title {
-                                            margin-bottom: 30px;
-                                            text-align: center;
-                                            font-family: "Montserrat-Bold" i !important;
-                                            font-size: 22px;
-                                            color: #37474fb8 !important;
-                                            width: auto !important;
-                                            background: none !important;
+
                                         }
                                         .faq-collapse-body {
                                             #accordion {
@@ -46,6 +50,6 @@ section {
                 }
             }
         }
-       
+
     }
 }

@@ -1,11 +1,15 @@
 @extends('layouts.loginlayout')
 @section('content')
+    <div class="title-faq">
+        
+       Frequently Asked Questions
+        
+    </div>
     <div class="row">
+        
         <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="faq-section">
-                <div class="title">
-                   Frequently Asked Questions
-                </div>
+                
                 <div class="faq-collapse-body">
                     <div id="accordion">
                         <div class="card mb-4">
@@ -62,9 +66,7 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="faq-section">
-                <div class="title">
-                    Frequently Asked Questions
-                </div>
+               
 
                 <div class="faq-collapse-body">
                     <div id="accordion">

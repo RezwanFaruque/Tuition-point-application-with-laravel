@@ -116,7 +116,7 @@
                                                         <div class="info-right">
                                                             <label>Gender</label>
                                                             @php
-                                                            $genders = ['male','female'];
+                                                            $genders = ['Male','Female'];
                                                             @endphp
 
                                                             <select class="form-control" name="gender">

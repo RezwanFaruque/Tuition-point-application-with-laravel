@@ -78,6 +78,19 @@ section{
                                                                     // font-weight: bold;
                                                                     // margin-top: 10px;
                                                                     // margin-bottom: 10px;
+                                                                    display: flex;
+                                                                    label{
+                                                                        width: 40%;
+                                                                        font-family: 'Montserrat-SemiBold';
+                                                                        font-size: 13px;
+
+                                                                    }
+                                                                    .info{
+                                                                        width: 60%;
+                                                                        text-align: left;
+                                                                        font-family: 'Montserrat-Medium';
+                                                                        font-size: 12px;
+                                                                    }
 
                                                                     .form-group{
                                                                         label{

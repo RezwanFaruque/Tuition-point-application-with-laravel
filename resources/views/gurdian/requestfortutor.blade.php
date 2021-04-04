@@ -38,13 +38,11 @@
 
                                     <div class="form-group">
 
-                                        <select class="form-control" required  name="class @error('medium') is-invalid @enderror" id="classes">
-                                            <option value="" disabled selected hidden>Select Medium First</option>
+                                        <select class="form-control" required name="student_gender" id="exampleFormControlSelect1">
+                                            <option>Student Gender</option>
 
-                                            @error('medium')
-                                                <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
-
+                                            <option>Male</option>
+                                            <option>Female</option>
                                         </select>
                                     </div>
 
@@ -112,15 +110,22 @@
                                         </select>
                                     </div>
 
+
+                                    {{-- class --}}
+
                                     <div class="form-group">
 
-                                        <select class="form-control" required name="student_gender" id="exampleFormControlSelect1">
-                                            <option>Student Gender</option>
+                                        <select class="form-control" required  name="class @error('medium') is-invalid @enderror" id="classes">
+                                            <option value="" disabled selected hidden>Select Medium First</option>
 
-                                            <option>Male</option>
-                                            <option>Female</option>
+                                            @error('medium')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+
                                         </select>
                                     </div>
+
+                                    
 
                                     <div class="form-group">
 

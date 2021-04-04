@@ -8,9 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'TutionPoint') }}</title>
+    <title>{{ config('app.name', 'Meettutor') }}</title>
 
-    <link rel="icon"  href="{{ asset('assets/vendor/images/index/mt_logo.png') }}">
+    <link rel="shortcut icon"  href="{{ asset('assets/vendor/images/index/mt_logo.png') }}">
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">

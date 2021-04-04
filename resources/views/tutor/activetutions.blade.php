@@ -17,21 +17,21 @@
                                         {{ $tution->title }}
                                     </div>
                                 </div>
-                                <div class="body">
+                                 <div class="body">
                                     <div class="tution-info-body">
-                                        <span>Lacation:</span> {{ $tution->location }}
+                                        <div>Lacation:</div> <div class="info">{{ $tution->location }}</div>
                                     </div>
                                     <div class="tution-info-body">
-                                        <span>Tution ID:</span> {{ $tution->tutor_id }}
+                                        <div>Tution ID:</div> <div class="info">{{ $tution->tutor_id }}</div>
                                     </div>
                                     <div class="tution-info-body">
-                                        <span>Class:</span> {{ $tution->class }}
+                                        <div>Class:</div> <div class="info">{{ $tution->class }}</div>
                                     </div>
                                     <div class="tution-info-body">
-                                        <span>Subject</span> {{ $tution->subjects }}
+                                        <div>Subject:</div> <div class="info"> {{ $tution->subjects }}</div>
                                     </div>
                                     <div class="tution-info-body">
-                                        <span>Salary:</span> {{ $tution->salary_range }}
+                                        <div>Salary:</div> <div class="info"> {{ $tution->salary_range }}</div>
                                     </div>
 
                                 </div>

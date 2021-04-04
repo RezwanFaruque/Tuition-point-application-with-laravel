@@ -453,11 +453,11 @@
                                                     <label for="my-input">Prefered Medium</label>
                                                     @php
 
-                                                        $p_mediums = ['English','Bangla'];
+                                                        
                                                     @endphp
                                                     <select class="form-control" name="prefered_medium">
-                                                        @foreach($p_mediums as $p_medium)
-                                                        <option @if($p_medium == $getuser->tutorinfo->prefered_medium) selected @endif value="{{$p_medium}}">{{$p_medium}}</option>
+                                                        @foreach($mediums as $p_medium)
+                                                        <option @if($p_medium->medium_name == $getuser->tutorinfo->prefered_medium) selected @endif value="{{$p_medium->medium_name}}">{{$p_medium->medium_name}}</option>
 
                                                         @endforeach
                                                     </select>

@@ -104,7 +104,7 @@
 
                                      </div>
                                      <div class="info-right">
-                                        <label>University/Collage</label>
+                                        <label>University</label>
                                         <div class="info">
                                             {{$user->tutorinfo->university_or_collage}}
                                         </div>

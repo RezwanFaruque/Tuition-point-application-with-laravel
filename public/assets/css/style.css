@@ -704,7 +704,8 @@ section.body .container .row .col-sm-12 .meet-the-team-section .team-member-sect
   color: #37474F;
 }
 
-section.body .header-middle .container .row .col-sm-12 .right-side .row .col-sm-12 .faq-section .title {
+section.body .header-middle .container .row .col-sm-12 .right-side .title-faq {
+  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   font-family: "Montserrat-Bold" i !important;
@@ -1068,6 +1069,18 @@ section.body .tutor-profile-section .details-information .container .row .col-sm
   font-size: 12px;
   color: #37474FB8;
   padding-bottom: 10px;
+  display: flex;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right label {
+  width: 40%;
+  font-family: "Montserrat-SemiBold";
+  font-size: 13px;
+}
+section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .info {
+  width: 60%;
+  text-align: left;
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
 }
 section.body .tutor-profile-section .details-information .container .row .col-sm-12 .row .col-sm-12 .public-view-tab-content .tab-content .tab-pane .container .row .col-sm-12 .right-information .info-right .form-group label {
   font-size: 13px;
@@ -1593,7 +1606,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -1684,7 +1697,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -1775,7 +1788,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -1866,7 +1879,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -1957,7 +1970,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -2048,7 +2061,7 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -2135,11 +2148,10 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
     width: 100%;
-    margin-top: 20px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -2192,11 +2204,10 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
     width: 100%;
-    margin-top: 20px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -2249,11 +2260,10 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
     width: 100%;
-    margin-top: 20px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;
@@ -2306,11 +2316,10 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .left-side {
     width: 100%;
-    margin-top: 20px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   section.header .header-middle .container .row .col-sm-12 .left-side .search-for-tutor .info .body-with-form form .body .flex-part .right-side .request-tutor-indexpage {
     width: 100%;

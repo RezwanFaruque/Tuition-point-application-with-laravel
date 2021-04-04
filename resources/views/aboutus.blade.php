@@ -7,7 +7,7 @@
             <div class="middle-about-us">
                 <div class="about-us-section-card">
                     <div class="title">
-                        What is TuitionPoint.com?
+                        What is Meettutor?
                     </div>
                     <div class="body">
                         Our technology is the best way for students to connect with tutors that are suited for their exact
@@ -84,14 +84,14 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="team-member-card">
                                     <div class="left-image">
-                                        <img src="{{asset('')}}" alt="" srcset="">
+                                        <img src="{{asset('assets/vendor/images/team/mehadi.jpg')}}" alt="" srcset="">
                                     </div>
                                     <div class="right-text">
                                         <div class="name">
                                             MD Mehadi Hasan Razu
                                         </div>
                                         <div class="designation">
-                                            CEO, Tuition Ponit
+                                            CEO, MeetTutor
                                         </div>
                                     </div>
                                 </div>
@@ -100,14 +100,30 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="team-member-card">
                                     <div class="left-image">
-                                        <img src="{{asset('')}}" alt="" srcset="">
+                                        <img src="{{asset('assets/vendor/images/team/rezvi.jpg')}}" alt="" srcset="">
                                     </div>
                                     <div class="right-text">
                                         <div class="name">
                                             Mahbub Rezvi
                                         </div>
                                         <div class="designation">
-                                            CEO, Tuition Ponit
+                                            CTO, MeetTutor
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="team-member-card">
+                                    <div class="left-image">
+                                        <img src="{{asset('assets/vendor/images/team/rezwanfaruque.jpg')}}" alt="" srcset="">
+                                    </div>
+                                    <div class="right-text">
+                                        <div class="name">
+                                           Rezwan Faruque
+                                        </div>
+                                        <div class="designation">
+                                            WebSite & Technical, MeetTutor
                                         </div>
                                     </div>
                                 </div>

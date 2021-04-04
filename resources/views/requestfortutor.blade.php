@@ -8,7 +8,7 @@
                 Request For a Tutor
             </div>
             @if (session('message'))
-            <div class="alert alert-success">
+            <div style="font-weight: bolder;" class="alert alert-danger">
                 {!! session('message') !!}
             </div>
             @endif
@@ -37,9 +37,11 @@
 
                                 <div class="form-group">
 
-                                    <select required class="form-control" name="class" id="classes">
-                                        <option value="" disabled selected hidden>Select Medium First</option>
+                                    <select required class="form-control" name="student_gender" id="student_gender">
+                                        <option>Student Gender</option>
 
+                                        <option>Male</option>
+                                        <option>Female</option>
                                     </select>
                                 </div>
 
@@ -108,15 +110,16 @@
                                         </select>
                                     </div>
 
+
                                     <div class="form-group">
 
-                                        <select required class="form-control" name="student_gender" id="student_gender">
-                                            <option>Student Gender</option>
+                                        <select required class="form-control" name="class" id="classes">
+                                            <option value="" disabled selected hidden>Select Medium First</option>
 
-                                            <option>Male</option>
-                                            <option>Female</option>
                                         </select>
                                     </div>
+
+                                    
 
                                     <div class="form-group">
 

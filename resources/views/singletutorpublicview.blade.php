@@ -129,33 +129,29 @@
                                             <div class="container">
                                                 <div class="row">
 
-                                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                                        <div class="left-informations">
-                                                            <div class="info-left">
-                                                                Name
-                                                            </div>
-                                                            <div class="info-left">
-                                                                Gender
-                                                            </div>
-                                                            <div class="info-left">
-                                                                Address
-                                                            </div>
-                                                            <div class="info-left">
-                                                                Phone Number
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-md-4 col-sm-12">
+                                                    
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <div class="right-information">
                                                             <div class="info-right">
-                                                                {{ $tutor->name }}
+                                                                <label>Name</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->name }}
+                                                                </div>
+                                                                
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->gender }}
+                                                                <label>Gender</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->gender }}
+                                                                </div>
+                                                                
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->area }}
+                                                                <label>Area</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->area }}
+                                                                </div>
+                                                                
                                                             </div>
                                                             <div class="overlay">
                                                                 <div class="info-right">
@@ -177,78 +173,41 @@
                                             <div class="container">
                                                 <div class="row">
 
-                                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                                        <div class="left-informations">
-
-                                                            <div class="section_education">
-                                                                <div class="info-left">
-                                                                    University
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Result
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Subject
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Passing Year
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="section_education">
-                                                                <div class="info-left">
-                                                                    High School/O'Level
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Section
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Result
-                                                                </div>
-
-                                                                <div class="info-left">
-                                                                    Passsing Year
-                                                                </div>
-                                                            </div>
-
-
-
-                                                            <div class="section_education">
-                                                                <div class="info-left">
-                                                                    Collage/A'Level
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Section
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Result
-                                                                </div>
-                                                                <div class="info-left">
-                                                                    Passsing Year
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-md-4 col-sm-12">
+                                                    
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <div class="right-information">
 
                                                             <div class="section_education">
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->university_or_collage ? $tutor->tutorinfo->university_or_collage : 'No Data Available' }}
+                                                                    <label>University</label>
+                                                                    <div class="info">
+                                                                         {{ $tutor->tutorinfo->university_or_collage ? $tutor->tutorinfo->university_or_collage : 'No Data Available' }}
+
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                <div class="info-right">
+                                                                    <label>University Result</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->university_result ? $tutor->tutorinfo->university_result : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->university_result ? $tutor->tutorinfo->university_result : 'No Data Available' }}
+                                                                    <label>Subject</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->subject ? $tutor->tutorinfo->subject : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->subject ? $tutor->tutorinfo->subject : 'No Data Available' }}
-
-                                                                </div>
-                                                                <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->university_passing_year ? $tutor->tutorinfo->university_passing_year : 'No Data Available' }}
+                                                                    <label>Passing Year</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->university_passing_year ? $tutor->tutorinfo->university_passing_year : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
 
@@ -256,17 +215,33 @@
 
                                                             <div class="section_education">
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->h_school_name ? $tutor->tutorinfo->h_school_name : 'No Data Available' }}
+                                                                    <label>High School Name</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->h_school_name ? $tutor->tutorinfo->h_school_name : 'No Data Available' }}
+                                                                    </div>
+                                                                    
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->h_school_section ? $tutor->tutorinfo->h_school_section : 'No Data Available' }}
+                                                                    <label>High School Section</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->h_school_section ? $tutor->tutorinfo->h_school_section : 'No Data Available' }}
+                                                                    </div>
+                                                                    
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->h_school_result ? $tutor->tutorinfo->h_school_result : 'No Data Available' }}
+                                                                    <label>High School Result</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->h_school_result ? $tutor->tutorinfo->h_school_result : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->h_passing_year ? $tutor->tutorinfo->h_passing_year : 'No Data Available' }}
+                                                                    <label>High School Passing Year</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->h_passing_year ? $tutor->tutorinfo->h_passing_year : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                             </div>
@@ -277,19 +252,36 @@
 
                                                             <div class="section_education">
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->collage_name ? $tutor->tutorinfo->collage_name : 'No Data Availabe' }}
+                                                                    <label>Collage</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->collage_name ? $tutor->tutorinfo->collage_name : 'No Data Availabe' }}
+                                                                    </div>
+                                                                    
                                                                 </div>
 
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->collage_section ? $tutor->tutorinfo->collage_section : 'No Data Available' }}
+                                                                    <label>Collage Section</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->collage_section ? $tutor->tutorinfo->collage_section : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->collage_result ? $tutor->tutorinfo->collage_result : 'No Data Available' }}
+                                                                    <label>Collage Result</label>
+                                                                    <div class="info">
+                                                                        {{ $tutor->tutorinfo->collage_result ? $tutor->tutorinfo->collage_result : 'No Data Available' }}
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                                 <div class="info-right">
-                                                                    {{ $tutor->tutorinfo->collage_passing_year ? $tutor->tutorinfo->collage_passing_year : 'No Data Available' }}
+                                                                    <label>Collage Passing Year</label>
+
+                                                                    <div class="info">
+                                                                         {{ $tutor->tutorinfo->collage_passing_year ? $tutor->tutorinfo->collage_passing_year : 'No Data Available' }}
+                                                                    </div>
+                                                                   
 
                                                                 </div>
 
@@ -313,50 +305,74 @@
                                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                                         <div class="left-informations">
                                                             <div class="info-left">
-                                                                Prefered Class
+                                                                
                                                             </div>
                                                             <div class="info-left">
-                                                                Prefered Subjects
+                                                                
                                                             </div>
                                                             <div class="info-left">
-                                                                Prefered Area
+                                                                
                                                             </div>
                                                             <div class="info-left">
-                                                                Prefered Medium
+                                                                
                                                             </div>
                                                             <div class="info-left">
-                                                                Experience (Years)
+                                                                
                                                             </div>
                                                             <div class="info-left">
-                                                                Salary Range
+                                                                
                                                             </div>
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-8 col-md-4 col-sm-12">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <div class="right-information">
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->prefered_class ? $tutor->tutorinfo->prefered_class : 'No Data Available' }}
+                                                                <label>Prefered Class</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->prefered_class ? $tutor->tutorinfo->prefered_class : 'No Data Available' }}
+                                                                </div>                                                            
+                                                                
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->prefered_subject ? $tutor->tutorinfo->prefered_subject : 'No Data Available' }}
+                                                                <label>Prefered Subjects</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->prefered_subject ? $tutor->tutorinfo->prefered_subject : 'No Data Available' }}
+                                                                </div>
+                                                                
 
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->prefared_area ? $tutor->tutorinfo->prefared_area : 'No Data Available' }}
+                                                                <label>Prefered Area</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->prefared_area ? $tutor->tutorinfo->prefared_area : 'No Data Available' }}
+                                                                </div>
+                                                                
 
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->prefered_medium ? $tutor->tutorinfo->prefered_medium : 'No Data Available' }}
+                                                                <label>Prefered Medium</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->prefered_medium ? $tutor->tutorinfo->prefered_medium : 'No Data Available' }}
+                                                                </div>
+                                                                
 
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->experience_years ? $tutor->tutorinfo->experience_years : 'No Data Available' }}
+                                                                <label>Experience (Years)</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->experience_years ? $tutor->tutorinfo->experience_years : 'No Data Available' }}
+                                                                </div>
+                                                                
 
                                                             </div>
                                                             <div class="info-right">
-                                                                {{ $tutor->tutorinfo->salar_range_from ? $tutor->tutorinfo->salar_range_from : 'No Data Available' }}
+                                                                <label>Salary Range</label>
+                                                                <div class="info">
+                                                                    {{ $tutor->tutorinfo->salar_range_from ? $tutor->tutorinfo->salar_range_from : 'No Data Available' }}
                                                                 - {{ $tutor->tutorinfo->salary_range_to }}
+                                                                </div>
+                                                                
 
                                                             </div>
                                                         </div>
@@ -378,20 +394,15 @@
                                                     @foreach($tutor_feedbacks as $tutor_feedback )
                                                         <div class="row">
 
-                                                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                                                <div class="left-informations">
-                                                                    <div class="info-left">
-                                                                        {{$tutor_feedback->name}}
-                                                                    </div>
-                                                                   
-
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-8 col-md-4 col-sm-12">
+                                                            
+                                                            <div class="col-lg-12 col-md-12 col-sm-12">
                                                                 <div class="right-information">
                                                                     <div class="info-right">
-                                                                        {{$tutor_feedback->feedback_message}}
+                                                                        <label>{{$tutor_feedback->name}}</label>
+                                                                        <div class="info">
+                                                                            {{$tutor_feedback->feedback_message}}
+                                                                        </div>
+                                                                        
                                                                     </div>
                                                                    
 

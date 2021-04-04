@@ -43,7 +43,10 @@
                                                         .left-side{
                                                            
                                                             width: 100%;
-                                                            margin-top: 20px;
+                                                            @if($width >= 700){
+                                                                 margin-top: 20px;
+                                                            }
+                                                           
                                                             .form-group{
                                                                
                                                                 .form-control{
@@ -55,7 +58,7 @@
                                                         .right-side{
                                                             
                                                             width: 100%;
-                                                            margin-top: 20px;
+                                                            margin-top: 0px;
                                                             .request-tutor-indexpage{
                                                                 width: 100%;
                                                                 margin-bottom: 10px;
@@ -90,6 +93,7 @@
                                 }
         
                                 .right-side{
+
                                     .social-fix-position{
                                         display: none;
                                        

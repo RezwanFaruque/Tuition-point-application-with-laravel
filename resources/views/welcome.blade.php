@@ -27,7 +27,32 @@
 
                                     </select>
                                 </div>
+
                                 <div class="form-group">
+
+                                    <select class="form-control" id="area">
+                                        <option value="" disabled selected hidden>Select Area</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <select class="form-control" name="gender" id="exampleFormControlSelect1">
+                                        <option value="" disabled selected hidden>Select Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+
+                                    </select>
+                                </div>
+
+
+                               
+                            </div>
+                            <div class="right-side site">
+                                
+
+                                 <div class="form-group">
 
                                     <select class="form-control" id="medium">
                                         <option value="" disabled selected hidden>Select Medium</option>
@@ -41,24 +66,6 @@
                                     <select class="form-control" name="classes" id="classes">
                                         <option value="" disabled selected hidden>Select Classes</option>
                                        
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="right-side site">
-                                <div class="form-group">
-
-                                    <select class="form-control" id="area">
-                                        <option value="" disabled selected hidden>Select Area</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-
-                                    <select class="form-control" name="gender" id="exampleFormControlSelect1">
-                                        <option value="" disabled selected hidden>Select Gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-
                                     </select>
                                 </div>
 
