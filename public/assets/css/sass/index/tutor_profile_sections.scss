@@ -79,6 +79,14 @@ section{
                             }
                             .btn-signout{
                                 margin-top: 20px;
+                                .call-number{
+                                    font-size: 15px;
+                                    font-family: 'Montserrat-SemiBold';
+                                    color: black;
+                                    span{
+                                        color: red;
+                                    }
+                                }
                                 form{
                                     .logout-frm-tutor-profile{
                                         border: none;

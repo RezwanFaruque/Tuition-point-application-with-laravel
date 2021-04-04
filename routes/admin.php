@@ -49,6 +49,13 @@ Route::middleware('is_admin')->namespace('Admin')->group(function () {
 
     Route::post('admin/save-tutor-user','AdminHomeController@saveTuotor')->name('admin.savetutor');
 
+
+    Route::get('admin/premium-tutor-request','AdminHomeController@fetchRequestedPremiumTutor')->name('admin.allpremiumrequesttutors');
+
+    Route::get('admin/premium-tutor-request/{id}','AdminHomeController@detailsRequestPremiumTutor')->name('admin.viewrequestpremiumtutor');
+
+    Route::post('admin/accept-request-premium-tutor/{id}','AdminHomeController@acceptRequestForPremiumTotor')->name('admin.acceptrequestpremium');
+
 });
 
 

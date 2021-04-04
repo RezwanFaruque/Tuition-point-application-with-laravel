@@ -6,7 +6,7 @@
         <div class="basic-information">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="bs-info">
                             <div class="bs-info-name">
                                 <div class="left">
@@ -28,7 +28,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    {{-- <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="feedback-form">
                             <div class="title">
                                 Give Us A Feedback For This Tutor
@@ -76,17 +76,17 @@
                                 
                             </form>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    </div> --}}
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="bs-info-edt-sgnout">
                             <div class="btn-edit-profile">
                                 <a href="#">Active for Tution</a>
 
                             </div>
                             <div class="btn-signout">
-                                <form action="" method="POST">
-                                    <Button class="logout-frm-tutor-profile" type="submit">Hire Now</Button>
-                                </form>
+                                <div class="call-number">
+                                    Call <span>01609578508</span> Number To Hire 
+                                </div>
                             </div>
                         </div>
                     </div>

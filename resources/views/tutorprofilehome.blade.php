@@ -25,6 +25,14 @@
                                 <div class="info gmail">
                                     {{$user->email}}
                                 </div>
+                                <div class="info gmail" style="color: red;font-weight: bold;">
+                                    @if($user->tutorinfo->is_premium == '1')
+                                        You Are A Premium Tutor
+                                    @else
+                                        You Are Not A Premium Tutor Become One To Get Tution Fast
+
+                                    @endif
+                                </div>
                                 @if (session('message'))
                                 <div class="alert alert-success">
                                     {!! session('message') !!}

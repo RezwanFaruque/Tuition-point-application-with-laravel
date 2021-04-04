@@ -1,0 +1,76 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px){ 
+
+        .body{
+            .header-middle{
+                .container{
+                    .row{
+                        .col-sm-12{
+                            .right-side{
+                                .premium-tutor-submit-section{
+
+                                    .main-section{
+
+                                        @if($width >= 800){
+                                            width: 100%;
+                                        }
+                                       
+                                        .title{
+                                           
+                                        }
+                                        .form-section{
+                                        
+                                         form{
+                                          .digit-submit{
+                                           
+
+                                           .title{
+                                           
+                                        }
+
+                                        .digit-input{
+                                            .bkash-digit-input{
+                                            
+                                         }
+                                     }
+                                 }
+
+                                 .screenshot-submit{
+                                  
+                                   .title{
+                                    
+                                }
+                                .file-upload{
+
+                                }
+                            }
+
+                            .submit-button{
+                               
+
+                               .payment-submit{
+                             
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .make-easy-payment{
+        
+
+
+       }
+   }
+}
+}
+}
+}
+}
+}
+}
+
+

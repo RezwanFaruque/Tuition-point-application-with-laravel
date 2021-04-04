@@ -150,7 +150,7 @@
                                                 <div class="form-group">
                                                     <label for="">Gender</label>
                                                     @php
-                                                    $genders = ['male','female'];
+                                                    $genders = ['Male','Female'];
                                                     @endphp
 
                                                     <select class="form-control" name="gender">
@@ -260,8 +260,16 @@
                                                 <div class="info-right">
                                                     <div class="form-group">
                                                         <label for="my-input">Section</label>
-                                                        <input id="my-input" class="form-control"
-                                                        type="text" value="{{$getuser->tutorinfo->h_school_section}}" name="h_school_section">
+                                                        @php
+                                                          $sections = ['Science','Arts','Commerce'];
+                                                        @endphp
+
+                                                        <select name="h_school_section" class="form-control">
+                                                            @foreach($sections as $section)
+                                                                <option @if($section == $getuser->tutorinfo->h_school_section) selected @endif value="{{$section}}">{{$section}}</option>
+                                                            @endforeach
+                                                        </select>
+                                                       
                                                     </div>
                                                 </div>
 
@@ -285,8 +293,16 @@
                                                 <div class="info-right">
                                                     <div class="form-group">
                                                         <label for="my-input">Section</label>
-                                                        <input id="my-input" class="form-control"
-                                                        type="text" value="{{$getuser->tutorinfo->collage_section}}" name="collage_section">
+                                                         @php
+                                                          $sections = ['Science','Arts','Commerce'];
+                                                        @endphp
+
+                                                        <select name="collage_section" class="form-control">
+                                                            @foreach($sections as $section)
+                                                                <option @if($section == $getuser->tutorinfo->collage_section) selected @endif value="{{$section}}">{{$section}}</option>
+                                                            @endforeach
+                                                        </select>
+                                                       
                                                     </div>
                                                 </div>
 

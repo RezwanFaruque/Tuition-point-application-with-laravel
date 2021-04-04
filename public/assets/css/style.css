@@ -787,6 +787,14 @@ section.body .tutor-profile-section .basic-information .container .row .col-sm-1
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout {
   margin-top: 20px;
 }
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout .call-number {
+  font-size: 15px;
+  font-family: "Montserrat-SemiBold";
+  color: black;
+}
+section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout .call-number span {
+  color: red;
+}
 section.body .tutor-profile-section .basic-information .container .row .col-sm-12 .bs-info-edt-sgnout .btn-signout form .logout-frm-tutor-profile {
   border: none;
   width: auto;
@@ -1117,7 +1125,7 @@ section.body .container .row .col-sm-12 .image-section {
   margin-top: 30px;
 }
 .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
-  width: 700px;
+  width: 100%;
   margin: auto;
   background-color: #E9ECEF;
   padding-left: 15px;
@@ -1234,12 +1242,20 @@ section.body .header-middle .container .row .col-sm-12 .right-side .active-tutio
   padding-top: 10px;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body .tution-info-body {
-  font-size: 12px;
-  font-family: "Montserrat-Regular";
-  color: black;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  display: flex;
 }
-section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body .tution-info-body span {
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body .tution-info-body div {
+  font-size: 14px;
+  font-family: "Montserrat-SemiBold";
+  color: black;
+  margin-right: 15px;
+  width: 30%;
+}
+section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .body .tution-info-body .info {
+  width: 70%;
+  text-align: left;
   font-size: 12px;
   font-family: "Montserrat-Medium";
   color: black;
@@ -4920,6 +4936,31 @@ section.body .header-middle .container .row .col-sm-12 .right-side .login-form .
   }
   section.body .tutor-profile-section .details-information .container .row .col-sm-12 .profile-details-information .tab-content .tab-pane .tutor-request-history .container .row .col-sm-12 .active-tutions .active-tution-card .right .details a.ignore {
     background-color: #F32B2B;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .body .header-middle .container .row .col-sm-12 .right-side .premium-tutor-submit-section .main-section {
+    width: 100%;
   }
 }
 

@@ -332,7 +332,12 @@ public function updateProfilePicture(Request $request){
         
         $paymentinfo = new PaymentInfoForPremiumTutor();
 
+        $paymentinfo->name = $request->name;
+        $paymentinfo->phone_number = $request->phone_number;
+        $paymentinfo->email = $request->email;
         $paymentinfo->user_id = Auth::user()->id;
+
+
 
         $paymentinfo->last_four_digit_bkash_number =  implode("", $last_digits);
 

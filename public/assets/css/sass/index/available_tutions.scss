@@ -41,7 +41,7 @@ section{
                                                     display: flex;
                                                     align-items: center;
                                                     padding-left: 30px;
-                            
+                                                    
                                                     .location{
                                                         font-family: 'Montserrat-Medium';
                                                         color: white;
@@ -51,15 +51,27 @@ section{
                                                 .body{
                                                     padding-top: 10px;
                                                     .tution-info-body{
-                                                        font-size: 12px;
-                                                        font-family: 'Montserrat-Regular';
-                                                        color: black;
-                                                        padding-bottom: 10px;
+                                                       
+                                                        padding-bottom: 12px;
+                                                        padding-left: 10px;
+                                                        display: flex;
 
-                                                        span{
+                                                        div{
+                                                            font-size: 14px;
+                                                            font-family: 'Montserrat-SemiBold';
+                                                            color: black;
+                                                            margin-right: 15px;
+                                                            width: 30%;
+                                                        }
+
+                                                        .info{
+                                                            width: 70%;
+                                                            text-align: left;
                                                             font-size: 12px;
                                                             font-family: 'Montserrat-Medium';
                                                             color: black;
+                                                            
+
                                                         }
                                                     }
                                                 }
@@ -121,19 +133,19 @@ section{
 
                                                 }
                                                 div{
-                                                     font-size: 12px;
-                                                     font-family: 'Montserrat-Medium';
-                                                     color: black;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+                                                 font-size: 12px;
+                                                 font-family: 'Montserrat-Medium';
+                                                 color: black;
+                                             }
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
 }

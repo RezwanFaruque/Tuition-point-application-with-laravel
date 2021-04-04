@@ -15,9 +15,13 @@ class CreatePaymentInfoForPremiumTutorsTable extends Migration
     {
         Schema::create('payment_info_for_premium_tutors', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name')->nullable();
+            $table->string('phone_number')->nullable();
             $table->string('user_id')->nullable();
+            $table->string('email')->nullable();
             $table->string('last_four_digit_bkash_number')->nullable();
             $table->string('payment_success_image_url')->nullable();
+            $table->string('is_premium')->nullable()->default('0');
             $table->timestamps();
         });
     }
