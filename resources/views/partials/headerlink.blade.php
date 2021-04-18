@@ -10,7 +10,7 @@
 
     <title>{{ config('app.name', 'Meettutor') }}</title>
 
-    <link rel="shortcut icon"  href="{{ asset('assets/vendor/images/index/mt_logo.png') }}">
+    <link rel="shortcut icon"  href="{{ asset('assets/vendor/images/index/mt_logo.ico') }}" type='image/x-icon'>
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">

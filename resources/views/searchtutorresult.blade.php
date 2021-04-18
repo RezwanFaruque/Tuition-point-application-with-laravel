@@ -94,8 +94,17 @@
                     <hr>
                     <div class="result-body">
                         <div class="container">
+
                             <div class="row">
-                                @foreach ($searchtutorresult as $searchtutor)
+                                @php
+                                    $count = count($searchtutorresult);
+                                @endphp
+                                @if($count == 0)
+                                    <div class="alert alert-danger">
+                                        No Tutor Found For This Search
+                                    </div>
+                                @else
+                                    @foreach ($searchtutorresult as $searchtutor)
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="result-card">
                                             <div class="header">
@@ -136,6 +145,8 @@
 
 
                                 @endforeach
+                                @endif
+                                
 
                             </div>
                             <div class="row">
@@ -164,7 +175,7 @@
                                         </div>
                                         <div class="button-find">
                                             <div class="request-tutor-page">
-                                                <a class="req-tutor" href="">Request a Tutor</a>
+                                                <a class="req-tutor" href="{{route('guest.requestfortutor')}}">Request a Tutor</a>
                                             </div>
                                         </div>
                                     </div>

@@ -47,7 +47,10 @@
             </div>
         </div>
     </section>
+    
     @include('partials.footer')
+    
+    
 
     
     <script src="{{ asset('assets/vendor/jquery/jquery-3.3.1.min.js') }}"></script>

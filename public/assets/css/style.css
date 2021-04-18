@@ -1286,6 +1286,8 @@ section.body .header-middle .container .row .col-sm-12 .right-side .active-tutio
   font-size: 12px;
   font-family: "Montserrat-Medium";
   color: black;
+  font-weight: bold;
+  color: #28a745;
 }
 section.body .header-middle .container .row .col-sm-12 .right-side .active-tutions-card .container .row .col-sm-12 .tutions-card .footer .view-details button {
   border: none;

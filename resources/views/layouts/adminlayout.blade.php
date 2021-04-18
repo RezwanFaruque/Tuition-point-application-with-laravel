@@ -394,10 +394,8 @@
                         </ol>
                     </div>
 
-                    <div class="row">
+                    
                         @yield('content')
-
-                    </div>
 
                 </div>
                 <!---Container Fluid-->

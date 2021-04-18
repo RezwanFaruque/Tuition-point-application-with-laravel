@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="footer">
                                     <div class="posting-date">
-                                        <span>Posted On:</span> {{ $tution->created_at }}
+                                        <span>Posted On:</span> {{ date('Y/m/d', strtotime($tution->created_at))}}
                                     </div>
                                     <div class="view-details">
                                         <button id="view_details_modal" data-toggle="modal" data-id="{{ $tution->id }}"

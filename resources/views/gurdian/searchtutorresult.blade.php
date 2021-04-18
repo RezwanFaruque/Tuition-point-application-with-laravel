@@ -95,7 +95,18 @@
                     <div class="result-body">
                         <div class="container">
                             <div class="row">
-                                @foreach ($searchtutorresult as $searchtutor)
+
+                                @php
+                                    $count = count($searchtutorresult);
+                                @endphp
+
+                                @if($count == 0)
+                                    <div class="alert alert-danger">
+                                        No Tutor Found For This Result
+                                    </div>
+                                @else
+
+                                 @foreach ($searchtutorresult as $searchtutor)
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="result-card">
                                             <div class="header">
@@ -137,6 +148,9 @@
 
                                 @endforeach
 
+                                @endif
+                               
+
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -164,7 +178,7 @@
                                         </div>
                                         <div class="button-find">
                                             <div class="request-tutor-page">
-                                                <a class="req-tutor" href="">Request a Tutor</a>
+                                                <a class="req-tutor" href="{{route('gurdian.requestfortutor')}}">Request a Tutor</a>
                                             </div>
                                         </div>
                                     </div>
